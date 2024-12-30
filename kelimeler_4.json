@@ -1,0 +1,9426 @@
+[
+  {
+    "id": 12,
+    "madde": "Duma"
+  },
+  {
+    "id": 37,
+    "madde": "düet"
+  },
+  {
+    "id": 89,
+    "madde": "duru"
+  },
+  {
+    "id": 207,
+    "madde": "duyu"
+  },
+  {
+    "id": 268,
+    "madde": "düğü"
+  },
+  {
+    "id": 434,
+    "madde": "dürü"
+  },
+  {
+    "id": 435,
+    "madde": "dürü"
+  },
+  {
+    "id": 450,
+    "madde": "düse"
+  },
+  {
+    "id": 553,
+    "madde": "düve"
+  },
+  {
+    "id": 571,
+    "madde": "düze"
+  },
+  {
+    "id": 619,
+    "madde": "norm"
+  },
+  {
+    "id": 660,
+    "madde": "e, E"
+  },
+  {
+    "id": 662,
+    "madde": "ebat"
+  },
+  {
+    "id": 687,
+    "madde": "ebet"
+  },
+  {
+    "id": 694,
+    "madde": "ebru"
+  },
+  {
+    "id": 705,
+    "madde": "ecel"
+  },
+  {
+    "id": 717,
+    "madde": "ecir"
+  },
+  {
+    "id": 722,
+    "madde": "ecza"
+  },
+  {
+    "id": 736,
+    "madde": "edat"
+  },
+  {
+    "id": 753,
+    "madde": "edep"
+  },
+  {
+    "id": 770,
+    "madde": "eder"
+  },
+  {
+    "id": 775,
+    "madde": "edik"
+  },
+  {
+    "id": 790,
+    "madde": "edim"
+  },
+  {
+    "id": 800,
+    "madde": "edip"
+  },
+  {
+    "id": 804,
+    "madde": "edna"
+  },
+  {
+    "id": 882,
+    "madde": "ağız"
+  },
+  {
+    "id": 952,
+    "madde": "ağlı"
+  },
+  {
+    "id": 953,
+    "madde": "ağma"
+  },
+  {
+    "id": 961,
+    "madde": "ağrı"
+  },
+  {
+    "id": 976,
+    "madde": "ağsı"
+  },
+  {
+    "id": 1014,
+    "madde": "ahar"
+  },
+  {
+    "id": 1026,
+    "madde": "ahçı"
+  },
+  {
+    "id": 1029,
+    "madde": "ahdî"
+  },
+  {
+    "id": 1052,
+    "madde": "ahır"
+  },
+  {
+    "id": 1061,
+    "madde": "ahir"
+  },
+  {
+    "id": 1065,
+    "madde": "ahit"
+  },
+  {
+    "id": 1071,
+    "madde": "ahiz"
+  },
+  {
+    "id": 1125,
+    "madde": "ahşa"
+  },
+  {
+    "id": 1141,
+    "madde": "aile"
+  },
+  {
+    "id": 1161,
+    "madde": "ajan"
+  },
+  {
+    "id": 1166,
+    "madde": "ajur"
+  },
+  {
+    "id": 1185,
+    "madde": "akaç"
+  },
+  {
+    "id": 1199,
+    "madde": "akak"
+  },
+  {
+    "id": 1205,
+    "madde": "akar"
+  },
+  {
+    "id": 1237,
+    "madde": "akça"
+  },
+  {
+    "id": 1238,
+    "madde": "akça"
+  },
+  {
+    "id": 1246,
+    "madde": "akçe"
+  },
+  {
+    "id": 1276,
+    "madde": "akıl"
+  },
+  {
+    "id": 1425,
+    "madde": "akım"
+  },
+  {
+    "id": 1430,
+    "madde": "akın"
+  },
+  {
+    "id": 1432,
+    "madde": "akın"
+  },
+  {
+    "id": 1446,
+    "madde": "akış"
+  },
+  {
+    "id": 1465,
+    "madde": "akik"
+  },
+  {
+    "id": 1466,
+    "madde": "akil"
+  },
+  {
+    "id": 1470,
+    "madde": "akim"
+  },
+  {
+    "id": 1472,
+    "madde": "akis"
+  },
+  {
+    "id": 1474,
+    "madde": "âkit"
+  },
+  {
+    "id": 1475,
+    "madde": "akit"
+  },
+  {
+    "id": 1500,
+    "madde": "aklı"
+  },
+  {
+    "id": 1506,
+    "madde": "akli"
+  },
+  {
+    "id": 1510,
+    "madde": "akma"
+  },
+  {
+    "id": 1578,
+    "madde": "akse"
+  },
+  {
+    "id": 1597,
+    "madde": "aksi"
+  },
+  {
+    "id": 1619,
+    "madde": "aksu"
+  },
+  {
+    "id": 1709,
+    "madde": "akur"
+  },
+  {
+    "id": 1711,
+    "madde": "akut"
+  },
+  {
+    "id": 1829,
+    "madde": "alan"
+  },
+  {
+    "id": 1864,
+    "madde": "alay"
+  },
+  {
+    "id": 1866,
+    "madde": "alay"
+  },
+  {
+    "id": 1883,
+    "madde": "alaz"
+  },
+  {
+    "id": 1934,
+    "madde": "alçı"
+  },
+  {
+    "id": 1980,
+    "madde": "âlem"
+  },
+  {
+    "id": 1985,
+    "madde": "alem"
+  },
+  {
+    "id": 2003,
+    "madde": "alet"
+  },
+  {
+    "id": 2010,
+    "madde": "alev"
+  },
+  {
+    "id": 2036,
+    "madde": "alfa"
+  },
+  {
+    "id": 2037,
+    "madde": "alfa"
+  },
+  {
+    "id": 2049,
+    "madde": "algı"
+  },
+  {
+    "id": 2050,
+    "madde": "algı"
+  },
+  {
+    "id": 2051,
+    "madde": "algı"
+  },
+  {
+    "id": 2067,
+    "madde": "efor"
+  },
+  {
+    "id": 2118,
+    "madde": "eğer"
+  },
+  {
+    "id": 2119,
+    "madde": "eğiç"
+  },
+  {
+    "id": 2120,
+    "madde": "eğik"
+  },
+  {
+    "id": 2133,
+    "madde": "eğim"
+  },
+  {
+    "id": 2137,
+    "madde": "eğin"
+  },
+  {
+    "id": 2142,
+    "madde": "eğir"
+  },
+  {
+    "id": 2150,
+    "madde": "eğiş"
+  },
+  {
+    "id": 2192,
+    "madde": "eğme"
+  },
+  {
+    "id": 2209,
+    "madde": "eğri"
+  },
+  {
+    "id": 2232,
+    "madde": "eğsi"
+  },
+  {
+    "id": 2234,
+    "madde": "ehem"
+  },
+  {
+    "id": 2239,
+    "madde": "ehil"
+  },
+  {
+    "id": 2241,
+    "madde": "ehlî"
+  },
+  {
+    "id": 2288,
+    "madde": "ekim"
+  },
+  {
+    "id": 2289,
+    "madde": "ekin"
+  },
+  {
+    "id": 2299,
+    "madde": "ekip"
+  },
+  {
+    "id": 2329,
+    "madde": "ekli"
+  },
+  {
+    "id": 2331,
+    "madde": "ekme"
+  },
+  {
+    "id": 2377,
+    "madde": "ekol"
+  },
+  {
+    "id": 2410,
+    "madde": "eksi"
+  },
+  {
+    "id": 2541,
+    "madde": "diri"
+  },
+  {
+    "id": 2597,
+    "madde": "disk"
+  },
+  {
+    "id": 2661,
+    "madde": "dişi"
+  },
+  {
+    "id": 2788,
+    "madde": "dize"
+  },
+  {
+    "id": 2821,
+    "madde": "dizi"
+  },
+  {
+    "id": 2857,
+    "madde": "doğa"
+  },
+  {
+    "id": 2949,
+    "madde": "doğu"
+  },
+  {
+    "id": 3004,
+    "madde": "doku"
+  },
+  {
+    "id": 3160,
+    "madde": "dolu"
+  },
+  {
+    "id": 3161,
+    "madde": "dolu"
+  },
+  {
+    "id": 3248,
+    "madde": "done"
+  },
+  {
+    "id": 3277,
+    "madde": "doru"
+  },
+  {
+    "id": 3285,
+    "madde": "dost"
+  },
+  {
+    "id": 3496,
+    "madde": "dört"
+  },
+  {
+    "id": 3597,
+    "madde": "dram"
+  },
+  {
+    "id": 3604,
+    "madde": "dren"
+  },
+  {
+    "id": 3609,
+    "madde": "drog"
+  },
+  {
+    "id": 3619,
+    "madde": "duba"
+  },
+  {
+    "id": 3655,
+    "madde": "dudu"
+  },
+  {
+    "id": 3660,
+    "madde": "duka"
+  },
+  {
+    "id": 3669,
+    "madde": "cadı"
+  },
+  {
+    "id": 3693,
+    "madde": "caiz"
+  },
+  {
+    "id": 3695,
+    "madde": "caka"
+  },
+  {
+    "id": 3732,
+    "madde": "cami"
+  },
+  {
+    "id": 3736,
+    "madde": "cami"
+  },
+  {
+    "id": 3858,
+    "madde": "cana"
+  },
+  {
+    "id": 3901,
+    "madde": "cani"
+  },
+  {
+    "id": 3963,
+    "madde": "cari"
+  },
+  {
+    "id": 3974,
+    "madde": "cart"
+  },
+  {
+    "id": 4040,
+    "madde": "c, C"
+  },
+  {
+    "id": 4043,
+    "madde": "cebe"
+  },
+  {
+    "id": 4069,
+    "madde": "Cedi"
+  },
+  {
+    "id": 4072,
+    "madde": "cefa"
+  },
+  {
+    "id": 4104,
+    "madde": "ceht"
+  },
+  {
+    "id": 4118,
+    "madde": "celi"
+  },
+  {
+    "id": 4124,
+    "madde": "celp"
+  },
+  {
+    "id": 4150,
+    "madde": "cemi"
+  },
+  {
+    "id": 4181,
+    "madde": "cenk"
+  },
+  {
+    "id": 4263,
+    "madde": "cerh"
+  },
+  {
+    "id": 4356,
+    "madde": "ceza"
+  },
+  {
+    "id": 4396,
+    "madde": "cezp"
+  },
+  {
+    "id": 4410,
+    "madde": "cılk"
+  },
+  {
+    "id": 4452,
+    "madde": "cırt"
+  },
+  {
+    "id": 4457,
+    "madde": "cıva"
+  },
+  {
+    "id": 4473,
+    "madde": "batı"
+  },
+  {
+    "id": 4497,
+    "madde": "bati"
+  },
+  {
+    "id": 4578,
+    "madde": "bayi"
+  },
+  {
+    "id": 4649,
+    "madde": "baza"
+  },
+  {
+    "id": 4653,
+    "madde": "bazı"
+  },
+  {
+    "id": 4667,
+    "madde": "b, B"
+  },
+  {
+    "id": 4671,
+    "madde": "bebe"
+  },
+  {
+    "id": 4784,
+    "madde": "beis"
+  },
+  {
+    "id": 4791,
+    "madde": "beka"
+  },
+  {
+    "id": 4865,
+    "madde": "bela"
+  },
+  {
+    "id": 4951,
+    "madde": "beli"
+  },
+  {
+    "id": 5133,
+    "madde": "bent"
+  },
+  {
+    "id": 5206,
+    "madde": "bere"
+  },
+  {
+    "id": 5234,
+    "madde": "beri"
+  },
+  {
+    "id": 5241,
+    "madde": "berk"
+  },
+  {
+    "id": 5275,
+    "madde": "besi"
+  },
+  {
+    "id": 5355,
+    "madde": "baht"
+  },
+  {
+    "id": 5388,
+    "madde": "bakı"
+  },
+  {
+    "id": 5432,
+    "madde": "baki"
+  },
+  {
+    "id": 5468,
+    "madde": "bak!"
+  },
+  {
+    "id": 5508,
+    "madde": "bala"
+  },
+  {
+    "id": 5553,
+    "madde": "bale"
+  },
+  {
+    "id": 5644,
+    "madde": "balo"
+  },
+  {
+    "id": 5709,
+    "madde": "bana"
+  },
+  {
+    "id": 5738,
+    "madde": "bani"
+  },
+  {
+    "id": 5739,
+    "madde": "bank"
+  },
+  {
+    "id": 5766,
+    "madde": "bant"
+  },
+  {
+    "id": 5847,
+    "madde": "barı"
+  },
+  {
+    "id": 5868,
+    "madde": "bari"
+  },
+  {
+    "id": 5889,
+    "madde": "baro"
+  },
+  {
+    "id": 5938,
+    "madde": "bası"
+  },
+  {
+    "id": 6169,
+    "madde": "a, A"
+  },
+  {
+    "id": 6219,
+    "madde": "abat"
+  },
+  {
+    "id": 6253,
+    "madde": "abes"
+  },
+  {
+    "id": 6266,
+    "madde": "abis"
+  },
+  {
+    "id": 6267,
+    "madde": "abla"
+  },
+  {
+    "id": 6274,
+    "madde": "abli"
+  },
+  {
+    "id": 6289,
+    "madde": "abra"
+  },
+  {
+    "id": 6309,
+    "madde": "abus"
+  },
+  {
+    "id": 6312,
+    "madde": "Acar"
+  },
+  {
+    "id": 6313,
+    "madde": "acar"
+  },
+  {
+    "id": 6337,
+    "madde": "Acem"
+  },
+  {
+    "id": 6338,
+    "madde": "acem"
+  },
+  {
+    "id": 6367,
+    "madde": "acep"
+  },
+  {
+    "id": 6455,
+    "madde": "acil"
+  },
+  {
+    "id": 6459,
+    "madde": "âciz"
+  },
+  {
+    "id": 6462,
+    "madde": "aciz"
+  },
+  {
+    "id": 6467,
+    "madde": "acul"
+  },
+  {
+    "id": 6468,
+    "madde": "acun"
+  },
+  {
+    "id": 6469,
+    "madde": "acur"
+  },
+  {
+    "id": 6471,
+    "madde": "acyo"
+  },
+  {
+    "id": 6506,
+    "madde": "açan"
+  },
+  {
+    "id": 6507,
+    "madde": "açar"
+  },
+  {
+    "id": 6513,
+    "madde": "açık"
+  },
+  {
+    "id": 6649,
+    "madde": "açım"
+  },
+  {
+    "id": 6673,
+    "madde": "açış"
+  },
+  {
+    "id": 6675,
+    "madde": "açıt"
+  },
+  {
+    "id": 6676,
+    "madde": "açkı"
+  },
+  {
+    "id": 6696,
+    "madde": "açma"
+  },
+  {
+    "id": 6751,
+    "madde": "adak"
+  },
+  {
+    "id": 6775,
+    "madde": "adam"
+  },
+  {
+    "id": 6827,
+    "madde": "adap"
+  },
+  {
+    "id": 6836,
+    "madde": "adaş"
+  },
+  {
+    "id": 6843,
+    "madde": "aday"
+  },
+  {
+    "id": 6850,
+    "madde": "adcı"
+  },
+  {
+    "id": 6862,
+    "madde": "Âdem"
+  },
+  {
+    "id": 6863,
+    "madde": "adem"
+  },
+  {
+    "id": 6878,
+    "madde": "âdet"
+  },
+  {
+    "id": 6884,
+    "madde": "adet"
+  },
+  {
+    "id": 6890,
+    "madde": "adıl"
+  },
+  {
+    "id": 6891,
+    "madde": "adım"
+  },
+  {
+    "id": 6910,
+    "madde": "adil"
+  },
+  {
+    "id": 6930,
+    "madde": "adlı"
+  },
+  {
+    "id": 6932,
+    "madde": "adli"
+  },
+  {
+    "id": 6969,
+    "madde": "afak"
+  },
+  {
+    "id": 6980,
+    "madde": "afat"
+  },
+  {
+    "id": 6985,
+    "madde": "afet"
+  },
+  {
+    "id": 7002,
+    "madde": "afif"
+  },
+  {
+    "id": 7005,
+    "madde": "afis"
+  },
+  {
+    "id": 7006,
+    "madde": "afiş"
+  },
+  {
+    "id": 7054,
+    "madde": "agâh"
+  },
+  {
+    "id": 7059,
+    "madde": "agel"
+  },
+  {
+    "id": 7077,
+    "madde": "aguş"
+  },
+  {
+    "id": 7095,
+    "madde": "ağaç"
+  },
+  {
+    "id": 7154,
+    "madde": "ağcı"
+  },
+  {
+    "id": 7157,
+    "madde": "ağda"
+  },
+  {
+    "id": 7172,
+    "madde": "ağıl"
+  },
+  {
+    "id": 7185,
+    "madde": "ağım"
+  },
+  {
+    "id": 7190,
+    "madde": "ağır"
+  },
+  {
+    "id": 7258,
+    "madde": "ağış"
+  },
+  {
+    "id": 7259,
+    "madde": "ağıt"
+  },
+  {
+    "id": 7264,
+    "madde": "ağız"
+  },
+  {
+    "id": 7452,
+    "madde": "araç"
+  },
+  {
+    "id": 7459,
+    "madde": "araf"
+  },
+  {
+    "id": 7463,
+    "madde": "arak"
+  },
+  {
+    "id": 7509,
+    "madde": "Arap"
+  },
+  {
+    "id": 7559,
+    "madde": "âraz"
+  },
+  {
+    "id": 7570,
+    "madde": "arda"
+  },
+  {
+    "id": 7606,
+    "madde": "argo"
+  },
+  {
+    "id": 7627,
+    "madde": "arık"
+  },
+  {
+    "id": 7629,
+    "madde": "arık"
+  },
+  {
+    "id": 7664,
+    "madde": "arış"
+  },
+  {
+    "id": 7665,
+    "madde": "arış"
+  },
+  {
+    "id": 7672,
+    "madde": "arız"
+  },
+  {
+    "id": 7684,
+    "madde": "arif"
+  },
+  {
+    "id": 7714,
+    "madde": "arka"
+  },
+  {
+    "id": 7800,
+    "madde": "arlı"
+  },
+  {
+    "id": 7802,
+    "madde": "arma"
+  },
+  {
+    "id": 7850,
+    "madde": "arpa"
+  },
+  {
+    "id": 7871,
+    "madde": "arsa"
+  },
+  {
+    "id": 7889,
+    "madde": "arşe"
+  },
+  {
+    "id": 7932,
+    "madde": "artı"
+  },
+  {
+    "id": 7967,
+    "madde": "aruz"
+  },
+  {
+    "id": 7968,
+    "madde": "arya"
+  },
+  {
+    "id": 7980,
+    "madde": "arzu"
+  },
+  {
+    "id": 8003,
+    "madde": "asal"
+  },
+  {
+    "id": 8017,
+    "madde": "asap"
+  },
+  {
+    "id": 8019,
+    "madde": "asar"
+  },
+  {
+    "id": 8030,
+    "madde": "ases"
+  },
+  {
+    "id": 8048,
+    "madde": "asık"
+  },
+  {
+    "id": 8050,
+    "madde": "asıl"
+  },
+  {
+    "id": 8065,
+    "madde": "asım"
+  },
+  {
+    "id": 8069,
+    "madde": "asır"
+  },
+  {
+    "id": 8075,
+    "madde": "asil"
+  },
+  {
+    "id": 8090,
+    "madde": "asit"
+  },
+  {
+    "id": 8129,
+    "madde": "askı"
+  },
+  {
+    "id": 8142,
+    "madde": "asla"
+  },
+  {
+    "id": 8166,
+    "madde": "asli"
+  },
+  {
+    "id": 8171,
+    "madde": "asma"
+  },
+  {
+    "id": 8172,
+    "madde": "asma"
+  },
+  {
+    "id": 8198,
+    "madde": "asri"
+  },
+  {
+    "id": 8294,
+    "madde": "aşar"
+  },
+  {
+    "id": 8296,
+    "madde": "aşçı"
+  },
+  {
+    "id": 8314,
+    "madde": "âşık"
+  },
+  {
+    "id": 8322,
+    "madde": "aşık"
+  },
+  {
+    "id": 8343,
+    "madde": "aşım"
+  },
+  {
+    "id": 8350,
+    "madde": "aşir"
+  },
+  {
+    "id": 8375,
+    "madde": "aşıt"
+  },
+  {
+    "id": 8397,
+    "madde": "aşma"
+  },
+  {
+    "id": 8401,
+    "madde": "aşoz"
+  },
+  {
+    "id": 8470,
+    "madde": "atak"
+  },
+  {
+    "id": 8471,
+    "madde": "atak"
+  },
+  {
+    "id": 8486,
+    "madde": "ataş"
+  },
+  {
+    "id": 8495,
+    "madde": "atçı"
+  },
+  {
+    "id": 8500,
+    "madde": "ateh"
+  },
+  {
+    "id": 8505,
+    "madde": "ateş"
+  },
+  {
+    "id": 8591,
+    "madde": "alıç"
+  },
+  {
+    "id": 8592,
+    "madde": "alık"
+  },
+  {
+    "id": 8603,
+    "madde": "alım"
+  },
+  {
+    "id": 8612,
+    "madde": "alın"
+  },
+  {
+    "id": 8639,
+    "madde": "alış"
+  },
+  {
+    "id": 8672,
+    "madde": "alil"
+  },
+  {
+    "id": 8673,
+    "madde": "âlim"
+  },
+  {
+    "id": 8675,
+    "madde": "alim"
+  },
+  {
+    "id": 8850,
+    "madde": "allı"
+  },
+  {
+    "id": 8853,
+    "madde": "alma"
+  },
+  {
+    "id": 8866,
+    "madde": "aldı"
+  },
+  {
+    "id": 8956,
+    "madde": "altı"
+  },
+  {
+    "id": 9024,
+    "madde": "alto"
+  },
+  {
+    "id": 9056,
+    "madde": "amaç"
+  },
+  {
+    "id": 9069,
+    "madde": "amal"
+  },
+  {
+    "id": 9072,
+    "madde": "aman"
+  },
+  {
+    "id": 9118,
+    "madde": "amca"
+  },
+  {
+    "id": 9123,
+    "madde": "amel"
+  },
+  {
+    "id": 9158,
+    "madde": "amfi"
+  },
+  {
+    "id": 9168,
+    "madde": "amil"
+  },
+  {
+    "id": 9170,
+    "madde": "âmin"
+  },
+  {
+    "id": 9171,
+    "madde": "amin"
+  },
+  {
+    "id": 9173,
+    "madde": "amip"
+  },
+  {
+    "id": 9176,
+    "madde": "amir"
+  },
+  {
+    "id": 9183,
+    "madde": "amit"
+  },
+  {
+    "id": 9187,
+    "madde": "amma"
+  },
+  {
+    "id": 9190,
+    "madde": "amme"
+  },
+  {
+    "id": 9222,
+    "madde": "amut"
+  },
+  {
+    "id": 9278,
+    "madde": "anaç"
+  },
+  {
+    "id": 9400,
+    "madde": "anca"
+  },
+  {
+    "id": 9449,
+    "madde": "anık"
+  },
+  {
+    "id": 9471,
+    "madde": "anıt"
+  },
+  {
+    "id": 9482,
+    "madde": "anız"
+  },
+  {
+    "id": 9489,
+    "madde": "anif"
+  },
+  {
+    "id": 9499,
+    "madde": "Anka"
+  },
+  {
+    "id": 9588,
+    "madde": "anma"
+  },
+  {
+    "id": 9592,
+    "madde": "anne"
+  },
+  {
+    "id": 9611,
+    "madde": "anot"
+  },
+  {
+    "id": 9716,
+    "madde": "anut"
+  },
+  {
+    "id": 9718,
+    "madde": "anüs"
+  },
+  {
+    "id": 9722,
+    "madde": "aort"
+  },
+  {
+    "id": 9726,
+    "madde": "apak"
+  },
+  {
+    "id": 9738,
+    "madde": "apaş"
+  },
+  {
+    "id": 9743,
+    "madde": "apaz"
+  },
+  {
+    "id": 9744,
+    "madde": "apaz"
+  },
+  {
+    "id": 9747,
+    "madde": "apel"
+  },
+  {
+    "id": 9749,
+    "madde": "apış"
+  },
+  {
+    "id": 9773,
+    "madde": "apre"
+  },
+  {
+    "id": 9780,
+    "madde": "apse"
+  },
+  {
+    "id": 10271,
+    "madde": "beta"
+  },
+  {
+    "id": 10280,
+    "madde": "beti"
+  },
+  {
+    "id": 10428,
+    "madde": "beze"
+  },
+  {
+    "id": 10429,
+    "madde": "beze"
+  },
+  {
+    "id": 10430,
+    "madde": "beze"
+  },
+  {
+    "id": 10471,
+    "madde": "bezm"
+  },
+  {
+    "id": 10625,
+    "madde": "cici"
+  },
+  {
+    "id": 10649,
+    "madde": "cife"
+  },
+  {
+    "id": 10693,
+    "madde": "cila"
+  },
+  {
+    "id": 10715,
+    "madde": "cilt"
+  },
+  {
+    "id": 10741,
+    "madde": "cima"
+  },
+  {
+    "id": 10786,
+    "madde": "cins"
+  },
+  {
+    "id": 10804,
+    "madde": "cips"
+  },
+  {
+    "id": 10814,
+    "madde": "ciro"
+  },
+  {
+    "id": 10882,
+    "madde": "cönk"
+  },
+  {
+    "id": 10888,
+    "madde": "cuma"
+  },
+  {
+    "id": 10928,
+    "madde": "cura"
+  },
+  {
+    "id": 10940,
+    "madde": "cüce"
+  },
+  {
+    "id": 10947,
+    "madde": "cüda"
+  },
+  {
+    "id": 10984,
+    "madde": "cüzi"
+  },
+  {
+    "id": 10987,
+    "madde": "atıf"
+  },
+  {
+    "id": 10990,
+    "madde": "atık"
+  },
+  {
+    "id": 10992,
+    "madde": "atıl"
+  },
+  {
+    "id": 11001,
+    "madde": "atım"
+  },
+  {
+    "id": 11005,
+    "madde": "atış"
+  },
+  {
+    "id": 11014,
+    "madde": "atik"
+  },
+  {
+    "id": 11015,
+    "madde": "atik"
+  },
+  {
+    "id": 11020,
+    "madde": "atkı"
+  },
+  {
+    "id": 11054,
+    "madde": "atlı"
+  },
+  {
+    "id": 11059,
+    "madde": "atma"
+  },
+  {
+    "id": 11074,
+    "madde": "atol"
+  },
+  {
+    "id": 11075,
+    "madde": "atom"
+  },
+  {
+    "id": 11110,
+    "madde": "aval"
+  },
+  {
+    "id": 11111,
+    "madde": "aval"
+  },
+  {
+    "id": 11113,
+    "madde": "avam"
+  },
+  {
+    "id": 11144,
+    "madde": "avaz"
+  },
+  {
+    "id": 11146,
+    "madde": "avcı"
+  },
+  {
+    "id": 11172,
+    "madde": "avlu"
+  },
+  {
+    "id": 11189,
+    "madde": "avuç"
+  },
+  {
+    "id": 11238,
+    "madde": "ayak"
+  },
+  {
+    "id": 11377,
+    "madde": "ayal"
+  },
+  {
+    "id": 11378,
+    "madde": "âyan"
+  },
+  {
+    "id": 11379,
+    "madde": "ayan"
+  },
+  {
+    "id": 11383,
+    "madde": "ayar"
+  },
+  {
+    "id": 11404,
+    "madde": "ayaz"
+  },
+  {
+    "id": 11426,
+    "madde": "ayça"
+  },
+  {
+    "id": 11445,
+    "madde": "ayet"
+  },
+  {
+    "id": 11469,
+    "madde": "ayık"
+  },
+  {
+    "id": 11488,
+    "madde": "ayın"
+  },
+  {
+    "id": 11495,
+    "madde": "ayıp"
+  },
+  {
+    "id": 11520,
+    "madde": "ayıt"
+  },
+  {
+    "id": 11523,
+    "madde": "ayin"
+  },
+  {
+    "id": 11536,
+    "madde": "ayla"
+  },
+  {
+    "id": 11549,
+    "madde": "aylı"
+  },
+  {
+    "id": 11557,
+    "madde": "ayma"
+  },
+  {
+    "id": 11563,
+    "madde": "ayna"
+  },
+  {
+    "id": 11579,
+    "madde": "aynı"
+  },
+  {
+    "id": 11594,
+    "madde": "ayni"
+  },
+  {
+    "id": 11595,
+    "madde": "ayni"
+  },
+  {
+    "id": 11599,
+    "madde": "ayol"
+  },
+  {
+    "id": 11614,
+    "madde": "ayrı"
+  },
+  {
+    "id": 11689,
+    "madde": "ayva"
+  },
+  {
+    "id": 11742,
+    "madde": "azap"
+  },
+  {
+    "id": 11746,
+    "madde": "azap"
+  },
+  {
+    "id": 11747,
+    "madde": "azar"
+  },
+  {
+    "id": 11756,
+    "madde": "azat"
+  },
+  {
+    "id": 11764,
+    "madde": "azca"
+  },
+  {
+    "id": 11781,
+    "madde": "azık"
+  },
+  {
+    "id": 11796,
+    "madde": "azil"
+  },
+  {
+    "id": 11797,
+    "madde": "azim"
+  },
+  {
+    "id": 11802,
+    "madde": "aziz"
+  },
+  {
+    "id": 11813,
+    "madde": "azma"
+  },
+  {
+    "id": 11831,
+    "madde": "azot"
+  },
+  {
+    "id": 11844,
+    "madde": "baba"
+  },
+  {
+    "id": 11901,
+    "madde": "Babi"
+  },
+  {
+    "id": 11903,
+    "madde": "baca"
+  },
+  {
+    "id": 11926,
+    "madde": "bacı"
+  },
+  {
+    "id": 11945,
+    "madde": "bade"
+  },
+  {
+    "id": 11969,
+    "madde": "badi"
+  },
+  {
+    "id": 11993,
+    "madde": "bağa"
+  },
+  {
+    "id": 12031,
+    "madde": "bağı"
+  },
+  {
+    "id": 12214,
+    "madde": "boru"
+  },
+  {
+    "id": 12347,
+    "madde": "boya"
+  },
+  {
+    "id": 12479,
+    "madde": "boza"
+  },
+  {
+    "id": 12559,
+    "madde": "böce"
+  },
+  {
+    "id": 12580,
+    "madde": "böcü"
+  },
+  {
+    "id": 12592,
+    "madde": "böke"
+  },
+  {
+    "id": 12605,
+    "madde": "bölü"
+  },
+  {
+    "id": 12651,
+    "madde": "börk"
+  },
+  {
+    "id": 12682,
+    "madde": "breş"
+  },
+  {
+    "id": 12685,
+    "madde": "briç"
+  },
+  {
+    "id": 12689,
+    "madde": "brik"
+  },
+  {
+    "id": 12690,
+    "madde": "brik"
+  },
+  {
+    "id": 12700,
+    "madde": "brom"
+  },
+  {
+    "id": 12712,
+    "madde": "broş"
+  },
+  {
+    "id": 12718,
+    "madde": "brüt"
+  },
+  {
+    "id": 12733,
+    "madde": "buat"
+  },
+  {
+    "id": 12796,
+    "madde": "buğu"
+  },
+  {
+    "id": 12838,
+    "madde": "buji"
+  },
+  {
+    "id": 12849,
+    "madde": "buke"
+  },
+  {
+    "id": 12857,
+    "madde": "bula"
+  },
+  {
+    "id": 13003,
+    "madde": "bura"
+  },
+  {
+    "id": 13015,
+    "madde": "burç"
+  },
+  {
+    "id": 13016,
+    "madde": "burç"
+  },
+  {
+    "id": 13045,
+    "madde": "burs"
+  },
+  {
+    "id": 13049,
+    "madde": "buru"
+  },
+  {
+    "id": 13124,
+    "madde": "buse"
+  },
+  {
+    "id": 13136,
+    "madde": "buut"
+  },
+  {
+    "id": 13211,
+    "madde": "büfe"
+  },
+  {
+    "id": 13267,
+    "madde": "büro"
+  },
+  {
+    "id": 13282,
+    "madde": "büst"
+  },
+  {
+    "id": 13313,
+    "madde": "büve"
+  },
+  {
+    "id": 13316,
+    "madde": "büyü"
+  },
+  {
+    "id": 13426,
+    "madde": "caba"
+  },
+  {
+    "id": 13446,
+    "madde": "biat"
+  },
+  {
+    "id": 13462,
+    "madde": "bibi"
+  },
+  {
+    "id": 13520,
+    "madde": "bide"
+  },
+  {
+    "id": 13569,
+    "madde": "bile"
+  },
+  {
+    "id": 13649,
+    "madde": "bili"
+  },
+  {
+    "id": 13766,
+    "madde": "bina"
+  },
+  {
+    "id": 13790,
+    "madde": "bini"
+  },
+  {
+    "id": 13962,
+    "madde": "bira"
+  },
+  {
+    "id": 14057,
+    "madde": "biri"
+  },
+  {
+    "id": 14171,
+    "madde": "bişi"
+  },
+  {
+    "id": 14254,
+    "madde": "biye"
+  },
+  {
+    "id": 14305,
+    "madde": "blok"
+  },
+  {
+    "id": 14317,
+    "madde": "blöf"
+  },
+  {
+    "id": 14321,
+    "madde": "blum"
+  },
+  {
+    "id": 14322,
+    "madde": "bluz"
+  },
+  {
+    "id": 14329,
+    "madde": "boca"
+  },
+  {
+    "id": 14336,
+    "madde": "boci"
+  },
+  {
+    "id": 14351,
+    "madde": "Boğa"
+  },
+  {
+    "id": 14352,
+    "madde": "boğa"
+  },
+  {
+    "id": 14480,
+    "madde": "boks"
+  },
+  {
+    "id": 14557,
+    "madde": "bone"
+  },
+  {
+    "id": 14564,
+    "madde": "bono"
+  },
+  {
+    "id": 14573,
+    "madde": "bora"
+  },
+  {
+    "id": 14586,
+    "madde": "borç"
+  },
+  {
+    "id": 14702,
+    "madde": "deni"
+  },
+  {
+    "id": 14807,
+    "madde": "denk"
+  },
+  {
+    "id": 14850,
+    "madde": "depo"
+  },
+  {
+    "id": 14880,
+    "madde": "derç"
+  },
+  {
+    "id": 14883,
+    "madde": "dere"
+  },
+  {
+    "id": 14912,
+    "madde": "deri"
+  },
+  {
+    "id": 14916,
+    "madde": "deri"
+  },
+  {
+    "id": 14953,
+    "madde": "derk"
+  },
+  {
+    "id": 14993,
+    "madde": "ders"
+  },
+  {
+    "id": 15009,
+    "madde": "dert"
+  },
+  {
+    "id": 15060,
+    "madde": "derz"
+  },
+  {
+    "id": 15164,
+    "madde": "deva"
+  },
+  {
+    "id": 15179,
+    "madde": "deve"
+  },
+  {
+    "id": 15315,
+    "madde": "deyi"
+  },
+  {
+    "id": 15441,
+    "madde": "diba"
+  },
+  {
+    "id": 15448,
+    "madde": "dide"
+  },
+  {
+    "id": 15782,
+    "madde": "dimi"
+  },
+  {
+    "id": 15820,
+    "madde": "dinç"
+  },
+  {
+    "id": 15833,
+    "madde": "dine"
+  },
+  {
+    "id": 15855,
+    "madde": "dinî"
+  },
+  {
+    "id": 15858,
+    "madde": "dink"
+  },
+  {
+    "id": 15900,
+    "madde": "dadı"
+  },
+  {
+    "id": 15977,
+    "madde": "daği"
+  },
+  {
+    "id": 16013,
+    "madde": "daha"
+  },
+  {
+    "id": 16021,
+    "madde": "dahi"
+  },
+  {
+    "id": 16022,
+    "madde": "dâhi"
+  },
+  {
+    "id": 16043,
+    "madde": "daim"
+  },
+  {
+    "id": 16048,
+    "madde": "dair"
+  },
+  {
+    "id": 16224,
+    "madde": "dama"
+  },
+  {
+    "id": 16324,
+    "madde": "dana"
+  },
+  {
+    "id": 16341,
+    "madde": "dane"
+  },
+  {
+    "id": 16342,
+    "madde": "dang"
+  },
+  {
+    "id": 16369,
+    "madde": "dans"
+  },
+  {
+    "id": 16393,
+    "madde": "dara"
+  },
+  {
+    "id": 16440,
+    "madde": "darı"
+  },
+  {
+    "id": 16466,
+    "madde": "darp"
+  },
+  {
+    "id": 16480,
+    "madde": "dava"
+  },
+  {
+    "id": 16590,
+    "madde": "daye"
+  },
+  {
+    "id": 16591,
+    "madde": "dayı"
+  },
+  {
+    "id": 16605,
+    "madde": "d, D"
+  },
+  {
+    "id": 16616,
+    "madde": "debi"
+  },
+  {
+    "id": 16623,
+    "madde": "dede"
+  },
+  {
+    "id": 16641,
+    "madde": "defa"
+  },
+  {
+    "id": 16664,
+    "madde": "defo"
+  },
+  {
+    "id": 16804,
+    "madde": "deha"
+  },
+  {
+    "id": 16872,
+    "madde": "deli"
+  },
+  {
+    "id": 16951,
+    "madde": "delk"
+  },
+  {
+    "id": 16967,
+    "madde": "deme"
+  },
+  {
+    "id": 17190,
+    "madde": "çığa"
+  },
+  {
+    "id": 17191,
+    "madde": "çığa"
+  },
+  {
+    "id": 17239,
+    "madde": "çıkı"
+  },
+  {
+    "id": 17317,
+    "madde": "çıma"
+  },
+  {
+    "id": 17382,
+    "madde": "çıra"
+  },
+  {
+    "id": 17437,
+    "madde": "çıta"
+  },
+  {
+    "id": 17518,
+    "madde": "çift"
+  },
+  {
+    "id": 17636,
+    "madde": "çile"
+  },
+  {
+    "id": 17643,
+    "madde": "çile"
+  },
+  {
+    "id": 17714,
+    "madde": "çini"
+  },
+  {
+    "id": 17734,
+    "madde": "çipo"
+  },
+  {
+    "id": 17770,
+    "madde": "çise"
+  },
+  {
+    "id": 17783,
+    "madde": "çita"
+  },
+  {
+    "id": 17786,
+    "madde": "çiti"
+  },
+  {
+    "id": 17803,
+    "madde": "çivi"
+  },
+  {
+    "id": 17863,
+    "madde": "çizi"
+  },
+  {
+    "id": 17970,
+    "madde": "çoğu"
+  },
+  {
+    "id": 18248,
+    "madde": "çucu"
+  },
+  {
+    "id": 18249,
+    "madde": "çuha"
+  },
+  {
+    "id": 18256,
+    "madde": "çuka"
+  },
+  {
+    "id": 18344,
+    "madde": "fent"
+  },
+  {
+    "id": 18383,
+    "madde": "ferç"
+  },
+  {
+    "id": 18391,
+    "madde": "ferî"
+  },
+  {
+    "id": 18424,
+    "madde": "fert"
+  },
+  {
+    "id": 18432,
+    "madde": "ferz"
+  },
+  {
+    "id": 18478,
+    "madde": "fevç"
+  },
+  {
+    "id": 18482,
+    "madde": "fevk"
+  },
+  {
+    "id": 18490,
+    "madde": "fevt"
+  },
+  {
+    "id": 18504,
+    "madde": "feza"
+  },
+  {
+    "id": 18506,
+    "madde": "fıçı"
+  },
+  {
+    "id": 18630,
+    "madde": "fırt"
+  },
+  {
+    "id": 18720,
+    "madde": "fide"
+  },
+  {
+    "id": 18742,
+    "madde": "fiil"
+  },
+  {
+    "id": 18797,
+    "madde": "file"
+  },
+  {
+    "id": 18828,
+    "madde": "film"
+  },
+  {
+    "id": 18838,
+    "madde": "filo"
+  },
+  {
+    "id": 18882,
+    "madde": "fink"
+  },
+  {
+    "id": 18883,
+    "madde": "fino"
+  },
+  {
+    "id": 18896,
+    "madde": "fire"
+  },
+  {
+    "id": 18927,
+    "madde": "fişe"
+  },
+  {
+    "id": 19033,
+    "madde": "flaş"
+  },
+  {
+    "id": 19040,
+    "madde": "flit"
+  },
+  {
+    "id": 19043,
+    "madde": "flok"
+  },
+  {
+    "id": 19047,
+    "madde": "floş"
+  },
+  {
+    "id": 19048,
+    "madde": "floş"
+  },
+  {
+    "id": 19054,
+    "madde": "flor"
+  },
+  {
+    "id": 19062,
+    "madde": "flüt"
+  },
+  {
+    "id": 19064,
+    "madde": "fobi"
+  },
+  {
+    "id": 19084,
+    "madde": "folk"
+  },
+  {
+    "id": 19114,
+    "madde": "font"
+  },
+  {
+    "id": 19115,
+    "madde": "fora"
+  },
+  {
+    "id": 19117,
+    "madde": "fora"
+  },
+  {
+    "id": 19119,
+    "madde": "form"
+  },
+  {
+    "id": 19146,
+    "madde": "fors"
+  },
+  {
+    "id": 19184,
+    "madde": "foşa"
+  },
+  {
+    "id": 19189,
+    "madde": "fota"
+  },
+  {
+    "id": 19190,
+    "madde": "foto"
+  },
+  {
+    "id": 19227,
+    "madde": "foya"
+  },
+  {
+    "id": 19230,
+    "madde": "fötr"
+  },
+  {
+    "id": 19233,
+    "madde": "frak"
+  },
+  {
+    "id": 19254,
+    "madde": "fren"
+  },
+  {
+    "id": 19282,
+    "madde": "frer"
+  },
+  {
+    "id": 19299,
+    "madde": "friz"
+  },
+  {
+    "id": 19302,
+    "madde": "fuar"
+  },
+  {
+    "id": 19317,
+    "madde": "fule"
+  },
+  {
+    "id": 19335,
+    "madde": "futa"
+  },
+  {
+    "id": 19344,
+    "madde": "füme"
+  },
+  {
+    "id": 19346,
+    "madde": "Fürs"
+  },
+  {
+    "id": 19347,
+    "madde": "füru"
+  },
+  {
+    "id": 19362,
+    "madde": "füze"
+  },
+  {
+    "id": 19368,
+    "madde": "g, G"
+  },
+  {
+    "id": 19373,
+    "madde": "gabi"
+  },
+  {
+    "id": 19389,
+    "madde": "gacı"
+  },
+  {
+    "id": 19423,
+    "madde": "gaga"
+  },
+  {
+    "id": 19439,
+    "madde": "gâhi"
+  },
+  {
+    "id": 19444,
+    "madde": "gaip"
+  },
+  {
+    "id": 19451,
+    "madde": "gala"
+  },
+  {
+    "id": 19457,
+    "madde": "gale"
+  },
+  {
+    "id": 19470,
+    "madde": "gali"
+  },
+  {
+    "id": 19504,
+    "madde": "gama"
+  },
+  {
+    "id": 19528,
+    "madde": "gang"
+  },
+  {
+    "id": 19533,
+    "madde": "gani"
+  },
+  {
+    "id": 19547,
+    "madde": "eski"
+  },
+  {
+    "id": 19597,
+    "madde": "esma"
+  },
+  {
+    "id": 19601,
+    "madde": "esme"
+  },
+  {
+    "id": 19616,
+    "madde": "esna"
+  },
+  {
+    "id": 19661,
+    "madde": "esre"
+  },
+  {
+    "id": 19712,
+    "madde": "eşek"
+  },
+  {
+    "id": 19767,
+    "madde": "eşey"
+  },
+  {
+    "id": 19778,
+    "madde": "eşik"
+  },
+  {
+    "id": 19786,
+    "madde": "eşit"
+  },
+  {
+    "id": 19831,
+    "madde": "eşli"
+  },
+  {
+    "id": 19834,
+    "madde": "eşme"
+  },
+  {
+    "id": 19853,
+    "madde": "eşya"
+  },
+  {
+    "id": 19886,
+    "madde": "etap"
+  },
+  {
+    "id": 19888,
+    "madde": "etçi"
+  },
+  {
+    "id": 19893,
+    "madde": "etek"
+  },
+  {
+    "id": 19924,
+    "madde": "eten"
+  },
+  {
+    "id": 19932,
+    "madde": "eter"
+  },
+  {
+    "id": 19941,
+    "madde": "etik"
+  },
+  {
+    "id": 19952,
+    "madde": "etil"
+  },
+  {
+    "id": 19967,
+    "madde": "etki"
+  },
+  {
+    "id": 20003,
+    "madde": "etli"
+  },
+  {
+    "id": 20013,
+    "madde": "etme"
+  },
+  {
+    "id": 20036,
+    "madde": "etol"
+  },
+  {
+    "id": 20056,
+    "madde": "etüt"
+  },
+  {
+    "id": 20058,
+    "madde": "etüv"
+  },
+  {
+    "id": 20082,
+    "madde": "evce"
+  },
+  {
+    "id": 20084,
+    "madde": "evci"
+  },
+  {
+    "id": 20107,
+    "madde": "evet"
+  },
+  {
+    "id": 20118,
+    "madde": "eviç"
+  },
+  {
+    "id": 20119,
+    "madde": "evin"
+  },
+  {
+    "id": 20138,
+    "madde": "evla"
+  },
+  {
+    "id": 20158,
+    "madde": "evli"
+  },
+  {
+    "id": 20176,
+    "madde": "evre"
+  },
+  {
+    "id": 20218,
+    "madde": "eyer"
+  },
+  {
+    "id": 20268,
+    "madde": "ezan"
+  },
+  {
+    "id": 20303,
+    "madde": "ezel"
+  },
+  {
+    "id": 20306,
+    "madde": "ezgi"
+  },
+  {
+    "id": 20314,
+    "madde": "ezik"
+  },
+  {
+    "id": 20337,
+    "madde": "ezme"
+  },
+  {
+    "id": 20343,
+    "madde": "f, F"
+  },
+  {
+    "id": 20345,
+    "madde": "faal"
+  },
+  {
+    "id": 20352,
+    "madde": "fabl"
+  },
+  {
+    "id": 20362,
+    "madde": "faça"
+  },
+  {
+    "id": 20384,
+    "madde": "faik"
+  },
+  {
+    "id": 20386,
+    "madde": "fail"
+  },
+  {
+    "id": 20390,
+    "madde": "faiz"
+  },
+  {
+    "id": 20404,
+    "madde": "fakr"
+  },
+  {
+    "id": 20420,
+    "madde": "faks"
+  },
+  {
+    "id": 20468,
+    "madde": "fâni"
+  },
+  {
+    "id": 20469,
+    "madde": "fani"
+  },
+  {
+    "id": 20495,
+    "madde": "fare"
+  },
+  {
+    "id": 20518,
+    "madde": "fark"
+  },
+  {
+    "id": 20545,
+    "madde": "Fars"
+  },
+  {
+    "id": 20546,
+    "madde": "fars"
+  },
+  {
+    "id": 20553,
+    "madde": "farz"
+  },
+  {
+    "id": 20615,
+    "madde": "faul"
+  },
+  {
+    "id": 20619,
+    "madde": "fava"
+  },
+  {
+    "id": 20665,
+    "madde": "feci"
+  },
+  {
+    "id": 20669,
+    "madde": "feda"
+  },
+  {
+    "id": 20702,
+    "madde": "felç"
+  },
+  {
+    "id": 20742,
+    "madde": "fena"
+  },
+  {
+    "id": 20751,
+    "madde": "fena"
+  },
+  {
+    "id": 20773,
+    "madde": "güdü"
+  },
+  {
+    "id": 20891,
+    "madde": "güme"
+  },
+  {
+    "id": 21119,
+    "madde": "günü"
+  },
+  {
+    "id": 21140,
+    "madde": "güre"
+  },
+  {
+    "id": 21185,
+    "madde": "gürz"
+  },
+  {
+    "id": 21190,
+    "madde": "güve"
+  },
+  {
+    "id": 21251,
+    "madde": "güya"
+  },
+  {
+    "id": 21299,
+    "madde": "ğ, Ğ"
+  },
+  {
+    "id": 21375,
+    "madde": "hacı"
+  },
+  {
+    "id": 21434,
+    "madde": "hadi"
+  },
+  {
+    "id": 21462,
+    "madde": "hafi"
+  },
+  {
+    "id": 21520,
+    "madde": "hail"
+  },
+  {
+    "id": 21522,
+    "madde": "hain"
+  },
+  {
+    "id": 21528,
+    "madde": "haiz"
+  },
+  {
+    "id": 21530,
+    "madde": "haje"
+  },
+  {
+    "id": 21570,
+    "madde": "hâkî"
+  },
+  {
+    "id": 21643,
+    "madde": "hala"
+  },
+  {
+    "id": 21644,
+    "madde": "hâlâ"
+  },
+  {
+    "id": 21666,
+    "madde": "hale"
+  },
+  {
+    "id": 21688,
+    "madde": "halı"
+  },
+  {
+    "id": 21692,
+    "madde": "hali"
+  },
+  {
+    "id": 21707,
+    "madde": "halk"
+  },
+  {
+    "id": 21710,
+    "madde": "halk"
+  },
+  {
+    "id": 21774,
+    "madde": "halt"
+  },
+  {
+    "id": 21836,
+    "madde": "hami"
+  },
+  {
+    "id": 21918,
+    "madde": "hane"
+  },
+  {
+    "id": 21951,
+    "madde": "hani"
+  },
+  {
+    "id": 21955,
+    "madde": "hani"
+  },
+  {
+    "id": 22000,
+    "madde": "hara"
+  },
+  {
+    "id": 22001,
+    "madde": "hara"
+  },
+  {
+    "id": 22068,
+    "madde": "harç"
+  },
+  {
+    "id": 22080,
+    "madde": "hare"
+  },
+  {
+    "id": 22111,
+    "madde": "harf"
+  },
+  {
+    "id": 22186,
+    "madde": "harp"
+  },
+  {
+    "id": 22194,
+    "madde": "hars"
+  },
+  {
+    "id": 22195,
+    "madde": "hart"
+  },
+  {
+    "id": 22204,
+    "madde": "hasa"
+  },
+  {
+    "id": 22314,
+    "madde": "haşa"
+  },
+  {
+    "id": 22367,
+    "madde": "hata"
+  },
+  {
+    "id": 22435,
+    "madde": "hava"
+  },
+  {
+    "id": 22560,
+    "madde": "havi"
+  },
+  {
+    "id": 22602,
+    "madde": "haya"
+  },
+  {
+    "id": 22603,
+    "madde": "hayâ"
+  },
+  {
+    "id": 22804,
+    "madde": "haza"
+  },
+  {
+    "id": 22880,
+    "madde": "heba"
+  },
+  {
+    "id": 22885,
+    "madde": "hece"
+  },
+  {
+    "id": 22927,
+    "madde": "hela"
+  },
+  {
+    "id": 22946,
+    "madde": "hele"
+  },
+  {
+    "id": 23100,
+    "madde": "herk"
+  },
+  {
+    "id": 23147,
+    "madde": "çaba"
+  },
+  {
+    "id": 23169,
+    "madde": "çaça"
+  },
+  {
+    "id": 23195,
+    "madde": "çağa"
+  },
+  {
+    "id": 23270,
+    "madde": "çakı"
+  },
+  {
+    "id": 23382,
+    "madde": "çalı"
+  },
+  {
+    "id": 23581,
+    "madde": "çapa"
+  },
+  {
+    "id": 23582,
+    "madde": "çıpa"
+  },
+  {
+    "id": 23665,
+    "madde": "çare"
+  },
+  {
+    "id": 23679,
+    "madde": "çark"
+  },
+  {
+    "id": 23812,
+    "madde": "çatı"
+  },
+  {
+    "id": 23965,
+    "madde": "çeçe"
+  },
+  {
+    "id": 23998,
+    "madde": "çeki"
+  },
+  {
+    "id": 24197,
+    "madde": "çene"
+  },
+  {
+    "id": 24256,
+    "madde": "çenk"
+  },
+  {
+    "id": 24312,
+    "madde": "çeri"
+  },
+  {
+    "id": 24351,
+    "madde": "çete"
+  },
+  {
+    "id": 24387,
+    "madde": "ekşi"
+  },
+  {
+    "id": 24408,
+    "madde": "ekti"
+  },
+  {
+    "id": 24616,
+    "madde": "elan"
+  },
+  {
+    "id": 24633,
+    "madde": "elci"
+  },
+  {
+    "id": 24637,
+    "madde": "elçi"
+  },
+  {
+    "id": 24643,
+    "madde": "elde"
+  },
+  {
+    "id": 24661,
+    "madde": "elek"
+  },
+  {
+    "id": 24756,
+    "madde": "elem"
+  },
+  {
+    "id": 24806,
+    "madde": "elif"
+  },
+  {
+    "id": 24813,
+    "madde": "elik"
+  },
+  {
+    "id": 24814,
+    "madde": "elim"
+  },
+  {
+    "id": 24827,
+    "madde": "elit"
+  },
+  {
+    "id": 24847,
+    "madde": "elli"
+  },
+  {
+    "id": 24848,
+    "madde": "elli"
+  },
+  {
+    "id": 24853,
+    "madde": "elma"
+  },
+  {
+    "id": 24883,
+    "madde": "elti"
+  },
+  {
+    "id": 24923,
+    "madde": "emay"
+  },
+  {
+    "id": 24936,
+    "madde": "emeç"
+  },
+  {
+    "id": 24937,
+    "madde": "emek"
+  },
+  {
+    "id": 24963,
+    "madde": "emel"
+  },
+  {
+    "id": 24966,
+    "madde": "emen"
+  },
+  {
+    "id": 24969,
+    "madde": "emik"
+  },
+  {
+    "id": 24972,
+    "madde": "emin"
+  },
+  {
+    "id": 24974,
+    "madde": "emir"
+  },
+  {
+    "id": 24980,
+    "madde": "emîr"
+  },
+  {
+    "id": 24992,
+    "madde": "emiş"
+  },
+  {
+    "id": 25005,
+    "madde": "emme"
+  },
+  {
+    "id": 25011,
+    "madde": "emmi"
+  },
+  {
+    "id": 25069,
+    "madde": "enam"
+  },
+  {
+    "id": 25126,
+    "madde": "enek"
+  },
+  {
+    "id": 25134,
+    "madde": "enez"
+  },
+  {
+    "id": 25175,
+    "madde": "enik"
+  },
+  {
+    "id": 25180,
+    "madde": "enir"
+  },
+  {
+    "id": 25189,
+    "madde": "enli"
+  },
+  {
+    "id": 25193,
+    "madde": "ense"
+  },
+  {
+    "id": 25246,
+    "madde": "enva"
+  },
+  {
+    "id": 25255,
+    "madde": "epey"
+  },
+  {
+    "id": 25265,
+    "madde": "epik"
+  },
+  {
+    "id": 25292,
+    "madde": "erat"
+  },
+  {
+    "id": 25300,
+    "madde": "erce"
+  },
+  {
+    "id": 25313,
+    "madde": "erek"
+  },
+  {
+    "id": 25319,
+    "madde": "eren"
+  },
+  {
+    "id": 25334,
+    "madde": "ergi"
+  },
+  {
+    "id": 25358,
+    "madde": "erik"
+  },
+  {
+    "id": 25367,
+    "madde": "eril"
+  },
+  {
+    "id": 25369,
+    "madde": "erim"
+  },
+  {
+    "id": 25370,
+    "madde": "erim"
+  },
+  {
+    "id": 25376,
+    "madde": "erin"
+  },
+  {
+    "id": 25387,
+    "madde": "eriş"
+  },
+  {
+    "id": 25416,
+    "madde": "erke"
+  },
+  {
+    "id": 25474,
+    "madde": "erme"
+  },
+  {
+    "id": 25489,
+    "madde": "eros"
+  },
+  {
+    "id": 25521,
+    "madde": "esas"
+  },
+  {
+    "id": 25541,
+    "madde": "esef"
+  },
+  {
+    "id": 25549,
+    "madde": "esen"
+  },
+  {
+    "id": 25557,
+    "madde": "eser"
+  },
+  {
+    "id": 25564,
+    "madde": "esik"
+  },
+  {
+    "id": 25565,
+    "madde": "esim"
+  },
+  {
+    "id": 25566,
+    "madde": "esin"
+  },
+  {
+    "id": 25576,
+    "madde": "esir"
+  },
+  {
+    "id": 25582,
+    "madde": "esir"
+  },
+  {
+    "id": 25650,
+    "madde": "golf"
+  },
+  {
+    "id": 25660,
+    "madde": "gonk"
+  },
+  {
+    "id": 25695,
+    "madde": "göce"
+  },
+  {
+    "id": 25722,
+    "madde": "göçü"
+  },
+  {
+    "id": 25884,
+    "madde": "gömü"
+  },
+  {
+    "id": 25899,
+    "madde": "gönç"
+  },
+  {
+    "id": 26037,
+    "madde": "göre"
+  },
+  {
+    "id": 26089,
+    "madde": "görk"
+  },
+  {
+    "id": 26127,
+    "madde": "görü"
+  },
+  {
+    "id": 26501,
+    "madde": "göze"
+  },
+  {
+    "id": 26629,
+    "madde": "gram"
+  },
+  {
+    "id": 26650,
+    "madde": "Grek"
+  },
+  {
+    "id": 26654,
+    "madde": "gres"
+  },
+  {
+    "id": 26657,
+    "madde": "grev"
+  },
+  {
+    "id": 26668,
+    "madde": "gril"
+  },
+  {
+    "id": 26669,
+    "madde": "grip"
+  },
+  {
+    "id": 26678,
+    "madde": "grup"
+  },
+  {
+    "id": 26687,
+    "madde": "guaj"
+  },
+  {
+    "id": 26714,
+    "madde": "gurk"
+  },
+  {
+    "id": 26744,
+    "madde": "guşa"
+  },
+  {
+    "id": 26766,
+    "madde": "gücü"
+  },
+  {
+    "id": 26896,
+    "madde": "koyu"
+  },
+  {
+    "id": 26941,
+    "madde": "koza"
+  },
+  {
+    "id": 27046,
+    "madde": "köle"
+  },
+  {
+    "id": 27178,
+    "madde": "köre"
+  },
+  {
+    "id": 27239,
+    "madde": "köse"
+  },
+  {
+    "id": 27279,
+    "madde": "köşe"
+  },
+  {
+    "id": 27321,
+    "madde": "köşk"
+  },
+  {
+    "id": 27329,
+    "madde": "kötü"
+  },
+  {
+    "id": 27404,
+    "madde": "kral"
+  },
+  {
+    "id": 27440,
+    "madde": "krem"
+  },
+  {
+    "id": 27448,
+    "madde": "krep"
+  },
+  {
+    "id": 27454,
+    "madde": "kreş"
+  },
+  {
+    "id": 27481,
+    "madde": "kriz"
+  },
+  {
+    "id": 27490,
+    "madde": "krom"
+  },
+  {
+    "id": 27503,
+    "madde": "kron"
+  },
+  {
+    "id": 27513,
+    "madde": "kros"
+  },
+  {
+    "id": 27585,
+    "madde": "kûfi"
+  },
+  {
+    "id": 27586,
+    "madde": "kuğu"
+  },
+  {
+    "id": 27588,
+    "madde": "kûhi"
+  },
+  {
+    "id": 27590,
+    "madde": "kuka"
+  },
+  {
+    "id": 27591,
+    "madde": "kuka"
+  },
+  {
+    "id": 27615,
+    "madde": "kula"
+  },
+  {
+    "id": 27725,
+    "madde": "kipe"
+  },
+  {
+    "id": 27733,
+    "madde": "kira"
+  },
+  {
+    "id": 27835,
+    "madde": "kist"
+  },
+  {
+    "id": 27841,
+    "madde": "kişi"
+  },
+  {
+    "id": 27902,
+    "madde": "kivi"
+  },
+  {
+    "id": 27903,
+    "madde": "kivi"
+  },
+  {
+    "id": 27910,
+    "madde": "klan"
+  },
+  {
+    "id": 27914,
+    "madde": "klas"
+  },
+  {
+    "id": 27929,
+    "madde": "klik"
+  },
+  {
+    "id": 27939,
+    "madde": "klip"
+  },
+  {
+    "id": 27949,
+    "madde": "klor"
+  },
+  {
+    "id": 27971,
+    "madde": "kloş"
+  },
+  {
+    "id": 27976,
+    "madde": "klüz"
+  },
+  {
+    "id": 27986,
+    "madde": "koca"
+  },
+  {
+    "id": 27992,
+    "madde": "koca"
+  },
+  {
+    "id": 28042,
+    "madde": "koçu"
+  },
+  {
+    "id": 28054,
+    "madde": "kofa"
+  },
+  {
+    "id": 28066,
+    "madde": "koka"
+  },
+  {
+    "id": 28107,
+    "madde": "koku"
+  },
+  {
+    "id": 28149,
+    "madde": "kola"
+  },
+  {
+    "id": 28150,
+    "madde": "kola"
+  },
+  {
+    "id": 28228,
+    "madde": "koli"
+  },
+  {
+    "id": 28298,
+    "madde": "koma"
+  },
+  {
+    "id": 28301,
+    "madde": "koma"
+  },
+  {
+    "id": 28321,
+    "madde": "komi"
+  },
+  {
+    "id": 28402,
+    "madde": "konç"
+  },
+  {
+    "id": 28441,
+    "madde": "koni"
+  },
+  {
+    "id": 28492,
+    "madde": "kont"
+  },
+  {
+    "id": 28539,
+    "madde": "konu"
+  },
+  {
+    "id": 28674,
+    "madde": "kore"
+  },
+  {
+    "id": 28749,
+    "madde": "koro"
+  },
+  {
+    "id": 28760,
+    "madde": "kort"
+  },
+  {
+    "id": 28768,
+    "madde": "koru"
+  },
+  {
+    "id": 28802,
+    "madde": "kosa"
+  },
+  {
+    "id": 28815,
+    "madde": "koşa"
+  },
+  {
+    "id": 28832,
+    "madde": "koşu"
+  },
+  {
+    "id": 28870,
+    "madde": "kota"
+  },
+  {
+    "id": 28886,
+    "madde": "Kova"
+  },
+  {
+    "id": 28887,
+    "madde": "kova"
+  },
+  {
+    "id": 28889,
+    "madde": "kova"
+  },
+  {
+    "id": 28936,
+    "madde": "gard"
+  },
+  {
+    "id": 28963,
+    "madde": "gark"
+  },
+  {
+    "id": 28970,
+    "madde": "garp"
+  },
+  {
+    "id": 28988,
+    "madde": "gasp"
+  },
+  {
+    "id": 29001,
+    "madde": "gato"
+  },
+  {
+    "id": 29026,
+    "madde": "gaye"
+  },
+  {
+    "id": 29031,
+    "madde": "gayr"
+  },
+  {
+    "id": 29076,
+    "madde": "gayz"
+  },
+  {
+    "id": 29086,
+    "madde": "gaza"
+  },
+  {
+    "id": 29116,
+    "madde": "gazi"
+  },
+  {
+    "id": 29158,
+    "madde": "gebe"
+  },
+  {
+    "id": 29181,
+    "madde": "gece"
+  },
+  {
+    "id": 29231,
+    "madde": "geçe"
+  },
+  {
+    "id": 29232,
+    "madde": "geçe"
+  },
+  {
+    "id": 29347,
+    "madde": "geda"
+  },
+  {
+    "id": 29368,
+    "madde": "gele"
+  },
+  {
+    "id": 29478,
+    "madde": "gemi"
+  },
+  {
+    "id": 29510,
+    "madde": "genç"
+  },
+  {
+    "id": 29522,
+    "madde": "gene"
+  },
+  {
+    "id": 29706,
+    "madde": "geri"
+  },
+  {
+    "id": 29723,
+    "madde": "geri"
+  },
+  {
+    "id": 29789,
+    "madde": "getr"
+  },
+  {
+    "id": 29861,
+    "madde": "gezi"
+  },
+  {
+    "id": 29863,
+    "madde": "gezi"
+  },
+  {
+    "id": 29909,
+    "madde": "gıda"
+  },
+  {
+    "id": 29925,
+    "madde": "gıgı"
+  },
+  {
+    "id": 29932,
+    "madde": "gına"
+  },
+  {
+    "id": 29954,
+    "madde": "gırt"
+  },
+  {
+    "id": 29979,
+    "madde": "gibi"
+  },
+  {
+    "id": 30002,
+    "madde": "gidi"
+  },
+  {
+    "id": 30019,
+    "madde": "gine"
+  },
+  {
+    "id": 30079,
+    "madde": "gişe"
+  },
+  {
+    "id": 30147,
+    "madde": "kule"
+  },
+  {
+    "id": 30173,
+    "madde": "kulp"
+  },
+  {
+    "id": 30202,
+    "madde": "kuma"
+  },
+  {
+    "id": 30293,
+    "madde": "kunt"
+  },
+  {
+    "id": 30295,
+    "madde": "kupa"
+  },
+  {
+    "id": 30296,
+    "madde": "kupa"
+  },
+  {
+    "id": 30306,
+    "madde": "kura"
+  },
+  {
+    "id": 30417,
+    "madde": "kurs"
+  },
+  {
+    "id": 30418,
+    "madde": "kurs"
+  },
+  {
+    "id": 30455,
+    "madde": "kurt"
+  },
+  {
+    "id": 30466,
+    "madde": "kurt"
+  },
+  {
+    "id": 30512,
+    "madde": "kuru"
+  },
+  {
+    "id": 30584,
+    "madde": "yave"
+  },
+  {
+    "id": 30616,
+    "madde": "yaya"
+  },
+  {
+    "id": 30736,
+    "madde": "yazı"
+  },
+  {
+    "id": 30742,
+    "madde": "yazı"
+  },
+  {
+    "id": 30849,
+    "madde": "yedi"
+  },
+  {
+    "id": 30904,
+    "madde": "yeis"
+  },
+  {
+    "id": 30910,
+    "madde": "yeke"
+  },
+  {
+    "id": 30935,
+    "madde": "yele"
+  },
+  {
+    "id": 31005,
+    "madde": "yeme"
+  },
+  {
+    "id": 31087,
+    "madde": "meze"
+  },
+  {
+    "id": 31213,
+    "madde": "miat"
+  },
+  {
+    "id": 31218,
+    "madde": "muço"
+  },
+  {
+    "id": 31219,
+    "madde": "mide"
+  },
+  {
+    "id": 31235,
+    "madde": "midi"
+  },
+  {
+    "id": 31257,
+    "madde": "mihr"
+  },
+  {
+    "id": 31262,
+    "madde": "mika"
+  },
+  {
+    "id": 31415,
+    "madde": "mine"
+  },
+  {
+    "id": 31430,
+    "madde": "mini"
+  },
+  {
+    "id": 31440,
+    "madde": "mink"
+  },
+  {
+    "id": 31463,
+    "madde": "mira"
+  },
+  {
+    "id": 31476,
+    "madde": "mirî"
+  },
+  {
+    "id": 31509,
+    "madde": "misk"
+  },
+  {
+    "id": 31564,
+    "madde": "miza"
+  },
+  {
+    "id": 31588,
+    "madde": "moda"
+  },
+  {
+    "id": 31625,
+    "madde": "moka"
+  },
+  {
+    "id": 31627,
+    "madde": "mola"
+  },
+  {
+    "id": 31673,
+    "madde": "mont"
+  },
+  {
+    "id": 31704,
+    "madde": "morg"
+  },
+  {
+    "id": 31713,
+    "madde": "mors"
+  },
+  {
+    "id": 31714,
+    "madde": "Mors"
+  },
+  {
+    "id": 31773,
+    "madde": "mönü"
+  },
+  {
+    "id": 31781,
+    "madde": "muaf"
+  },
+  {
+    "id": 31880,
+    "madde": "kesp"
+  },
+  {
+    "id": 31938,
+    "madde": "kete"
+  },
+  {
+    "id": 31995,
+    "madde": "keza"
+  },
+  {
+    "id": 32024,
+    "madde": "kığı"
+  },
+  {
+    "id": 32164,
+    "madde": "kına"
+  },
+  {
+    "id": 32339,
+    "madde": "ışık"
+  },
+  {
+    "id": 32377,
+    "madde": "ışın"
+  },
+  {
+    "id": 32395,
+    "madde": "ışkı"
+  },
+  {
+    "id": 32399,
+    "madde": "ıtır"
+  },
+  {
+    "id": 32405,
+    "madde": "ıtri"
+  },
+  {
+    "id": 32420,
+    "madde": "i, İ"
+  },
+  {
+    "id": 32421,
+    "madde": "iade"
+  },
+  {
+    "id": 32425,
+    "madde": "iane"
+  },
+  {
+    "id": 32426,
+    "madde": "iare"
+  },
+  {
+    "id": 32427,
+    "madde": "iaşe"
+  },
+  {
+    "id": 32441,
+    "madde": "ibda"
+  },
+  {
+    "id": 32444,
+    "madde": "ibik"
+  },
+  {
+    "id": 32447,
+    "madde": "ibis"
+  },
+  {
+    "id": 32448,
+    "madde": "ibiş"
+  },
+  {
+    "id": 32457,
+    "madde": "ibne"
+  },
+  {
+    "id": 32460,
+    "madde": "ibra"
+  },
+  {
+    "id": 32467,
+    "madde": "ibre"
+  },
+  {
+    "id": 32484,
+    "madde": "icap"
+  },
+  {
+    "id": 32489,
+    "madde": "icar"
+  },
+  {
+    "id": 32491,
+    "madde": "icat"
+  },
+  {
+    "id": 32495,
+    "madde": "icaz"
+  },
+  {
+    "id": 32504,
+    "madde": "icra"
+  },
+  {
+    "id": 32683,
+    "madde": "içim"
+  },
+  {
+    "id": 32686,
+    "madde": "için"
+  },
+  {
+    "id": 32702,
+    "madde": "içiş"
+  },
+  {
+    "id": 32704,
+    "madde": "içit"
+  },
+  {
+    "id": 32710,
+    "madde": "içki"
+  },
+  {
+    "id": 32731,
+    "madde": "içli"
+  },
+  {
+    "id": 32739,
+    "madde": "içme"
+  },
+  {
+    "id": 32755,
+    "madde": "içre"
+  },
+  {
+    "id": 32796,
+    "madde": "idam"
+  },
+  {
+    "id": 32832,
+    "madde": "idea"
+  },
+  {
+    "id": 32846,
+    "madde": "idil"
+  },
+  {
+    "id": 32887,
+    "madde": "ifna"
+  },
+  {
+    "id": 32905,
+    "madde": "ifşa"
+  },
+  {
+    "id": 32908,
+    "madde": "ifta"
+  },
+  {
+    "id": 32935,
+    "madde": "iğci"
+  },
+  {
+    "id": 32936,
+    "madde": "iğde"
+  },
+  {
+    "id": 32945,
+    "madde": "iğne"
+  },
+  {
+    "id": 32994,
+    "madde": "iham"
+  },
+  {
+    "id": 33124,
+    "madde": "ihya"
+  },
+  {
+    "id": 33138,
+    "madde": "ikaz"
+  },
+  {
+    "id": 33289,
+    "madde": "ikiz"
+  },
+  {
+    "id": 33311,
+    "madde": "ikna"
+  },
+  {
+    "id": 33360,
+    "madde": "ilaç"
+  },
+  {
+    "id": 33376,
+    "madde": "ilah"
+  },
+  {
+    "id": 33387,
+    "madde": "ilam"
+  },
+  {
+    "id": 33389,
+    "madde": "ilan"
+  },
+  {
+    "id": 33404,
+    "madde": "ilca"
+  },
+  {
+    "id": 33406,
+    "madde": "ilçe"
+  },
+  {
+    "id": 33465,
+    "madde": "ilga"
+  },
+  {
+    "id": 33470,
+    "madde": "ilgi"
+  },
+  {
+    "id": 33508,
+    "madde": "ilik"
+  },
+  {
+    "id": 33509,
+    "madde": "ilik"
+  },
+  {
+    "id": 33528,
+    "madde": "ilim"
+  },
+  {
+    "id": 33573,
+    "madde": "ilke"
+  },
+  {
+    "id": 33608,
+    "madde": "ille"
+  },
+  {
+    "id": 33613,
+    "madde": "illa"
+  },
+  {
+    "id": 33620,
+    "madde": "illî"
+  },
+  {
+    "id": 33626,
+    "madde": "ilme"
+  },
+  {
+    "id": 33632,
+    "madde": "ilmî"
+  },
+  {
+    "id": 33680,
+    "madde": "imaj"
+  },
+  {
+    "id": 33681,
+    "madde": "imal"
+  },
+  {
+    "id": 33691,
+    "madde": "imam"
+  },
+  {
+    "id": 33705,
+    "madde": "iman"
+  },
+  {
+    "id": 33722,
+    "madde": "imar"
+  },
+  {
+    "id": 33735,
+    "madde": "imdi"
+  },
+  {
+    "id": 33739,
+    "madde": "imge"
+  },
+  {
+    "id": 33748,
+    "madde": "imha"
+  },
+  {
+    "id": 33759,
+    "madde": "imla"
+  },
+  {
+    "id": 33804,
+    "madde": "imza"
+  },
+  {
+    "id": 33831,
+    "madde": "inak"
+  },
+  {
+    "id": 33835,
+    "madde": "inal"
+  },
+  {
+    "id": 33836,
+    "madde": "inam"
+  },
+  {
+    "id": 33837,
+    "madde": "inan"
+  },
+  {
+    "id": 33865,
+    "madde": "inat"
+  },
+  {
+    "id": 33877,
+    "madde": "ince"
+  },
+  {
+    "id": 33971,
+    "madde": "h, H"
+  },
+  {
+    "id": 34000,
+    "madde": "hınç"
+  },
+  {
+    "id": 34005,
+    "madde": "hınk"
+  },
+  {
+    "id": 34059,
+    "madde": "hırs"
+  },
+  {
+    "id": 34086,
+    "madde": "hırt"
+  },
+  {
+    "id": 34166,
+    "madde": "hibe"
+  },
+  {
+    "id": 34284,
+    "madde": "hile"
+  },
+  {
+    "id": 34356,
+    "madde": "Hint"
+  },
+  {
+    "id": 34420,
+    "madde": "hişt"
+  },
+  {
+    "id": 34438,
+    "madde": "hiza"
+  },
+  {
+    "id": 34463,
+    "madde": "hobi"
+  },
+  {
+    "id": 34464,
+    "madde": "hoca"
+  },
+  {
+    "id": 34511,
+    "madde": "hona"
+  },
+  {
+    "id": 34545,
+    "madde": "hora"
+  },
+  {
+    "id": 34651,
+    "madde": "hoşt"
+  },
+  {
+    "id": 34680,
+    "madde": "höst"
+  },
+  {
+    "id": 34743,
+    "madde": "huni"
+  },
+  {
+    "id": 34747,
+    "madde": "hurç"
+  },
+  {
+    "id": 34757,
+    "madde": "huri"
+  },
+  {
+    "id": 34781,
+    "madde": "huşu"
+  },
+  {
+    "id": 34944,
+    "madde": "ı, I"
+  },
+  {
+    "id": 34948,
+    "madde": "ığıl"
+  },
+  {
+    "id": 34959,
+    "madde": "ıhma"
+  },
+  {
+    "id": 34991,
+    "madde": "ılık"
+  },
+  {
+    "id": 34998,
+    "madde": "ılım"
+  },
+  {
+    "id": 35021,
+    "madde": "ırak"
+  },
+  {
+    "id": 35023,
+    "madde": "ırak"
+  },
+  {
+    "id": 35053,
+    "madde": "ırıp"
+  },
+  {
+    "id": 35060,
+    "madde": "ırki"
+  },
+  {
+    "id": 35082,
+    "madde": "ısıl"
+  },
+  {
+    "id": 35083,
+    "madde": "ısın"
+  },
+  {
+    "id": 35117,
+    "madde": "ıska"
+  },
+  {
+    "id": 35144,
+    "madde": "inci"
+  },
+  {
+    "id": 35172,
+    "madde": "indi"
+  },
+  {
+    "id": 35207,
+    "madde": "ineç"
+  },
+  {
+    "id": 35209,
+    "madde": "inek"
+  },
+  {
+    "id": 35243,
+    "madde": "inha"
+  },
+  {
+    "id": 35261,
+    "madde": "inik"
+  },
+  {
+    "id": 35275,
+    "madde": "iniş"
+  },
+  {
+    "id": 35311,
+    "madde": "inme"
+  },
+  {
+    "id": 35398,
+    "madde": "inşa"
+  },
+  {
+    "id": 35491,
+    "madde": "ipçi"
+  },
+  {
+    "id": 35494,
+    "madde": "ipek"
+  },
+  {
+    "id": 35515,
+    "madde": "ipka"
+  },
+  {
+    "id": 35541,
+    "madde": "ipsi"
+  },
+  {
+    "id": 35574,
+    "madde": "irap"
+  },
+  {
+    "id": 35575,
+    "madde": "irat"
+  },
+  {
+    "id": 35577,
+    "madde": "irca"
+  },
+  {
+    "id": 35592,
+    "madde": "irin"
+  },
+  {
+    "id": 35597,
+    "madde": "iris"
+  },
+  {
+    "id": 35619,
+    "madde": "irsî"
+  },
+  {
+    "id": 35646,
+    "madde": "isal"
+  },
+  {
+    "id": 35656,
+    "madde": "isim"
+  },
+  {
+    "id": 35740,
+    "madde": "isli"
+  },
+  {
+    "id": 35985,
+    "madde": "kapı"
+  },
+  {
+    "id": 36147,
+    "madde": "kara"
+  },
+  {
+    "id": 36154,
+    "madde": "kara"
+  },
+  {
+    "id": 36478,
+    "madde": "kare"
+  },
+  {
+    "id": 36532,
+    "madde": "karı"
+  },
+  {
+    "id": 36621,
+    "madde": "kari"
+  },
+  {
+    "id": 36705,
+    "madde": "karo"
+  },
+  {
+    "id": 36779,
+    "madde": "kart"
+  },
+  {
+    "id": 36780,
+    "madde": "kart"
+  },
+  {
+    "id": 36822,
+    "madde": "kasa"
+  },
+  {
+    "id": 36854,
+    "madde": "kâse"
+  },
+  {
+    "id": 36894,
+    "madde": "kask"
+  },
+  {
+    "id": 36967,
+    "madde": "kaşe"
+  },
+  {
+    "id": 37020,
+    "madde": "kati"
+  },
+  {
+    "id": 37057,
+    "madde": "katı"
+  },
+  {
+    "id": 37058,
+    "madde": "katı"
+  },
+  {
+    "id": 37210,
+    "madde": "kafa"
+  },
+  {
+    "id": 37318,
+    "madde": "kafe"
+  },
+  {
+    "id": 37331,
+    "madde": "kâfi"
+  },
+  {
+    "id": 37454,
+    "madde": "kail"
+  },
+  {
+    "id": 37456,
+    "madde": "kaim"
+  },
+  {
+    "id": 37459,
+    "madde": "kâin"
+  },
+  {
+    "id": 37462,
+    "madde": "kaka"
+  },
+  {
+    "id": 37513,
+    "madde": "kala"
+  },
+  {
+    "id": 37617,
+    "madde": "kale"
+  },
+  {
+    "id": 37818,
+    "madde": "kalp"
+  },
+  {
+    "id": 37850,
+    "madde": "kalp"
+  },
+  {
+    "id": 37852,
+    "madde": "kalp"
+  },
+  {
+    "id": 37892,
+    "madde": "kama"
+  },
+  {
+    "id": 37948,
+    "madde": "kame"
+  },
+  {
+    "id": 37977,
+    "madde": "kamp"
+  },
+  {
+    "id": 37991,
+    "madde": "kamu"
+  },
+  {
+    "id": 38079,
+    "madde": "kana"
+  },
+  {
+    "id": 38202,
+    "madde": "kanı"
+  },
+  {
+    "id": 38232,
+    "madde": "kani"
+  },
+  {
+    "id": 38260,
+    "madde": "kano"
+  },
+  {
+    "id": 38278,
+    "madde": "kant"
+  },
+  {
+    "id": 38341,
+    "madde": "kaos"
+  },
+  {
+    "id": 38376,
+    "madde": "kırç"
+  },
+  {
+    "id": 38438,
+    "madde": "kırk"
+  },
+  {
+    "id": 38559,
+    "madde": "kısa"
+  },
+  {
+    "id": 38725,
+    "madde": "kıta"
+  },
+  {
+    "id": 38817,
+    "madde": "kıya"
+  },
+  {
+    "id": 38861,
+    "madde": "kıyı"
+  },
+  {
+    "id": 39067,
+    "madde": "kile"
+  },
+  {
+    "id": 39102,
+    "madde": "kilo"
+  },
+  {
+    "id": 39124,
+    "madde": "kils"
+  },
+  {
+    "id": 39139,
+    "madde": "kimi"
+  },
+  {
+    "id": 39192,
+    "madde": "miço"
+  },
+  {
+    "id": 39194,
+    "madde": "mudi"
+  },
+  {
+    "id": 39344,
+    "madde": "muin"
+  },
+  {
+    "id": 39347,
+    "madde": "muit"
+  },
+  {
+    "id": 39487,
+    "madde": "murç"
+  },
+  {
+    "id": 39495,
+    "madde": "murt"
+  },
+  {
+    "id": 39557,
+    "madde": "muta"
+  },
+  {
+    "id": 39799,
+    "madde": "işar"
+  },
+  {
+    "id": 39817,
+    "madde": "işba"
+  },
+  {
+    "id": 39829,
+    "madde": "işbu"
+  },
+  {
+    "id": 39830,
+    "madde": "işçi"
+  },
+  {
+    "id": 39945,
+    "madde": "işli"
+  },
+  {
+    "id": 39979,
+    "madde": "işte"
+  },
+  {
+    "id": 39999,
+    "madde": "işve"
+  },
+  {
+    "id": 40042,
+    "madde": "itap"
+  },
+  {
+    "id": 40059,
+    "madde": "itfa"
+  },
+  {
+    "id": 40140,
+    "madde": "itiş"
+  },
+  {
+    "id": 40151,
+    "madde": "itki"
+  },
+  {
+    "id": 40163,
+    "madde": "itme"
+  },
+  {
+    "id": 40180,
+    "madde": "ivaz"
+  },
+  {
+    "id": 40197,
+    "madde": "ivgi"
+  },
+  {
+    "id": 40200,
+    "madde": "ivme"
+  },
+  {
+    "id": 40269,
+    "madde": "iyon"
+  },
+  {
+    "id": 40276,
+    "madde": "iyot"
+  },
+  {
+    "id": 40291,
+    "madde": "izaç"
+  },
+  {
+    "id": 40293,
+    "madde": "izan"
+  },
+  {
+    "id": 40310,
+    "madde": "izah"
+  },
+  {
+    "id": 40319,
+    "madde": "izam"
+  },
+  {
+    "id": 40320,
+    "madde": "izam"
+  },
+  {
+    "id": 40322,
+    "madde": "izaz"
+  },
+  {
+    "id": 40325,
+    "madde": "izbe"
+  },
+  {
+    "id": 40328,
+    "madde": "izci"
+  },
+  {
+    "id": 40339,
+    "madde": "izin"
+  },
+  {
+    "id": 40407,
+    "madde": "jale"
+  },
+  {
+    "id": 40415,
+    "madde": "janr"
+  },
+  {
+    "id": 40416,
+    "madde": "jant"
+  },
+  {
+    "id": 40461,
+    "madde": "jest"
+  },
+  {
+    "id": 40475,
+    "madde": "jile"
+  },
+  {
+    "id": 40484,
+    "madde": "jips"
+  },
+  {
+    "id": 40487,
+    "madde": "j, J"
+  },
+  {
+    "id": 40491,
+    "madde": "jöle"
+  },
+  {
+    "id": 40494,
+    "madde": "judo"
+  },
+  {
+    "id": 40503,
+    "madde": "juro"
+  },
+  {
+    "id": 40508,
+    "madde": "jüri"
+  },
+  {
+    "id": 40511,
+    "madde": "k, K"
+  },
+  {
+    "id": 40512,
+    "madde": "kaba"
+  },
+  {
+    "id": 40688,
+    "madde": "kaçı"
+  },
+  {
+    "id": 40767,
+    "madde": "kadı"
+  },
+  {
+    "id": 40791,
+    "madde": "marn"
+  },
+  {
+    "id": 40800,
+    "madde": "Mars"
+  },
+  {
+    "id": 40801,
+    "madde": "mars"
+  },
+  {
+    "id": 40810,
+    "madde": "marş"
+  },
+  {
+    "id": 40813,
+    "madde": "mart"
+  },
+  {
+    "id": 40844,
+    "madde": "masa"
+  },
+  {
+    "id": 40872,
+    "madde": "mask"
+  },
+  {
+    "id": 40946,
+    "madde": "maşa"
+  },
+  {
+    "id": 41026,
+    "madde": "maun"
+  },
+  {
+    "id": 41030,
+    "madde": "mavi"
+  },
+  {
+    "id": 41047,
+    "madde": "maya"
+  },
+  {
+    "id": 41050,
+    "madde": "maya"
+  },
+  {
+    "id": 41051,
+    "madde": "maya"
+  },
+  {
+    "id": 41089,
+    "madde": "mayi"
+  },
+  {
+    "id": 41106,
+    "madde": "mayo"
+  },
+  {
+    "id": 41130,
+    "madde": "mazı"
+  },
+  {
+    "id": 41131,
+    "madde": "mazı"
+  },
+  {
+    "id": 41134,
+    "madde": "mazi"
+  },
+  {
+    "id": 41152,
+    "madde": "meal"
+  },
+  {
+    "id": 41386,
+    "madde": "meme"
+  },
+  {
+    "id": 41477,
+    "madde": "meni"
+  },
+  {
+    "id": 41501,
+    "madde": "menü"
+  },
+  {
+    "id": 41510,
+    "madde": "mera"
+  },
+  {
+    "id": 41668,
+    "madde": "mert"
+  },
+  {
+    "id": 41708,
+    "madde": "mesh"
+  },
+  {
+    "id": 41740,
+    "madde": "mest"
+  },
+  {
+    "id": 41743,
+    "madde": "mest"
+  },
+  {
+    "id": 41769,
+    "madde": "meşe"
+  },
+  {
+    "id": 41793,
+    "madde": "meşk"
+  },
+  {
+    "id": 41822,
+    "madde": "meta"
+  },
+  {
+    "id": 41948,
+    "madde": "mevt"
+  },
+  {
+    "id": 42071,
+    "madde": "yeni"
+  },
+  {
+    "id": 42385,
+    "madde": "yeti"
+  },
+  {
+    "id": 42485,
+    "madde": "yıkı"
+  },
+  {
+    "id": 42665,
+    "madde": "yısa"
+  },
+  {
+    "id": 42687,
+    "madde": "yine"
+  },
+  {
+    "id": 42736,
+    "madde": "yoga"
+  },
+  {
+    "id": 42737,
+    "madde": "yogi"
+  },
+  {
+    "id": 42856,
+    "madde": "kavi"
+  },
+  {
+    "id": 42959,
+    "madde": "kaya"
+  },
+  {
+    "id": 43202,
+    "madde": "kaza"
+  },
+  {
+    "id": 43264,
+    "madde": "kazı"
+  },
+  {
+    "id": 43323,
+    "madde": "kebe"
+  },
+  {
+    "id": 43328,
+    "madde": "keçe"
+  },
+  {
+    "id": 43344,
+    "madde": "keçi"
+  },
+  {
+    "id": 43380,
+    "madde": "kedi"
+  },
+  {
+    "id": 43417,
+    "madde": "kefe"
+  },
+  {
+    "id": 43418,
+    "madde": "kefe"
+  },
+  {
+    "id": 43452,
+    "madde": "keka"
+  },
+  {
+    "id": 43453,
+    "madde": "keke"
+  },
+  {
+    "id": 43486,
+    "madde": "kele"
+  },
+  {
+    "id": 43580,
+    "madde": "keme"
+  },
+  {
+    "id": 43759,
+    "madde": "kene"
+  },
+  {
+    "id": 43781,
+    "madde": "kent"
+  },
+  {
+    "id": 43841,
+    "madde": "kere"
+  },
+  {
+    "id": 43856,
+    "madde": "kerh"
+  },
+  {
+    "id": 43911,
+    "madde": "kese"
+  },
+  {
+    "id": 43923,
+    "madde": "kese"
+  },
+  {
+    "id": 44158,
+    "madde": "yoma"
+  },
+  {
+    "id": 44170,
+    "madde": "yont"
+  },
+  {
+    "id": 44299,
+    "madde": "yöre"
+  },
+  {
+    "id": 44329,
+    "madde": "yuha"
+  },
+  {
+    "id": 44351,
+    "madde": "yuma"
+  },
+  {
+    "id": 44426,
+    "madde": "leva"
+  },
+  {
+    "id": 44503,
+    "madde": "liet"
+  },
+  {
+    "id": 44513,
+    "madde": "lift"
+  },
+  {
+    "id": 44517,
+    "madde": "liga"
+  },
+  {
+    "id": 44519,
+    "madde": "lika"
+  },
+  {
+    "id": 44536,
+    "madde": "lime"
+  },
+  {
+    "id": 44567,
+    "madde": "linç"
+  },
+  {
+    "id": 44572,
+    "madde": "link"
+  },
+  {
+    "id": 44573,
+    "madde": "link"
+  },
+  {
+    "id": 44583,
+    "madde": "lira"
+  },
+  {
+    "id": 44598,
+    "madde": "lise"
+  },
+  {
+    "id": 44617,
+    "madde": "liva"
+  },
+  {
+    "id": 44630,
+    "madde": "lobi"
+  },
+  {
+    "id": 44634,
+    "madde": "loca"
+  },
+  {
+    "id": 44635,
+    "madde": "loça"
+  },
+  {
+    "id": 44636,
+    "madde": "loda"
+  },
+  {
+    "id": 44647,
+    "madde": "logo"
+  },
+  {
+    "id": 44695,
+    "madde": "lolo"
+  },
+  {
+    "id": 44717,
+    "madde": "lort"
+  },
+  {
+    "id": 44734,
+    "madde": "lota"
+  },
+  {
+    "id": 44762,
+    "madde": "luti"
+  },
+  {
+    "id": 44763,
+    "madde": "lutr"
+  },
+  {
+    "id": 44773,
+    "madde": "lüks"
+  },
+  {
+    "id": 44775,
+    "madde": "lüks"
+  },
+  {
+    "id": 44778,
+    "madde": "lüle"
+  },
+  {
+    "id": 44815,
+    "madde": "m, M"
+  },
+  {
+    "id": 44822,
+    "madde": "maaş"
+  },
+  {
+    "id": 44866,
+    "madde": "maça"
+  },
+  {
+    "id": 45143,
+    "madde": "mail"
+  },
+  {
+    "id": 45146,
+    "madde": "main"
+  },
+  {
+    "id": 45209,
+    "madde": "maki"
+  },
+  {
+    "id": 45210,
+    "madde": "maki"
+  },
+  {
+    "id": 45284,
+    "madde": "mala"
+  },
+  {
+    "id": 45305,
+    "madde": "mali"
+  },
+  {
+    "id": 45331,
+    "madde": "malt"
+  },
+  {
+    "id": 45366,
+    "madde": "mama"
+  },
+  {
+    "id": 45376,
+    "madde": "mana"
+  },
+  {
+    "id": 45452,
+    "madde": "mani"
+  },
+  {
+    "id": 45453,
+    "madde": "mâni"
+  },
+  {
+    "id": 45455,
+    "madde": "mâni"
+  },
+  {
+    "id": 45570,
+    "madde": "mapa"
+  },
+  {
+    "id": 45615,
+    "madde": "marj"
+  },
+  {
+    "id": 45617,
+    "madde": "mark"
+  },
+  {
+    "id": 45708,
+    "madde": "yahu"
+  },
+  {
+    "id": 45718,
+    "madde": "yaka"
+  },
+  {
+    "id": 45755,
+    "madde": "yakı"
+  },
+  {
+    "id": 45930,
+    "madde": "yalı"
+  },
+  {
+    "id": 46018,
+    "madde": "yama"
+  },
+  {
+    "id": 46188,
+    "madde": "yani"
+  },
+  {
+    "id": 46276,
+    "madde": "yapı"
+  },
+  {
+    "id": 46391,
+    "madde": "yara"
+  },
+  {
+    "id": 46528,
+    "madde": "yarı"
+  },
+  {
+    "id": 46651,
+    "madde": "yasa"
+  },
+  {
+    "id": 46746,
+    "madde": "yaşa"
+  },
+  {
+    "id": 46840,
+    "madde": "yatı"
+  },
+  {
+    "id": 46887,
+    "madde": "onar"
+  },
+  {
+    "id": 46899,
+    "madde": "onat"
+  },
+  {
+    "id": 46900,
+    "madde": "onay"
+  },
+  {
+    "id": 46917,
+    "madde": "onca"
+  },
+  {
+    "id": 46940,
+    "madde": "onlu"
+  },
+  {
+    "id": 46942,
+    "madde": "onma"
+  },
+  {
+    "id": 46953,
+    "madde": "onum"
+  },
+  {
+    "id": 46955,
+    "madde": "onur"
+  },
+  {
+    "id": 46975,
+    "madde": "opal"
+  },
+  {
+    "id": 46998,
+    "madde": "opus"
+  },
+  {
+    "id": 47005,
+    "madde": "orak"
+  },
+  {
+    "id": 47017,
+    "madde": "oran"
+  },
+  {
+    "id": 47044,
+    "madde": "ordu"
+  },
+  {
+    "id": 47127,
+    "madde": "orsa"
+  },
+  {
+    "id": 47132,
+    "madde": "orta"
+  },
+  {
+    "id": 47268,
+    "madde": "oruç"
+  },
+  {
+    "id": 47276,
+    "madde": "orun"
+  },
+  {
+    "id": 47277,
+    "madde": "orya"
+  },
+  {
+    "id": 47302,
+    "madde": "otağ"
+  },
+  {
+    "id": 47312,
+    "madde": "otçu"
+  },
+  {
+    "id": 47314,
+    "madde": "otel"
+  },
+  {
+    "id": 47332,
+    "madde": "otlu"
+  },
+  {
+    "id": 47391,
+    "madde": "otsu"
+  },
+  {
+    "id": 47421,
+    "madde": "otuz"
+  },
+  {
+    "id": 47429,
+    "madde": "oval"
+  },
+  {
+    "id": 47443,
+    "madde": "ovma"
+  },
+  {
+    "id": 47490,
+    "madde": "oyma"
+  },
+  {
+    "id": 47521,
+    "madde": "oysa"
+  },
+  {
+    "id": 47524,
+    "madde": "oyuk"
+  },
+  {
+    "id": 47537,
+    "madde": "oyum"
+  },
+  {
+    "id": 47538,
+    "madde": "oyun"
+  },
+  {
+    "id": 47578,
+    "madde": "oyuş"
+  },
+  {
+    "id": 47580,
+    "madde": "ozan"
+  },
+  {
+    "id": 47587,
+    "madde": "ozon"
+  },
+  {
+    "id": 47591,
+    "madde": "ö, Ö"
+  },
+  {
+    "id": 47592,
+    "madde": "öbek"
+  },
+  {
+    "id": 47593,
+    "madde": "öbür"
+  },
+  {
+    "id": 47603,
+    "madde": "öçlü"
+  },
+  {
+    "id": 47610,
+    "madde": "ödem"
+  },
+  {
+    "id": 47624,
+    "madde": "ödev"
+  },
+  {
+    "id": 47638,
+    "madde": "ödül"
+  },
+  {
+    "id": 47643,
+    "madde": "ödün"
+  },
+  {
+    "id": 47656,
+    "madde": "öfke"
+  },
+  {
+    "id": 47677,
+    "madde": "öğle"
+  },
+  {
+    "id": 47725,
+    "madde": "öğün"
+  },
+  {
+    "id": 47726,
+    "madde": "öğür"
+  },
+  {
+    "id": 47740,
+    "madde": "öğüt"
+  },
+  {
+    "id": 47756,
+    "madde": "ökçe"
+  },
+  {
+    "id": 47760,
+    "madde": "ökse"
+  },
+  {
+    "id": 47785,
+    "madde": "öküz"
+  },
+  {
+    "id": 47811,
+    "madde": "ölçü"
+  },
+  {
+    "id": 47843,
+    "madde": "ölet"
+  },
+  {
+    "id": 47848,
+    "madde": "ölme"
+  },
+  {
+    "id": 47881,
+    "madde": "ölük"
+  },
+  {
+    "id": 47884,
+    "madde": "ölüm"
+  },
+  {
+    "id": 47933,
+    "madde": "ölüş"
+  },
+  {
+    "id": 47942,
+    "madde": "ömür"
+  },
+  {
+    "id": 47991,
+    "madde": "önce"
+  },
+  {
+    "id": 48007,
+    "madde": "öncü"
+  },
+  {
+    "id": 48023,
+    "madde": "önel"
+  },
+  {
+    "id": 48024,
+    "madde": "önem"
+  },
+  {
+    "id": 48241,
+    "madde": "kuşe"
+  },
+  {
+    "id": 48318,
+    "madde": "kutu"
+  },
+  {
+    "id": 48400,
+    "madde": "kuyu"
+  },
+  {
+    "id": 48433,
+    "madde": "kuzu"
+  },
+  {
+    "id": 48523,
+    "madde": "küfe"
+  },
+  {
+    "id": 48626,
+    "madde": "kült"
+  },
+  {
+    "id": 48653,
+    "madde": "küme"
+  },
+  {
+    "id": 48680,
+    "madde": "künh"
+  },
+  {
+    "id": 48682,
+    "madde": "künk"
+  },
+  {
+    "id": 48693,
+    "madde": "küpe"
+  },
+  {
+    "id": 48712,
+    "madde": "küre"
+  },
+  {
+    "id": 48713,
+    "madde": "küre"
+  },
+  {
+    "id": 48736,
+    "madde": "kürk"
+  },
+  {
+    "id": 48750,
+    "madde": "Kürt"
+  },
+  {
+    "id": 48785,
+    "madde": "küsü"
+  },
+  {
+    "id": 48834,
+    "madde": "l, L"
+  },
+  {
+    "id": 48986,
+    "madde": "laik"
+  },
+  {
+    "id": 48992,
+    "madde": "lain"
+  },
+  {
+    "id": 49003,
+    "madde": "lake"
+  },
+  {
+    "id": 49037,
+    "madde": "lala"
+  },
+  {
+    "id": 49041,
+    "madde": "lale"
+  },
+  {
+    "id": 49052,
+    "madde": "lama"
+  },
+  {
+    "id": 49053,
+    "madde": "lama"
+  },
+  {
+    "id": 49070,
+    "madde": "lame"
+  },
+  {
+    "id": 49098,
+    "madde": "lapa"
+  },
+  {
+    "id": 49115,
+    "madde": "larp"
+  },
+  {
+    "id": 49122,
+    "madde": "laso"
+  },
+  {
+    "id": 49133,
+    "madde": "laşe"
+  },
+  {
+    "id": 49134,
+    "madde": "lata"
+  },
+  {
+    "id": 49135,
+    "madde": "lata"
+  },
+  {
+    "id": 49170,
+    "madde": "lava"
+  },
+  {
+    "id": 49203,
+    "madde": "laza"
+  },
+  {
+    "id": 49223,
+    "madde": "leçe"
+  },
+  {
+    "id": 49263,
+    "madde": "leke"
+  },
+  {
+    "id": 49286,
+    "madde": "lenf"
+  },
+  {
+    "id": 49293,
+    "madde": "lens"
+  },
+  {
+    "id": 49410,
+    "madde": "nebi"
+  },
+  {
+    "id": 49417,
+    "madde": "nece"
+  },
+  {
+    "id": 49419,
+    "madde": "neci"
+  },
+  {
+    "id": 49482,
+    "madde": "neft"
+  },
+  {
+    "id": 49510,
+    "madde": "nema"
+  },
+  {
+    "id": 49523,
+    "madde": "nemf"
+  },
+  {
+    "id": 49540,
+    "madde": "nene"
+  },
+  {
+    "id": 49545,
+    "madde": "neon"
+  },
+  {
+    "id": 49554,
+    "madde": "nere"
+  },
+  {
+    "id": 49578,
+    "madde": "nesi"
+  },
+  {
+    "id": 49595,
+    "madde": "neşe"
+  },
+  {
+    "id": 49645,
+    "madde": "neva"
+  },
+  {
+    "id": 49710,
+    "madde": "nice"
+  },
+  {
+    "id": 49718,
+    "madde": "nida"
+  },
+  {
+    "id": 49777,
+    "madde": "nine"
+  },
+  {
+    "id": 49834,
+    "madde": "nite"
+  },
+  {
+    "id": 49866,
+    "madde": "niye"
+  },
+  {
+    "id": 49880,
+    "madde": "niza"
+  },
+  {
+    "id": 49900,
+    "madde": "Noel"
+  },
+  {
+    "id": 49964,
+    "madde": "nota"
+  },
+  {
+    "id": 49967,
+    "madde": "nova"
+  },
+  {
+    "id": 49983,
+    "madde": "nötr"
+  },
+  {
+    "id": 50085,
+    "madde": "nüve"
+  },
+  {
+    "id": 50101,
+    "madde": "o, O"
+  },
+  {
+    "id": 50106,
+    "madde": "obje"
+  },
+  {
+    "id": 50116,
+    "madde": "obua"
+  },
+  {
+    "id": 50118,
+    "madde": "obur"
+  },
+  {
+    "id": 50123,
+    "madde": "obüs"
+  },
+  {
+    "id": 50124,
+    "madde": "ocak"
+  },
+  {
+    "id": 50148,
+    "madde": "odak"
+  },
+  {
+    "id": 50167,
+    "madde": "odun"
+  },
+  {
+    "id": 50184,
+    "madde": "ofis"
+  },
+  {
+    "id": 50196,
+    "madde": "Oğan"
+  },
+  {
+    "id": 50206,
+    "madde": "oğul"
+  },
+  {
+    "id": 50219,
+    "madde": "Oğuz"
+  },
+  {
+    "id": 50220,
+    "madde": "oğuz"
+  },
+  {
+    "id": 50231,
+    "madde": "ojit"
+  },
+  {
+    "id": 50238,
+    "madde": "okar"
+  },
+  {
+    "id": 50240,
+    "madde": "okçu"
+  },
+  {
+    "id": 50242,
+    "madde": "okey"
+  },
+  {
+    "id": 50243,
+    "madde": "okka"
+  },
+  {
+    "id": 50293,
+    "madde": "okul"
+  },
+  {
+    "id": 50325,
+    "madde": "okur"
+  },
+  {
+    "id": 50375,
+    "madde": "olay"
+  },
+  {
+    "id": 50387,
+    "madde": "oldu"
+  },
+  {
+    "id": 50402,
+    "madde": "olgu"
+  },
+  {
+    "id": 50422,
+    "madde": "olma"
+  },
+  {
+    "id": 50445,
+    "madde": "olta"
+  },
+  {
+    "id": 50458,
+    "madde": "oluk"
+  },
+  {
+    "id": 50486,
+    "madde": "olur"
+  },
+  {
+    "id": 50496,
+    "madde": "oluş"
+  },
+  {
+    "id": 50509,
+    "madde": "omca"
+  },
+  {
+    "id": 50514,
+    "madde": "omur"
+  },
+  {
+    "id": 50519,
+    "madde": "omuz"
+  },
+  {
+    "id": 50535,
+    "madde": "öpme"
+  },
+  {
+    "id": 50547,
+    "madde": "öpüş"
+  },
+  {
+    "id": 50559,
+    "madde": "örek"
+  },
+  {
+    "id": 50561,
+    "madde": "ören"
+  },
+  {
+    "id": 50564,
+    "madde": "örfi"
+  },
+  {
+    "id": 50566,
+    "madde": "örge"
+  },
+  {
+    "id": 50569,
+    "madde": "örgü"
+  },
+  {
+    "id": 50596,
+    "madde": "örme"
+  },
+  {
+    "id": 50635,
+    "madde": "örtü"
+  },
+  {
+    "id": 50651,
+    "madde": "örük"
+  },
+  {
+    "id": 50657,
+    "madde": "örüm"
+  },
+  {
+    "id": 50672,
+    "madde": "örüş"
+  },
+  {
+    "id": 50675,
+    "madde": "öşür"
+  },
+  {
+    "id": 50697,
+    "madde": "ötme"
+  },
+  {
+    "id": 50699,
+    "madde": "ötre"
+  },
+  {
+    "id": 50717,
+    "madde": "ötüş"
+  },
+  {
+    "id": 50720,
+    "madde": "öveç"
+  },
+  {
+    "id": 50721,
+    "madde": "övgü"
+  },
+  {
+    "id": 50724,
+    "madde": "övme"
+  },
+  {
+    "id": 50740,
+    "madde": "övüş"
+  },
+  {
+    "id": 50741,
+    "madde": "öykü"
+  },
+  {
+    "id": 50751,
+    "madde": "öyle"
+  },
+  {
+    "id": 50797,
+    "madde": "özek"
+  },
+  {
+    "id": 50801,
+    "madde": "özel"
+  },
+  {
+    "id": 50830,
+    "madde": "özen"
+  },
+  {
+    "id": 50858,
+    "madde": "özet"
+  },
+  {
+    "id": 50865,
+    "madde": "özge"
+  },
+  {
+    "id": 50870,
+    "madde": "özgü"
+  },
+  {
+    "id": 50921,
+    "madde": "özlü"
+  },
+  {
+    "id": 50927,
+    "madde": "özne"
+  },
+  {
+    "id": 50953,
+    "madde": "özür"
+  },
+  {
+    "id": 50958,
+    "madde": "özüt"
+  },
+  {
+    "id": 50967,
+    "madde": "p, P"
+  },
+  {
+    "id": 50986,
+    "madde": "paça"
+  },
+  {
+    "id": 51026,
+    "madde": "paha"
+  },
+  {
+    "id": 51067,
+    "madde": "pakt"
+  },
+  {
+    "id": 51069,
+    "madde": "pala"
+  },
+  {
+    "id": 51073,
+    "madde": "pala"
+  },
+  {
+    "id": 51198,
+    "madde": "pano"
+  },
+  {
+    "id": 51226,
+    "madde": "papa"
+  },
+  {
+    "id": 51270,
+    "madde": "para"
+  },
+  {
+    "id": 51422,
+    "madde": "pare"
+  },
+  {
+    "id": 51435,
+    "madde": "park"
+  },
+  {
+    "id": 51493,
+    "madde": "pars"
+  },
+  {
+    "id": 51576,
+    "madde": "paso"
+  },
+  {
+    "id": 51618,
+    "madde": "paşa"
+  },
+  {
+    "id": 51634,
+    "madde": "pata"
+  },
+  {
+    "id": 51674,
+    "madde": "pati"
+  },
+  {
+    "id": 51769,
+    "madde": "yuna"
+  },
+  {
+    "id": 51781,
+    "madde": "yurt"
+  },
+  {
+    "id": 51817,
+    "madde": "yuva"
+  },
+  {
+    "id": 51861,
+    "madde": "yüce"
+  },
+  {
+    "id": 52183,
+    "madde": "muti"
+  },
+  {
+    "id": 52397,
+    "madde": "müft"
+  },
+  {
+    "id": 52502,
+    "madde": "mülk"
+  },
+  {
+    "id": 52645,
+    "madde": "mürt"
+  },
+  {
+    "id": 52817,
+    "madde": "muta"
+  },
+  {
+    "id": 52950,
+    "madde": "müze"
+  },
+  {
+    "id": 52993,
+    "madde": "n, N"
+  },
+  {
+    "id": 52995,
+    "madde": "naaş"
+  },
+  {
+    "id": 52996,
+    "madde": "naat"
+  },
+  {
+    "id": 53032,
+    "madde": "nafi"
+  },
+  {
+    "id": 53056,
+    "madde": "nail"
+  },
+  {
+    "id": 53058,
+    "madde": "naip"
+  },
+  {
+    "id": 53139,
+    "madde": "nale"
+  },
+  {
+    "id": 53176,
+    "madde": "name"
+  },
+  {
+    "id": 53213,
+    "madde": "nane"
+  },
+  {
+    "id": 53239,
+    "madde": "nara"
+  },
+  {
+    "id": 53250,
+    "madde": "narh"
+  },
+  {
+    "id": 53302,
+    "madde": "naşi"
+  },
+  {
+    "id": 53312,
+    "madde": "nato"
+  },
+  {
+    "id": 53354,
+    "madde": "Nazi"
+  },
+  {
+    "id": 53401,
+    "madde": "sabi"
+  },
+  {
+    "id": 53412,
+    "madde": "sabo"
+  },
+  {
+    "id": 53484,
+    "madde": "saçı"
+  },
+  {
+    "id": 53510,
+    "madde": "sada"
+  },
+  {
+    "id": 53523,
+    "madde": "sade"
+  },
+  {
+    "id": 53558,
+    "madde": "safa"
+  },
+  {
+    "id": 53570,
+    "madde": "safi"
+  },
+  {
+    "id": 53596,
+    "madde": "sagu"
+  },
+  {
+    "id": 53639,
+    "madde": "sağı"
+  },
+  {
+    "id": 53718,
+    "madde": "sagu"
+  },
+  {
+    "id": 53725,
+    "madde": "saha"
+  },
+  {
+    "id": 53738,
+    "madde": "sahi"
+  },
+  {
+    "id": 53758,
+    "madde": "sahn"
+  },
+  {
+    "id": 53785,
+    "madde": "saik"
+  },
+  {
+    "id": 53788,
+    "madde": "sair"
+  },
+  {
+    "id": 53794,
+    "madde": "saka"
+  },
+  {
+    "id": 53796,
+    "madde": "saka"
+  },
+  {
+    "id": 53797,
+    "madde": "saka"
+  },
+  {
+    "id": 53883,
+    "madde": "saki"
+  },
+  {
+    "id": 53913,
+    "madde": "sako"
+  },
+  {
+    "id": 53924,
+    "madde": "sela"
+  },
+  {
+    "id": 53996,
+    "madde": "salı"
+  },
+  {
+    "id": 54070,
+    "madde": "salt"
+  },
+  {
+    "id": 54111,
+    "madde": "Sami"
+  },
+  {
+    "id": 54127,
+    "madde": "sana"
+  },
+  {
+    "id": 54222,
+    "madde": "sanı"
+  },
+  {
+    "id": 54286,
+    "madde": "sapa"
+  },
+  {
+    "id": 54349,
+    "madde": "sara"
+  },
+  {
+    "id": 54382,
+    "madde": "sarf"
+  },
+  {
+    "id": 54401,
+    "madde": "sarı"
+  },
+  {
+    "id": 54475,
+    "madde": "sari"
+  },
+  {
+    "id": 54476,
+    "madde": "sâri"
+  },
+  {
+    "id": 54518,
+    "madde": "sarp"
+  },
+  {
+    "id": 54547,
+    "madde": "sası"
+  },
+  {
+    "id": 54563,
+    "madde": "satı"
+  },
+  {
+    "id": 54675,
+    "madde": "puan"
+  },
+  {
+    "id": 54704,
+    "madde": "puhu"
+  },
+  {
+    "id": 54727,
+    "madde": "puma"
+  },
+  {
+    "id": 54729,
+    "madde": "punç"
+  },
+  {
+    "id": 54730,
+    "madde": "punt"
+  },
+  {
+    "id": 54735,
+    "madde": "pupa"
+  },
+  {
+    "id": 54737,
+    "madde": "puro"
+  },
+  {
+    "id": 54753,
+    "madde": "pusu"
+  },
+  {
+    "id": 54769,
+    "madde": "puşt"
+  },
+  {
+    "id": 54802,
+    "madde": "püre"
+  },
+  {
+    "id": 54846,
+    "madde": "r, R"
+  },
+  {
+    "id": 54857,
+    "madde": "raca"
+  },
+  {
+    "id": 54858,
+    "madde": "raci"
+  },
+  {
+    "id": 54972,
+    "madde": "raht"
+  },
+  {
+    "id": 54979,
+    "madde": "rakı"
+  },
+  {
+    "id": 54984,
+    "madde": "raks"
+  },
+  {
+    "id": 55011,
+    "madde": "rami"
+  },
+  {
+    "id": 55012,
+    "madde": "ramp"
+  },
+  {
+    "id": 55032,
+    "madde": "rant"
+  },
+  {
+    "id": 55074,
+    "madde": "rast"
+  },
+  {
+    "id": 55079,
+    "madde": "rast"
+  },
+  {
+    "id": 55098,
+    "madde": "raşe"
+  },
+  {
+    "id": 55099,
+    "madde": "raşi"
+  },
+  {
+    "id": 55103,
+    "madde": "rate"
+  },
+  {
+    "id": 55116,
+    "madde": "razı"
+  },
+  {
+    "id": 55175,
+    "madde": "reel"
+  },
+  {
+    "id": 55202,
+    "madde": "reha"
+  },
+  {
+    "id": 55218,
+    "madde": "reis"
+  },
+  {
+    "id": 55224,
+    "madde": "reji"
+  },
+  {
+    "id": 55257,
+    "madde": "remi"
+  },
+  {
+    "id": 55277,
+    "madde": "renk"
+  },
+  {
+    "id": 55321,
+    "madde": "repo"
+  },
+  {
+    "id": 55365,
+    "madde": "rest"
+  },
+  {
+    "id": 55382,
+    "madde": "reva"
+  },
+  {
+    "id": 55408,
+    "madde": "revü"
+  },
+  {
+    "id": 55411,
+    "madde": "reye"
+  },
+  {
+    "id": 55418,
+    "madde": "reze"
+  },
+  {
+    "id": 55442,
+    "madde": "rıza"
+  },
+  {
+    "id": 55454,
+    "madde": "rica"
+  },
+  {
+    "id": 55461,
+    "madde": "rika"
+  },
+  {
+    "id": 55469,
+    "madde": "rina"
+  },
+  {
+    "id": 55470,
+    "madde": "ring"
+  },
+  {
+    "id": 55473,
+    "madde": "rint"
+  },
+  {
+    "id": 55476,
+    "madde": "risk"
+  },
+  {
+    "id": 55486,
+    "madde": "riya"
+  },
+  {
+    "id": 55501,
+    "madde": "roba"
+  },
+  {
+    "id": 55510,
+    "madde": "roda"
+  },
+  {
+    "id": 55515,
+    "madde": "roka"
+  },
+  {
+    "id": 55555,
+    "madde": "rota"
+  },
+  {
+    "id": 55562,
+    "madde": "roza"
+  },
+  {
+    "id": 55575,
+    "madde": "röle"
+  },
+  {
+    "id": 55600,
+    "madde": "ruam"
+  },
+  {
+    "id": 55601,
+    "madde": "ruba"
+  },
+  {
+    "id": 55637,
+    "madde": "ruhi"
+  },
+  {
+    "id": 55663,
+    "madde": "rulo"
+  },
+  {
+    "id": 55670,
+    "madde": "Rumi"
+  },
+  {
+    "id": 55678,
+    "madde": "rupi"
+  },
+  {
+    "id": 55704,
+    "madde": "rücu"
+  },
+  {
+    "id": 55711,
+    "madde": "rükû"
+  },
+  {
+    "id": 55723,
+    "madde": "rüşt"
+  },
+  {
+    "id": 55734,
+    "madde": "rüya"
+  },
+  {
+    "id": 55760,
+    "madde": "s, S"
+  },
+  {
+    "id": 55765,
+    "madde": "saat"
+  },
+  {
+    "id": 55790,
+    "madde": "saba"
+  },
+  {
+    "id": 55840,
+    "madde": "sava"
+  },
+  {
+    "id": 55921,
+    "madde": "saya"
+  },
+  {
+    "id": 55938,
+    "madde": "saye"
+  },
+  {
+    "id": 55959,
+    "madde": "sayı"
+  },
+  {
+    "id": 56081,
+    "madde": "seci"
+  },
+  {
+    "id": 56088,
+    "madde": "seçi"
+  },
+  {
+    "id": 56128,
+    "madde": "seda"
+  },
+  {
+    "id": 56150,
+    "madde": "sefa"
+  },
+  {
+    "id": 56210,
+    "madde": "seki"
+  },
+  {
+    "id": 56211,
+    "madde": "seki"
+  },
+  {
+    "id": 56233,
+    "madde": "seks"
+  },
+  {
+    "id": 56303,
+    "madde": "sele"
+  },
+  {
+    "id": 56304,
+    "madde": "sele"
+  },
+  {
+    "id": 56305,
+    "madde": "sele"
+  },
+  {
+    "id": 56322,
+    "madde": "selp"
+  },
+  {
+    "id": 56330,
+    "madde": "sema"
+  },
+  {
+    "id": 56331,
+    "madde": "sema"
+  },
+  {
+    "id": 56351,
+    "madde": "seme"
+  },
+  {
+    "id": 56401,
+    "madde": "semt"
+  },
+  {
+    "id": 56414,
+    "madde": "sena"
+  },
+  {
+    "id": 56440,
+    "madde": "sene"
+  },
+  {
+    "id": 56497,
+    "madde": "sepi"
+  },
+  {
+    "id": 56514,
+    "madde": "sera"
+  },
+  {
+    "id": 56558,
+    "madde": "sere"
+  },
+  {
+    "id": 56564,
+    "madde": "serf"
+  },
+  {
+    "id": 56585,
+    "madde": "seri"
+  },
+  {
+    "id": 56586,
+    "madde": "seri"
+  },
+  {
+    "id": 56671,
+    "madde": "sert"
+  },
+  {
+    "id": 56830,
+    "madde": "sevi"
+  },
+  {
+    "id": 56866,
+    "madde": "sevk"
+  },
+  {
+    "id": 56931,
+    "madde": "seza"
+  },
+  {
+    "id": 56941,
+    "madde": "sezi"
+  },
+  {
+    "id": 56953,
+    "madde": "sezü"
+  },
+  {
+    "id": 57008,
+    "madde": "sıdk"
+  },
+  {
+    "id": 57184,
+    "madde": "z, Z"
+  },
+  {
+    "id": 57185,
+    "madde": "zaaf"
+  },
+  {
+    "id": 57199,
+    "madde": "zade"
+  },
+  {
+    "id": 57239,
+    "madde": "zail"
+  },
+  {
+    "id": 57241,
+    "madde": "zait"
+  },
+  {
+    "id": 57291,
+    "madde": "zamk"
+  },
+  {
+    "id": 57334,
+    "madde": "zapt"
+  },
+  {
+    "id": 57369,
+    "madde": "zarf"
+  },
+  {
+    "id": 57399,
+    "madde": "zati"
+  },
+  {
+    "id": 57400,
+    "madde": "zatî"
+  },
+  {
+    "id": 57423,
+    "madde": "paye"
+  },
+  {
+    "id": 57479,
+    "madde": "pazı"
+  },
+  {
+    "id": 57480,
+    "madde": "pazı"
+  },
+  {
+    "id": 57481,
+    "madde": "pazı"
+  },
+  {
+    "id": 57490,
+    "madde": "peçe"
+  },
+  {
+    "id": 57540,
+    "madde": "peki"
+  },
+  {
+    "id": 57608,
+    "madde": "pena"
+  },
+  {
+    "id": 57643,
+    "madde": "peni"
+  },
+  {
+    "id": 57651,
+    "madde": "pepe"
+  },
+  {
+    "id": 57734,
+    "madde": "peri"
+  },
+  {
+    "id": 57802,
+    "madde": "peso"
+  },
+  {
+    "id": 57806,
+    "madde": "pest"
+  },
+  {
+    "id": 57886,
+    "madde": "peyk"
+  },
+  {
+    "id": 57985,
+    "madde": "pide"
+  },
+  {
+    "id": 58000,
+    "madde": "pike"
+  },
+  {
+    "id": 58001,
+    "madde": "pike"
+  },
+  {
+    "id": 58008,
+    "madde": "piko"
+  },
+  {
+    "id": 58045,
+    "madde": "pipi"
+  },
+  {
+    "id": 58048,
+    "madde": "pipo"
+  },
+  {
+    "id": 58054,
+    "madde": "pire"
+  },
+  {
+    "id": 58091,
+    "madde": "pisi"
+  },
+  {
+    "id": 58115,
+    "madde": "pist"
+  },
+  {
+    "id": 58116,
+    "madde": "pist"
+  },
+  {
+    "id": 58124,
+    "madde": "pişi"
+  },
+  {
+    "id": 58202,
+    "madde": "plaj"
+  },
+  {
+    "id": 58204,
+    "madde": "plak"
+  },
+  {
+    "id": 58214,
+    "madde": "plan"
+  },
+  {
+    "id": 58270,
+    "madde": "pili"
+  },
+  {
+    "id": 58364,
+    "madde": "polo"
+  },
+  {
+    "id": 58395,
+    "madde": "popo"
+  },
+  {
+    "id": 58437,
+    "madde": "posa"
+  },
+  {
+    "id": 58445,
+    "madde": "post"
+  },
+  {
+    "id": 58483,
+    "madde": "poşu"
+  },
+  {
+    "id": 58489,
+    "madde": "pota"
+  },
+  {
+    "id": 58490,
+    "madde": "pota"
+  },
+  {
+    "id": 58584,
+    "madde": "pres"
+  },
+  {
+    "id": 58604,
+    "madde": "prim"
+  },
+  {
+    "id": 58611,
+    "madde": "priz"
+  },
+  {
+    "id": 58666,
+    "madde": "süne"
+  },
+  {
+    "id": 58751,
+    "madde": "süre"
+  },
+  {
+    "id": 58850,
+    "madde": "sürü"
+  },
+  {
+    "id": 59023,
+    "madde": "ş, Ş"
+  },
+  {
+    "id": 59043,
+    "madde": "şaft"
+  },
+  {
+    "id": 59103,
+    "madde": "şair"
+  },
+  {
+    "id": 59110,
+    "madde": "şaka"
+  },
+  {
+    "id": 59153,
+    "madde": "şaki"
+  },
+  {
+    "id": 59181,
+    "madde": "şale"
+  },
+  {
+    "id": 59183,
+    "madde": "şali"
+  },
+  {
+    "id": 59194,
+    "madde": "şama"
+  },
+  {
+    "id": 59252,
+    "madde": "şano"
+  },
+  {
+    "id": 59253,
+    "madde": "şans"
+  },
+  {
+    "id": 59339,
+    "madde": "şarj"
+  },
+  {
+    "id": 59342,
+    "madde": "şark"
+  },
+  {
+    "id": 59362,
+    "madde": "şart"
+  },
+  {
+    "id": 59386,
+    "madde": "şase"
+  },
+  {
+    "id": 59387,
+    "madde": "şasi"
+  },
+  {
+    "id": 59396,
+    "madde": "şaşı"
+  },
+  {
+    "id": 59429,
+    "madde": "şato"
+  },
+  {
+    "id": 59432,
+    "madde": "şavk"
+  },
+  {
+    "id": 59443,
+    "madde": "şayi"
+  },
+  {
+    "id": 59465,
+    "madde": "şeci"
+  },
+  {
+    "id": 59589,
+    "madde": "şelf"
+  },
+  {
+    "id": 59591,
+    "madde": "şema"
+  },
+  {
+    "id": 59597,
+    "madde": "şems"
+  },
+  {
+    "id": 59612,
+    "madde": "şeni"
+  },
+  {
+    "id": 59631,
+    "madde": "şeri"
+  },
+  {
+    "id": 59647,
+    "madde": "şerç"
+  },
+  {
+    "id": 59674,
+    "madde": "şerh"
+  },
+  {
+    "id": 59718,
+    "madde": "şevk"
+  },
+  {
+    "id": 59732,
+    "madde": "şeyh"
+  },
+  {
+    "id": 59823,
+    "madde": "şıra"
+  },
+  {
+    "id": 59845,
+    "madde": "şiar"
+  },
+  {
+    "id": 59858,
+    "madde": "şifa"
+  },
+  {
+    "id": 59906,
+    "madde": "soma"
+  },
+  {
+    "id": 59962,
+    "madde": "sone"
+  },
+  {
+    "id": 60016,
+    "madde": "sopa"
+  },
+  {
+    "id": 60060,
+    "madde": "soru"
+  },
+  {
+    "id": 60146,
+    "madde": "sote"
+  },
+  {
+    "id": 60152,
+    "madde": "soya"
+  },
+  {
+    "id": 60205,
+    "madde": "söbe"
+  },
+  {
+    "id": 60271,
+    "madde": "sörf"
+  },
+  {
+    "id": 60275,
+    "madde": "söve"
+  },
+  {
+    "id": 60491,
+    "madde": "spor"
+  },
+  {
+    "id": 60492,
+    "madde": "spor"
+  },
+  {
+    "id": 60504,
+    "madde": "spot"
+  },
+  {
+    "id": 60520,
+    "madde": "staj"
+  },
+  {
+    "id": 60534,
+    "madde": "star"
+  },
+  {
+    "id": 60539,
+    "madde": "stat"
+  },
+  {
+    "id": 60549,
+    "madde": "sten"
+  },
+  {
+    "id": 60550,
+    "madde": "sten"
+  },
+  {
+    "id": 60555,
+    "madde": "step"
+  },
+  {
+    "id": 60557,
+    "madde": "ster"
+  },
+  {
+    "id": 60575,
+    "madde": "stil"
+  },
+  {
+    "id": 60581,
+    "madde": "stok"
+  },
+  {
+    "id": 60590,
+    "madde": "stor"
+  },
+  {
+    "id": 60679,
+    "madde": "sual"
+  },
+  {
+    "id": 60712,
+    "madde": "sucu"
+  },
+  {
+    "id": 60804,
+    "madde": "sulh"
+  },
+  {
+    "id": 60809,
+    "madde": "sulp"
+  },
+  {
+    "id": 60823,
+    "madde": "sulu"
+  },
+  {
+    "id": 60854,
+    "madde": "suna"
+  },
+  {
+    "id": 60863,
+    "madde": "suni"
+  },
+  {
+    "id": 60872,
+    "madde": "sunu"
+  },
+  {
+    "id": 60896,
+    "madde": "sura"
+  },
+  {
+    "id": 60915,
+    "madde": "sure"
+  },
+  {
+    "id": 61038,
+    "madde": "süet"
+  },
+  {
+    "id": 61046,
+    "madde": "süit"
+  },
+  {
+    "id": 61047,
+    "madde": "süje"
+  },
+  {
+    "id": 61060,
+    "madde": "sülf"
+  },
+  {
+    "id": 61110,
+    "madde": "şiir"
+  },
+  {
+    "id": 61129,
+    "madde": "şike"
+  },
+  {
+    "id": 61135,
+    "madde": "şile"
+  },
+  {
+    "id": 61141,
+    "madde": "şilt"
+  },
+  {
+    "id": 61187,
+    "madde": "şirk"
+  },
+  {
+    "id": 61200,
+    "madde": "şist"
+  },
+  {
+    "id": 61207,
+    "madde": "şişe"
+  },
+  {
+    "id": 61209,
+    "madde": "şişe"
+  },
+  {
+    "id": 61248,
+    "madde": "şita"
+  },
+  {
+    "id": 61250,
+    "madde": "şive"
+  },
+  {
+    "id": 61268,
+    "madde": "şoke"
+  },
+  {
+    "id": 61280,
+    "madde": "şort"
+  },
+  {
+    "id": 61281,
+    "madde": "şose"
+  },
+  {
+    "id": 61324,
+    "madde": "şufa"
+  },
+  {
+    "id": 61328,
+    "madde": "şule"
+  },
+  {
+    "id": 61331,
+    "madde": "şura"
+  },
+  {
+    "id": 61333,
+    "madde": "şûra"
+  },
+  {
+    "id": 61346,
+    "madde": "şuur"
+  },
+  {
+    "id": 61381,
+    "madde": "şüyu"
+  },
+  {
+    "id": 61403,
+    "madde": "taam"
+  },
+  {
+    "id": 61417,
+    "madde": "taba"
+  },
+  {
+    "id": 61473,
+    "madde": "tabi"
+  },
+  {
+    "id": 61477,
+    "madde": "tabi"
+  },
+  {
+    "id": 61503,
+    "madde": "tabl"
+  },
+  {
+    "id": 61511,
+    "madde": "tabu"
+  },
+  {
+    "id": 61695,
+    "madde": "taht"
+  },
+  {
+    "id": 61723,
+    "madde": "taka"
+  },
+  {
+    "id": 61769,
+    "madde": "takı"
+  },
+  {
+    "id": 61884,
+    "madde": "takt"
+  },
+  {
+    "id": 61934,
+    "madde": "tali"
+  },
+  {
+    "id": 61962,
+    "madde": "talk"
+  },
+  {
+    "id": 62050,
+    "madde": "tamu"
+  },
+  {
+    "id": 62065,
+    "madde": "tane"
+  },
+  {
+    "id": 62086,
+    "madde": "tanı"
+  },
+  {
+    "id": 62151,
+    "madde": "tank"
+  },
+  {
+    "id": 62214,
+    "madde": "tapa"
+  },
+  {
+    "id": 62225,
+    "madde": "tapı"
+  },
+  {
+    "id": 62242,
+    "madde": "tapi"
+  },
+  {
+    "id": 62253,
+    "madde": "tapu"
+  },
+  {
+    "id": 62303,
+    "madde": "sığa"
+  },
+  {
+    "id": 62367,
+    "madde": "sıkı"
+  },
+  {
+    "id": 62436,
+    "madde": "sıla"
+  },
+  {
+    "id": 62442,
+    "madde": "sıma"
+  },
+  {
+    "id": 62517,
+    "madde": "sıpa"
+  },
+  {
+    "id": 62525,
+    "madde": "sıra"
+  },
+  {
+    "id": 62575,
+    "madde": "sırf"
+  },
+  {
+    "id": 62617,
+    "madde": "Sırp"
+  },
+  {
+    "id": 62627,
+    "madde": "sırt"
+  },
+  {
+    "id": 62675,
+    "madde": "sıva"
+  },
+  {
+    "id": 62701,
+    "madde": "sıvı"
+  },
+  {
+    "id": 62740,
+    "madde": "sızı"
+  },
+  {
+    "id": 62901,
+    "madde": "sili"
+  },
+  {
+    "id": 62902,
+    "madde": "sili"
+  },
+  {
+    "id": 62958,
+    "madde": "silo"
+  },
+  {
+    "id": 62967,
+    "madde": "sima"
+  },
+  {
+    "id": 63012,
+    "madde": "sine"
+  },
+  {
+    "id": 63047,
+    "madde": "sini"
+  },
+  {
+    "id": 63152,
+    "madde": "sirk"
+  },
+  {
+    "id": 63207,
+    "madde": "site"
+  },
+  {
+    "id": 63249,
+    "madde": "siya"
+  },
+  {
+    "id": 63300,
+    "madde": "skeç"
+  },
+  {
+    "id": 63302,
+    "madde": "skif"
+  },
+  {
+    "id": 63307,
+    "madde": "skor"
+  },
+  {
+    "id": 63309,
+    "madde": "Slav"
+  },
+  {
+    "id": 63316,
+    "madde": "slip"
+  },
+  {
+    "id": 63332,
+    "madde": "smaç"
+  },
+  {
+    "id": 63337,
+    "madde": "snop"
+  },
+  {
+    "id": 63339,
+    "madde": "soba"
+  },
+  {
+    "id": 63343,
+    "madde": "sobe"
+  },
+  {
+    "id": 63346,
+    "madde": "soda"
+  },
+  {
+    "id": 63359,
+    "madde": "sofa"
+  },
+  {
+    "id": 63360,
+    "madde": "sufi"
+  },
+  {
+    "id": 63386,
+    "madde": "sofu"
+  },
+  {
+    "id": 63475,
+    "madde": "soku"
+  },
+  {
+    "id": 63524,
+    "madde": "solo"
+  },
+  {
+    "id": 63544,
+    "madde": "tifo"
+  },
+  {
+    "id": 63555,
+    "madde": "tike"
+  },
+  {
+    "id": 63596,
+    "madde": "tipi"
+  },
+  {
+    "id": 63611,
+    "madde": "tire"
+  },
+  {
+    "id": 63612,
+    "madde": "tire"
+  },
+  {
+    "id": 63658,
+    "madde": "titr"
+  },
+  {
+    "id": 63692,
+    "madde": "toht"
+  },
+  {
+    "id": 63710,
+    "madde": "toka"
+  },
+  {
+    "id": 63711,
+    "madde": "toka"
+  },
+  {
+    "id": 64071,
+    "madde": "tost"
+  },
+  {
+    "id": 64084,
+    "madde": "toto"
+  },
+  {
+    "id": 64085,
+    "madde": "toto"
+  },
+  {
+    "id": 64147,
+    "madde": "töre"
+  },
+  {
+    "id": 64241,
+    "madde": "trap"
+  },
+  {
+    "id": 64244,
+    "madde": "tras"
+  },
+  {
+    "id": 64251,
+    "madde": "tren"
+  },
+  {
+    "id": 64280,
+    "madde": "trok"
+  },
+  {
+    "id": 64281,
+    "madde": "trol"
+  },
+  {
+    "id": 64305,
+    "madde": "trup"
+  },
+  {
+    "id": 64306,
+    "madde": "trük"
+  },
+  {
+    "id": 64311,
+    "madde": "Tuba"
+  },
+  {
+    "id": 64312,
+    "madde": "tuba"
+  },
+  {
+    "id": 64350,
+    "madde": "tulu"
+  },
+  {
+    "id": 64383,
+    "madde": "tunç"
+  },
+  {
+    "id": 64405,
+    "madde": "tura"
+  },
+  {
+    "id": 64453,
+    "madde": "turp"
+  },
+  {
+    "id": 64540,
+    "madde": "tutu"
+  },
+  {
+    "id": 64733,
+    "madde": "türe"
+  },
+  {
+    "id": 64750,
+    "madde": "Türk"
+  },
+  {
+    "id": 64964,
+    "madde": "tema"
+  },
+  {
+    "id": 65066,
+    "madde": "tepe"
+  },
+  {
+    "id": 65116,
+    "madde": "tepi"
+  },
+  {
+    "id": 65217,
+    "madde": "tere"
+  },
+  {
+    "id": 65258,
+    "madde": "terk"
+  },
+  {
+    "id": 65305,
+    "madde": "ters"
+  },
+  {
+    "id": 65315,
+    "madde": "ters"
+  },
+  {
+    "id": 65452,
+    "madde": "test"
+  },
+  {
+    "id": 65540,
+    "madde": "teşt"
+  },
+  {
+    "id": 65658,
+    "madde": "teyp"
+  },
+  {
+    "id": 65824,
+    "madde": "tını"
+  },
+  {
+    "id": 65832,
+    "madde": "tıpa"
+  },
+  {
+    "id": 66347,
+    "madde": "şalt"
+  },
+  {
+    "id": 66364,
+    "madde": "Zaza"
+  },
+  {
+    "id": 66385,
+    "madde": "sala"
+  },
+  {
+    "id": 66450,
+    "madde": "üste"
+  },
+  {
+    "id": 66514,
+    "madde": "üşme"
+  },
+  {
+    "id": 66528,
+    "madde": "ütme"
+  },
+  {
+    "id": 66551,
+    "madde": "ü, Ü"
+  },
+  {
+    "id": 66553,
+    "madde": "üvey"
+  },
+  {
+    "id": 66566,
+    "madde": "üvez"
+  },
+  {
+    "id": 66567,
+    "madde": "üvez"
+  },
+  {
+    "id": 66621,
+    "madde": "üzgü"
+  },
+  {
+    "id": 66628,
+    "madde": "üzme"
+  },
+  {
+    "id": 66630,
+    "madde": "üzre"
+  },
+  {
+    "id": 66634,
+    "madde": "üzüm"
+  },
+  {
+    "id": 66656,
+    "madde": "v, V"
+  },
+  {
+    "id": 66657,
+    "madde": "vaat"
+  },
+  {
+    "id": 66661,
+    "madde": "vaaz"
+  },
+  {
+    "id": 66667,
+    "madde": "vade"
+  },
+  {
+    "id": 66679,
+    "madde": "vadi"
+  },
+  {
+    "id": 66688,
+    "madde": "vaha"
+  },
+  {
+    "id": 66694,
+    "madde": "vahi"
+  },
+  {
+    "id": 66711,
+    "madde": "vaiz"
+  },
+  {
+    "id": 66713,
+    "madde": "vaka"
+  },
+  {
+    "id": 66735,
+    "madde": "vaki"
+  },
+  {
+    "id": 66757,
+    "madde": "vaks"
+  },
+  {
+    "id": 66769,
+    "madde": "vale"
+  },
+  {
+    "id": 66770,
+    "madde": "valf"
+  },
+  {
+    "id": 66771,
+    "madde": "vali"
+  },
+  {
+    "id": 66779,
+    "madde": "vals"
+  },
+  {
+    "id": 66781,
+    "madde": "vamp"
+  },
+  {
+    "id": 66783,
+    "madde": "vana"
+  },
+  {
+    "id": 66913,
+    "madde": "vasi"
+  },
+  {
+    "id": 66914,
+    "madde": "vâsi"
+  },
+  {
+    "id": 66987,
+    "madde": "vazo"
+  },
+  {
+    "id": 66992,
+    "madde": "veba"
+  },
+  {
+    "id": 66998,
+    "madde": "veca"
+  },
+  {
+    "id": 67001,
+    "madde": "vect"
+  },
+  {
+    "id": 67008,
+    "madde": "veda"
+  },
+  {
+    "id": 67013,
+    "madde": "vefa"
+  },
+  {
+    "id": 67056,
+    "madde": "veli"
+  },
+  {
+    "id": 67068,
+    "madde": "vena"
+  },
+  {
+    "id": 67079,
+    "madde": "vere"
+  },
+  {
+    "id": 67117,
+    "madde": "veri"
+  },
+  {
+    "id": 67187,
+    "madde": "veto"
+  },
+  {
+    "id": 67191,
+    "madde": "veya"
+  },
+  {
+    "id": 67256,
+    "madde": "vida"
+  },
+  {
+    "id": 67272,
+    "madde": "vido"
+  },
+  {
+    "id": 67287,
+    "madde": "vinç"
+  },
+  {
+    "id": 67290,
+    "madde": "vira"
+  },
+  {
+    "id": 67308,
+    "madde": "virt"
+  },
+  {
+    "id": 67349,
+    "madde": "viya"
+  },
+  {
+    "id": 67361,
+    "madde": "vize"
+  },
+  {
+    "id": 67377,
+    "madde": "vole"
+  },
+  {
+    "id": 67381,
+    "madde": "voli"
+  },
+  {
+    "id": 67388,
+    "madde": "volt"
+  },
+  {
+    "id": 67404,
+    "madde": "vuku"
+  },
+  {
+    "id": 67447,
+    "madde": "vuru"
+  },
+  {
+    "id": 67485,
+    "madde": "y, Y"
+  },
+  {
+    "id": 67493,
+    "madde": "yaba"
+  },
+  {
+    "id": 67631,
+    "madde": "yağı"
+  },
+  {
+    "id": 67679,
+    "madde": "tarh"
+  },
+  {
+    "id": 67740,
+    "madde": "tump"
+  },
+  {
+    "id": 67742,
+    "madde": "tart"
+  },
+  {
+    "id": 67743,
+    "madde": "tart"
+  },
+  {
+    "id": 67782,
+    "madde": "tarz"
+  },
+  {
+    "id": 67787,
+    "madde": "tasa"
+  },
+  {
+    "id": 68086,
+    "madde": "taun"
+  },
+  {
+    "id": 68095,
+    "madde": "tava"
+  },
+  {
+    "id": 68209,
+    "madde": "taya"
+  },
+  {
+    "id": 68212,
+    "madde": "tayf"
+  },
+  {
+    "id": 68230,
+    "madde": "tayt"
+  },
+  {
+    "id": 68246,
+    "madde": "taze"
+  },
+  {
+    "id": 68258,
+    "madde": "tazı"
+  },
+  {
+    "id": 68468,
+    "madde": "tefe"
+  },
+  {
+    "id": 68529,
+    "madde": "tehi"
+  },
+  {
+    "id": 68545,
+    "madde": "tein"
+  },
+  {
+    "id": 68595,
+    "madde": "teke"
+  },
+  {
+    "id": 68763,
+    "madde": "tela"
+  },
+  {
+    "id": 69213,
+    "madde": "lama"
+  },
+  {
+    "id": 69281,
+    "madde": "oley"
+  },
+  {
+    "id": 69288,
+    "madde": "yuka"
+  },
+  {
+    "id": 69290,
+    "madde": "zili"
+  },
+  {
+    "id": 69489,
+    "madde": "unsu"
+  },
+  {
+    "id": 69791,
+    "madde": "Palu"
+  },
+  {
+    "id": 69870,
+    "madde": "Soma"
+  },
+  {
+    "id": 69874,
+    "madde": "Söke"
+  },
+  {
+    "id": 69905,
+    "madde": "Şile"
+  },
+  {
+    "id": 69926,
+    "madde": "Tire"
+  },
+  {
+    "id": 69947,
+    "madde": "Ulaş"
+  },
+  {
+    "id": 69952,
+    "madde": "Ulus"
+  },
+  {
+    "id": 69953,
+    "madde": "Urla"
+  },
+  {
+    "id": 69957,
+    "madde": "Ünye"
+  },
+  {
+    "id": 69965,
+    "madde": "Vize"
+  },
+  {
+    "id": 70000,
+    "madde": "Zara"
+  },
+  {
+    "id": 70002,
+    "madde": "Zile"
+  },
+  {
+    "id": 70086,
+    "madde": "dank"
+  },
+  {
+    "id": 70175,
+    "madde": "tofu"
+  },
+  {
+    "id": 70180,
+    "madde": "miso"
+  },
+  {
+    "id": 70244,
+    "madde": "yöre"
+  },
+  {
+    "id": 70345,
+    "madde": "Avcı"
+  },
+  {
+    "id": 70351,
+    "madde": "Kurt"
+  },
+  {
+    "id": 70459,
+    "madde": "arak"
+  },
+  {
+    "id": 70461,
+    "madde": "slip"
+  },
+  {
+    "id": 71084,
+    "madde": "rumi"
+  },
+  {
+    "id": 71233,
+    "madde": "akor"
+  },
+  {
+    "id": 71284,
+    "madde": "Batı"
+  },
+  {
+    "id": 71285,
+    "madde": "Garp"
+  },
+  {
+    "id": 71286,
+    "madde": "Şark"
+  },
+  {
+    "id": 71287,
+    "madde": "Doğu"
+  },
+  {
+    "id": 71383,
+    "madde": "iglu"
+  },
+  {
+    "id": 71427,
+    "madde": "umur"
+  },
+  {
+    "id": 71433,
+    "madde": "Hüda"
+  },
+  {
+    "id": 71488,
+    "madde": "dart"
+  },
+  {
+    "id": 71499,
+    "madde": "demo"
+  },
+  {
+    "id": 71528,
+    "madde": "Ağrı"
+  },
+  {
+    "id": 71539,
+    "madde": "Bolu"
+  },
+  {
+    "id": 71561,
+    "madde": "Kars"
+  },
+  {
+    "id": 71577,
+    "madde": "Ordu"
+  },
+  {
+    "id": 71578,
+    "madde": "Rize"
+  },
+  {
+    "id": 71589,
+    "madde": "Uşak"
+  },
+  {
+    "id": 71613,
+    "madde": "Ağın"
+  },
+  {
+    "id": 71615,
+    "madde": "Ağlı"
+  },
+  {
+    "id": 71633,
+    "madde": "Aksu"
+  },
+  {
+    "id": 71647,
+    "madde": "Alpu"
+  },
+  {
+    "id": 71659,
+    "madde": "Araç"
+  },
+  {
+    "id": 71680,
+    "madde": "Ayaş"
+  },
+  {
+    "id": 71703,
+    "madde": "Balâ"
+  },
+  {
+    "id": 71736,
+    "madde": "Biga"
+  },
+  {
+    "id": 71756,
+    "madde": "Buca"
+  },
+  {
+    "id": 71768,
+    "madde": "Cide"
+  },
+  {
+    "id": 71822,
+    "madde": "Çine"
+  },
+  {
+    "id": 71907,
+    "madde": "Eğil"
+  },
+  {
+    "id": 71916,
+    "madde": "Emet"
+  },
+  {
+    "id": 71920,
+    "madde": "Enez"
+  },
+  {
+    "id": 71929,
+    "madde": "Eruh"
+  },
+  {
+    "id": 71935,
+    "madde": "Eşme"
+  },
+  {
+    "id": 72027,
+    "madde": "tüyo"
+  },
+  {
+    "id": 72033,
+    "madde": "tüze"
+  },
+  {
+    "id": 72040,
+    "madde": "u, U"
+  },
+  {
+    "id": 72047,
+    "madde": "ucuz"
+  },
+  {
+    "id": 72075,
+    "madde": "uçak"
+  },
+  {
+    "id": 72080,
+    "madde": "uçar"
+  },
+  {
+    "id": 72096,
+    "madde": "uçlu"
+  },
+  {
+    "id": 72097,
+    "madde": "uçma"
+  },
+  {
+    "id": 72112,
+    "madde": "uçuk"
+  },
+  {
+    "id": 72113,
+    "madde": "uçuk"
+  },
+  {
+    "id": 72118,
+    "madde": "uçun"
+  },
+  {
+    "id": 72128,
+    "madde": "uçuş"
+  },
+  {
+    "id": 72138,
+    "madde": "ufak"
+  },
+  {
+    "id": 72155,
+    "madde": "ufki"
+  },
+  {
+    "id": 72160,
+    "madde": "ufuk"
+  },
+  {
+    "id": 72167,
+    "madde": "uğra"
+  },
+  {
+    "id": 72185,
+    "madde": "uğru"
+  },
+  {
+    "id": 72197,
+    "madde": "uğur"
+  },
+  {
+    "id": 72200,
+    "madde": "uğur"
+  },
+  {
+    "id": 72217,
+    "madde": "uğut"
+  },
+  {
+    "id": 72218,
+    "madde": "uhde"
+  },
+  {
+    "id": 72228,
+    "madde": "ukde"
+  },
+  {
+    "id": 72232,
+    "madde": "ulaç"
+  },
+  {
+    "id": 72233,
+    "madde": "Ulah"
+  },
+  {
+    "id": 72235,
+    "madde": "ulak"
+  },
+  {
+    "id": 72237,
+    "madde": "ulam"
+  },
+  {
+    "id": 72240,
+    "madde": "ulan"
+  },
+  {
+    "id": 72263,
+    "madde": "ulum"
+  },
+  {
+    "id": 72267,
+    "madde": "ulus"
+  },
+  {
+    "id": 72280,
+    "madde": "ulvi"
+  },
+  {
+    "id": 72284,
+    "madde": "umar"
+  },
+  {
+    "id": 72287,
+    "madde": "umde"
+  },
+  {
+    "id": 72290,
+    "madde": "umma"
+  },
+  {
+    "id": 72294,
+    "madde": "umre"
+  },
+  {
+    "id": 72298,
+    "madde": "umum"
+  },
+  {
+    "id": 72312,
+    "madde": "umur"
+  },
+  {
+    "id": 72323,
+    "madde": "umut"
+  },
+  {
+    "id": 72354,
+    "madde": "uncu"
+  },
+  {
+    "id": 72381,
+    "madde": "uran"
+  },
+  {
+    "id": 72384,
+    "madde": "uray"
+  },
+  {
+    "id": 72385,
+    "madde": "urba"
+  },
+  {
+    "id": 72399,
+    "madde": "uruk"
+  },
+  {
+    "id": 72400,
+    "madde": "urup"
+  },
+  {
+    "id": 72417,
+    "madde": "usçu"
+  },
+  {
+    "id": 72431,
+    "madde": "uslu"
+  },
+  {
+    "id": 72439,
+    "madde": "usta"
+  },
+  {
+    "id": 72460,
+    "madde": "usul"
+  },
+  {
+    "id": 72462,
+    "madde": "usul"
+  },
+  {
+    "id": 72470,
+    "madde": "uşak"
+  },
+  {
+    "id": 72501,
+    "madde": "utçu"
+  },
+  {
+    "id": 72502,
+    "madde": "utku"
+  },
+  {
+    "id": 72504,
+    "madde": "utlu"
+  },
+  {
+    "id": 72505,
+    "madde": "utma"
+  },
+  {
+    "id": 72512,
+    "madde": "uyak"
+  },
+  {
+    "id": 72543,
+    "madde": "uydu"
+  },
+  {
+    "id": 72589,
+    "madde": "uyku"
+  },
+  {
+    "id": 72631,
+    "madde": "uyma"
+  },
+  {
+    "id": 72652,
+    "madde": "uyum"
+  },
+  {
+    "id": 72662,
+    "madde": "uyur"
+  },
+  {
+    "id": 72689,
+    "madde": "uyuz"
+  },
+  {
+    "id": 72704,
+    "madde": "uzak"
+  },
+  {
+    "id": 72734,
+    "madde": "uzam"
+  },
+  {
+    "id": 72737,
+    "madde": "uza!"
+  },
+  {
+    "id": 72757,
+    "madde": "uzay"
+  },
+  {
+    "id": 72799,
+    "madde": "uzun"
+  },
+  {
+    "id": 72835,
+    "madde": "uzuv"
+  },
+  {
+    "id": 72836,
+    "madde": "uzvi"
+  },
+  {
+    "id": 72839,
+    "madde": "ücra"
+  },
+  {
+    "id": 72863,
+    "madde": "üçer"
+  },
+  {
+    "id": 72882,
+    "madde": "üçlü"
+  },
+  {
+    "id": 72896,
+    "madde": "üçüz"
+  },
+  {
+    "id": 72906,
+    "madde": "uful"
+  },
+  {
+    "id": 72913,
+    "madde": "üleş"
+  },
+  {
+    "id": 72927,
+    "madde": "ülke"
+  },
+  {
+    "id": 72932,
+    "madde": "ülkü"
+  },
+  {
+    "id": 72948,
+    "madde": "ülüş"
+  },
+  {
+    "id": 72950,
+    "madde": "ümit"
+  },
+  {
+    "id": 72980,
+    "madde": "ümmi"
+  },
+  {
+    "id": 72983,
+    "madde": "ümük"
+  },
+  {
+    "id": 72991,
+    "madde": "ünik"
+  },
+  {
+    "id": 73005,
+    "madde": "ünlü"
+  },
+  {
+    "id": 73019,
+    "madde": "ürat"
+  },
+  {
+    "id": 73023,
+    "madde": "ürem"
+  },
+  {
+    "id": 73059,
+    "madde": "ürkü"
+  },
+  {
+    "id": 73083,
+    "madde": "ürün"
+  },
+  {
+    "id": 73169,
+    "madde": "Feke"
+  },
+  {
+    "id": 73175,
+    "madde": "Foça"
+  },
+  {
+    "id": 73185,
+    "madde": "Genç"
+  },
+  {
+    "id": 73197,
+    "madde": "Göle"
+  },
+  {
+    "id": 73210,
+    "madde": "Güce"
+  },
+  {
+    "id": 73242,
+    "madde": "Hani"
+  },
+  {
+    "id": 73266,
+    "madde": "Hopa"
+  },
+  {
+    "id": 73274,
+    "madde": "İdil"
+  },
+  {
+    "id": 73279,
+    "madde": "İliç"
+  },
+  {
+    "id": 73320,
+    "madde": "Kale"
+  },
+  {
+    "id": 73378,
+    "madde": "Kiğı"
+  },
+  {
+    "id": 73398,
+    "madde": "Köse"
+  },
+  {
+    "id": 73399,
+    "madde": "Köşk"
+  },
+  {
+    "id": 73401,
+    "madde": "Kula"
+  },
+  {
+    "id": 73402,
+    "madde": "Kulp"
+  },
+  {
+    "id": 73403,
+    "madde": "Kulu"
+  },
+  {
+    "id": 73414,
+    "madde": "Küre"
+  },
+  {
+    "id": 73420,
+    "madde": "Lice"
+  },
+  {
+    "id": 73473,
+    "madde": "Oltu"
+  },
+  {
+    "id": 73474,
+    "madde": "Olur"
+  },
+  {
+    "id": 73478,
+    "madde": "Orta"
+  },
+  {
+    "id": 73817,
+    "madde": "azış"
+  },
+  {
+    "id": 73908,
+    "madde": "arap"
+  },
+  {
+    "id": 73928,
+    "madde": "Yıva"
+  },
+  {
+    "id": 73939,
+    "madde": "Kayı"
+  },
+  {
+    "id": 73981,
+    "madde": "kast"
+  },
+  {
+    "id": 74018,
+    "madde": "meri"
+  },
+  {
+    "id": 74170,
+    "madde": "itçe"
+  },
+  {
+    "id": 74172,
+    "madde": "kaça"
+  },
+  {
+    "id": 74240,
+    "madde": "müge"
+  },
+  {
+    "id": 74247,
+    "madde": "azit"
+  },
+  {
+    "id": 74249,
+    "madde": "azol"
+  },
+  {
+    "id": 74280,
+    "madde": "ışıl"
+  },
+  {
+    "id": 74350,
+    "madde": "roze"
+  },
+  {
+    "id": 74360,
+    "madde": "t, T"
+  },
+  {
+    "id": 74394,
+    "madde": "sent"
+  },
+  {
+    "id": 74400,
+    "madde": "tülü"
+  },
+  {
+    "id": 74413,
+    "madde": "anık"
+  },
+  {
+    "id": 74429,
+    "madde": "guru"
+  },
+  {
+    "id": 74497,
+    "madde": "dreç"
+  },
+  {
+    "id": 74538,
+    "madde": "chat"
+  },
+  {
+    "id": 74560,
+    "madde": "akne"
+  },
+  {
+    "id": 74590,
+    "madde": "afal"
+  },
+  {
+    "id": 74633,
+    "madde": "suma"
+  },
+  {
+    "id": 74676,
+    "madde": "şube"
+  },
+  {
+    "id": 74745,
+    "madde": "kuut"
+  },
+  {
+    "id": 74755,
+    "madde": "anal"
+  },
+  {
+    "id": 74756,
+    "madde": "oral"
+  },
+  {
+    "id": 74809,
+    "madde": "pert"
+  },
+  {
+    "id": 74843,
+    "madde": "İlah"
+  },
+  {
+    "id": 74872,
+    "madde": "obez"
+  },
+  {
+    "id": 74893,
+    "madde": "daru"
+  },
+  {
+    "id": 75233,
+    "madde": "saba"
+  },
+  {
+    "id": 75383,
+    "madde": "naif"
+  },
+  {
+    "id": 75500,
+    "madde": "tipo"
+  },
+  {
+    "id": 76076,
+    "madde": "pike"
+  },
+  {
+    "id": 76089,
+    "madde": "gren"
+  },
+  {
+    "id": 76090,
+    "madde": "eper"
+  },
+  {
+    "id": 76232,
+    "madde": "malç"
+  },
+  {
+    "id": 76295,
+    "madde": "ç, Ç"
+  },
+  {
+    "id": 76373,
+    "madde": "Avar"
+  },
+  {
+    "id": 76428,
+    "madde": "denk"
+  },
+  {
+    "id": 76501,
+    "madde": "isot"
+  },
+  {
+    "id": 76555,
+    "madde": "avro"
+  },
+  {
+    "id": 76562,
+    "madde": "nisa"
+  },
+  {
+    "id": 76585,
+    "madde": "enam"
+  },
+  {
+    "id": 76755,
+    "madde": "diya"
+  },
+  {
+    "id": 76837,
+    "madde": "eman"
+  },
+  {
+    "id": 76841,
+    "madde": "söve"
+  },
+  {
+    "id": 76842,
+    "madde": "idol"
+  },
+  {
+    "id": 76843,
+    "madde": "amor"
+  },
+  {
+    "id": 76892,
+    "madde": "uğur"
+  },
+  {
+    "id": 76954,
+    "madde": "data"
+  },
+  {
+    "id": 77000,
+    "madde": "icma"
+  },
+  {
+    "id": 77002,
+    "madde": "Hüma"
+  },
+  {
+    "id": 77166,
+    "madde": "Agop"
+  },
+  {
+    "id": 77212,
+    "madde": "böle"
+  },
+  {
+    "id": 77220,
+    "madde": "suşi"
+  },
+  {
+    "id": 77221,
+    "madde": "sake"
+  },
+  {
+    "id": 77290,
+    "madde": "briz"
+  },
+  {
+    "id": 77357,
+    "madde": "akva"
+  },
+  {
+    "id": 77360,
+    "madde": "araz"
+  },
+  {
+    "id": 77380,
+    "madde": "slap"
+  },
+  {
+    "id": 77383,
+    "madde": "klon"
+  },
+  {
+    "id": 77498,
+    "madde": "âdem"
+  },
+  {
+    "id": 77589,
+    "madde": "cönk"
+  },
+  {
+    "id": 77732,
+    "madde": "laka"
+  },
+  {
+    "id": 78013,
+    "madde": "zayi"
+  },
+  {
+    "id": 78071,
+    "madde": "zekâ"
+  },
+  {
+    "id": 78080,
+    "madde": "zeki"
+  },
+  {
+    "id": 78143,
+    "madde": "zerk"
+  },
+  {
+    "id": 78167,
+    "madde": "zevç"
+  },
+  {
+    "id": 78170,
+    "madde": "zevk"
+  },
+  {
+    "id": 78275,
+    "madde": "zınk"
+  },
+  {
+    "id": 78298,
+    "madde": "zırh"
+  },
+  {
+    "id": 78363,
+    "madde": "zift"
+  },
+  {
+    "id": 78438,
+    "madde": "zina"
+  },
+  {
+    "id": 78467,
+    "madde": "zira"
+  },
+  {
+    "id": 78485,
+    "madde": "ziya"
+  },
+  {
+    "id": 78511,
+    "madde": "zoka"
+  },
+  {
+    "id": 78515,
+    "madde": "zona"
+  },
+  {
+    "id": 78520,
+    "madde": "zonk"
+  },
+  {
+    "id": 78581,
+    "madde": "zula"
+  },
+  {
+    "id": 78610,
+    "madde": "züht"
+  },
+  {
+    "id": 78706,
+    "madde": "font"
+  },
+  {
+    "id": 78750,
+    "madde": "mano"
+  },
+  {
+    "id": 78840,
+    "madde": "defi"
+  },
+  {
+    "id": 78924,
+    "madde": "kaşe"
+  },
+  {
+    "id": 78938,
+    "madde": "laka"
+  },
+  {
+    "id": 79109,
+    "madde": "pens"
+  },
+  {
+    "id": 79128,
+    "madde": "pışt"
+  },
+  {
+    "id": 79211,
+    "madde": "ülen"
+  },
+  {
+    "id": 79703,
+    "madde": "usul"
+  },
+  {
+    "id": 79749,
+    "madde": "o bu"
+  },
+  {
+    "id": 79909,
+    "madde": "Kâbe"
+  },
+  {
+    "id": 80780,
+    "madde": "topu"
+  },
+  {
+    "id": 80807,
+    "madde": "hamt"
+  },
+  {
+    "id": 80830,
+    "madde": "diye"
+  },
+  {
+    "id": 80837,
+    "madde": "taat"
+  },
+  {
+    "id": 81463,
+    "madde": "umuş"
+  },
+  {
+    "id": 81880,
+    "madde": "ilek"
+  },
+  {
+    "id": 81914,
+    "madde": "acve"
+  },
+  {
+    "id": 81931,
+    "madde": "izge"
+  },
+  {
+    "id": 83320,
+    "madde": "erce"
+  },
+  {
+    "id": 83463,
+    "madde": "Eros"
+  },
+  {
+    "id": 83648,
+    "madde": "trio"
+  },
+  {
+    "id": 83760,
+    "madde": "nüks"
+  },
+  {
+    "id": 84121,
+    "madde": "kaşe"
+  },
+  {
+    "id": 84217,
+    "madde": "inti"
+  },
+  {
+    "id": 84239,
+    "madde": "krep"
+  },
+  {
+    "id": 85182,
+    "madde": "azel"
+  },
+  {
+    "id": 85461,
+    "madde": "step"
+  },
+  {
+    "id": 86078,
+    "madde": "baks"
+  },
+  {
+    "id": 86083,
+    "madde": "rate"
+  },
+  {
+    "id": 86200,
+    "madde": "bere"
+  },
+  {
+    "id": 86234,
+    "madde": "atel"
+  },
+  {
+    "id": 86240,
+    "madde": "şart"
+  },
+  {
+    "id": 86245,
+    "madde": "blöf"
+  },
+  {
+    "id": 86248,
+    "madde": "bara"
+  },
+  {
+    "id": 86563,
+    "madde": "Asya"
+  },
+  {
+    "id": 86719,
+    "madde": "bold"
+  },
+  {
+    "id": 86723,
+    "madde": "meke"
+  },
+  {
+    "id": 86765,
+    "madde": "abuk"
+  },
+  {
+    "id": 87125,
+    "madde": "ekit"
+  },
+  {
+    "id": 87134,
+    "madde": "esiş"
+  },
+  {
+    "id": 87197,
+    "madde": "kesi"
+  },
+  {
+    "id": 87201,
+    "madde": "iksa"
+  },
+  {
+    "id": 87418,
+    "madde": "akar"
+  },
+  {
+    "id": 87419,
+    "madde": "akar"
+  },
+  {
+    "id": 87443,
+    "madde": "dore"
+  },
+  {
+    "id": 87587,
+    "madde": "stop"
+  },
+  {
+    "id": 87596,
+    "madde": "mama"
+  },
+  {
+    "id": 87690,
+    "madde": "maço"
+  },
+  {
+    "id": 87712,
+    "madde": "tırt"
+  },
+  {
+    "id": 88052,
+    "madde": "meke"
+  },
+  {
+    "id": 88054,
+    "madde": "diva"
+  },
+  {
+    "id": 88185,
+    "madde": "brit"
+  },
+  {
+    "id": 89859,
+    "madde": "pisi"
+  },
+  {
+    "id": 89950,
+    "madde": "opak"
+  },
+  {
+    "id": 90768,
+    "madde": "tork"
+  },
+  {
+    "id": 90792,
+    "madde": "cırt"
+  },
+  {
+    "id": 91281,
+    "madde": "ikta"
+  },
+  {
+    "id": 92032,
+    "madde": "Avar"
+  },
+  {
+    "id": 92177,
+    "madde": "ağıl"
+  },
+  {
+    "id": 92301,
+    "madde": "ikon"
+  },
+  {
+    "id": 92315,
+    "madde": "ekru"
+  },
+  {
+    "id": 92316,
+    "madde": "sota"
+  },
+  {
+    "id": 92366,
+    "madde": "vasl"
+  },
+  {
+    "id": 92398,
+    "madde": "asar"
+  },
+  {
+    "id": 92401,
+    "madde": "kaju"
+  },
+  {
+    "id": 92413,
+    "madde": "abak"
+  },
+  {
+    "id": 92421,
+    "madde": "abak"
+  },
+  {
+    "id": 92432,
+    "madde": "abiş"
+  },
+  {
+    "id": 92433,
+    "madde": "abiş"
+  },
+  {
+    "id": 92458,
+    "madde": "acip"
+  },
+  {
+    "id": 92498,
+    "madde": "adat"
+  },
+  {
+    "id": 92520,
+    "madde": "ağca"
+  },
+  {
+    "id": 92569,
+    "madde": "aksa"
+  },
+  {
+    "id": 92588,
+    "madde": "alat"
+  },
+  {
+    "id": 92597,
+    "madde": "alev"
+  },
+  {
+    "id": 92679,
+    "madde": "Amme"
+  },
+  {
+    "id": 92708,
+    "madde": "anat"
+  },
+  {
+    "id": 92826,
+    "madde": "asan"
+  },
+  {
+    "id": 92883,
+    "madde": "atar"
+  },
+  {
+    "id": 92913,
+    "madde": "aura"
+  },
+  {
+    "id": 92992,
+    "madde": "alfa"
+  },
+  {
+    "id": 92996,
+    "madde": "harp"
+  },
+  {
+    "id": 93053,
+    "madde": "blog"
+  },
+  {
+    "id": 93178,
+    "madde": "bark"
+  },
+  {
+    "id": 93252,
+    "madde": "bayt"
+  },
+  {
+    "id": 93376,
+    "madde": "bila"
+  },
+  {
+    "id": 93529,
+    "madde": "börü"
+  },
+  {
+    "id": 93796,
+    "madde": "neye"
+  },
+  {
+    "id": 93928,
+    "madde": "gron"
+  },
+  {
+    "id": 93933,
+    "madde": "enin"
+  },
+  {
+    "id": 94281,
+    "madde": "ravi"
+  },
+  {
+    "id": 94420,
+    "madde": "çeri"
+  },
+  {
+    "id": 94423,
+    "madde": "çeşm"
+  },
+  {
+    "id": 94535,
+    "madde": "Saha"
+  },
+  {
+    "id": 94603,
+    "madde": "sami"
+  },
+  {
+    "id": 94748,
+    "madde": "sele"
+  },
+  {
+    "id": 95003,
+    "madde": "siga"
+  },
+  {
+    "id": 95053,
+    "madde": "dest"
+  },
+  {
+    "id": 95061,
+    "madde": "deyi"
+  },
+  {
+    "id": 95377,
+    "madde": "spam"
+  },
+  {
+    "id": 95390,
+    "madde": "spin"
+  },
+  {
+    "id": 95570,
+    "madde": "Enam"
+  },
+  {
+    "id": 96009,
+    "madde": "şime"
+  },
+  {
+    "id": 96024,
+    "madde": "şire"
+  },
+  {
+    "id": 96095,
+    "madde": "kazı"
+  },
+  {
+    "id": 96226,
+    "madde": "kıst"
+  },
+  {
+    "id": 96563,
+    "madde": "gıdı"
+  },
+  {
+    "id": 97297,
+    "madde": "trip"
+  },
+  {
+    "id": 97307,
+    "madde": "tufa"
+  },
+  {
+    "id": 97334,
+    "madde": "Tuva"
+  },
+  {
+    "id": 97710,
+    "madde": "Urum"
+  },
+  {
+    "id": 97721,
+    "madde": "usat"
+  },
+  {
+    "id": 97775,
+    "madde": "uyar"
+  },
+  {
+    "id": 97805,
+    "madde": "uygu"
+  },
+  {
+    "id": 97923,
+    "madde": "host"
+  },
+  {
+    "id": 98003,
+    "madde": "iğsi"
+  },
+  {
+    "id": 98084,
+    "madde": "imik"
+  },
+  {
+    "id": 98156,
+    "madde": "Urfa"
+  },
+  {
+    "id": 98183,
+    "madde": "vâle"
+  },
+  {
+    "id": 98208,
+    "madde": "vire"
+  },
+  {
+    "id": 98364,
+    "madde": "mayt"
+  },
+  {
+    "id": 98748,
+    "madde": "neli"
+  },
+  {
+    "id": 98825,
+    "madde": "obuz"
+  },
+  {
+    "id": 98915,
+    "madde": "zede"
+  },
+  {
+    "id": 98956,
+    "madde": "okra"
+  },
+  {
+    "id": 98963,
+    "madde": "oksu"
+  },
+  {
+    "id": 98997,
+    "madde": "onam"
+  },
+  {
+    "id": 99062,
+    "madde": "zırh"
+  },
+  {
+    "id": 99117,
+    "madde": "önlü"
+  },
+  {
+    "id": 99153,
+    "madde": "ötüm"
+  },
+  {
+    "id": 99212,
+    "madde": "panç"
+  },
+  {
+    "id": 99222,
+    "madde": "pane"
+  },
+  {
+    "id": 99298,
+    "madde": "penç"
+  },
+  {
+    "id": 99319,
+    "madde": "pile"
+  }
+]
