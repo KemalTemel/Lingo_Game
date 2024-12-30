@@ -2,6 +2,9 @@
 
 Türkçe kelime tahmin etme oyunu. Wordle benzeri bir oyun, ancak Türkçe kelimelerle ve çok oyunculu olarak oynanabiliyor.
 
+## Demo 🌐
+[Oyunu oynamak için tıklayın](https://web-production-2478.up.railway.app)
+
 ## Test Güncellemesi ✨
 Bu satır test için eklenmiştir.
 
