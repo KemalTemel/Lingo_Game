@@ -73,46 +73,55 @@ body::before {
 .tahmin-satiri {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    margin-bottom: 5px;
+    gap: 8px;
+    margin-bottom: 8px;
 }
 
 .harf {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    border: 2px solid #ccc;
-    border-radius: 8px;
     text-transform: uppercase;
-    background: #fff;
-}
-
-.harf.dogru {
-    background: #22c55e;
-    color: white;
-    border-color: #16a34a;
-}
-
-.harf.var {
-    background: #eab308;
-    color: white;
-    border-color: #ca8a04;
-}
-
-.harf.yok {
-    background: #ef4444;
-    color: white;
-    border-color: #dc2626;
+    border: 2px solid #d1d5db;
+    background: white;
+    transition: all 0.2s ease;
 }
 
 /* Boş kutu stili */
 .harf:empty {
-    background: #f3f4f6;
-    border-color: #d1d5db;
+    background: white;
+    border: 2px solid #d1d5db;
+}
+
+/* Doğru harf stili */
+.harf.dogru {
+    background: #22c55e;
+    color: white;
+    border-color: #22c55e;
+}
+
+/* Yanlış yerde olan harf stili */
+.harf.var {
+    background: #eab308;
+    color: white;
+    border-color: #eab308;
+}
+
+/* Olmayan harf stili */
+.harf.yok {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+}
+
+/* Aktif satır efekti */
+.tahmin-satiri.aktif .harf:empty {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
 .harf.joker {
