@@ -209,6 +209,16 @@ function tahminSonuclariniGuncelle(tahminler) {
     const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
     const ilkHarf = document.getElementById('ilk-harf').textContent;
 
+    // Önceki tahminlerdeki doğru harfleri bul
+    let dogruHarfler = new Array(kelimeUzunlugu).fill(null);
+    tahminler.forEach(tahmin => {
+        tahmin.sonuc.forEach((sonuc, index) => {
+            if (sonuc.durum === 'dogru') {
+                dogruHarfler[index] = tahmin.tahmin[index];
+            }
+        });
+    });
+
     // Önceki tahminleri işle
     for (let i = 0; i < tahminler.length; i++) {
         const tahmin = tahminler[i];
@@ -219,48 +229,37 @@ function tahminSonuclariniGuncelle(tahminler) {
         for (let j = 0; j < kelimeUzunlugu; j++) {
             const harfDiv = harfDivler[j];
             if (j === 0) {
+                // İlk harf her zaman aynı ve yeşil
                 harfDiv.textContent = ilkHarf;
                 harfDiv.className = 'harf dogru';
             } else {
+                // Kullanıcının tahmin ettiği harfi göster
                 harfDiv.textContent = tahmin.tahmin[j];
                 harfDiv.className = `harf ${tahmin.sonuc[j].durum}`;
             }
         }
     }
 
-    // Kalan boş satırlara doğru harfleri taşı
-    if (tahminler.length > 0) {
-        const sonTahmin = tahminler[tahminler.length - 1];
-        
-        // Önceki tüm tahminlerdeki doğru harfleri bul
-        let dogruHarfler = new Array(kelimeUzunlugu).fill(null);
-        tahminler.forEach(tahmin => {
-            tahmin.sonuc.forEach((sonuc, index) => {
-                if (sonuc.durum === 'dogru') {
-                    dogruHarfler[index] = tahmin.tahmin[index];
-                }
-            });
-        });
+    // Kalan boş satırlara sadece doğru harfleri yerleştir
+    for (let i = tahminler.length; i < 6; i++) {
+        const satirDiv = satirlar[i];
+        satirDiv.classList.add('bos');
+        const harfDivler = satirDiv.getElementsByClassName('harf');
 
-        // Boş satırlara doğru harfleri yerleştir
-        for (let i = tahminler.length; i < 6; i++) {
-            const satirDiv = satirlar[i];
-            satirDiv.classList.add('bos');
-            const harfDivler = satirDiv.getElementsByClassName('harf');
-
-            for (let j = 0; j < kelimeUzunlugu; j++) {
-                const harfDiv = harfDivler[j];
-                if (j === 0) {
-                    harfDiv.textContent = ilkHarf;
-                    harfDiv.className = 'harf dogru';
-                } else if (dogruHarfler[j] !== null) {
-                    // Önceki tahminlerde doğru olan harfleri göster
-                    harfDiv.textContent = dogruHarfler[j];
-                    harfDiv.className = 'harf dogru';
-                } else {
-                    harfDiv.textContent = '';
-                    harfDiv.className = 'harf';
-                }
+        for (let j = 0; j < kelimeUzunlugu; j++) {
+            const harfDiv = harfDivler[j];
+            if (j === 0) {
+                // İlk harf her zaman aynı ve yeşil
+                harfDiv.textContent = ilkHarf;
+                harfDiv.className = 'harf dogru';
+            } else if (dogruHarfler[j] !== null) {
+                // Önceki tahminlerde doğru bulunan harfleri yeşil olarak göster
+                harfDiv.textContent = dogruHarfler[j];
+                harfDiv.className = 'harf dogru';
+            } else {
+                // Diğer kutular boş
+                harfDiv.textContent = '';
+                harfDiv.className = 'harf';
             }
         }
     }
