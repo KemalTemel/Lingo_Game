@@ -874,6 +874,10 @@ body::before {
     justify-content: center;
     width: 100%;
     margin: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 #tahminler {
@@ -893,7 +897,6 @@ body::before {
     gap: 8px;
     margin-bottom: 8px;
     width: 100%;
-    max-width: 400px;
 }
 
 .harf {
@@ -909,4 +912,62 @@ body::before {
     background: white;
     border-radius: 8px;
     transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Harf Durumları */
+.harf.dogru {
+    background: #22c55e;
+    color: white;
+    border-color: #22c55e;
+}
+
+.harf.var {
+    background: #eab308;
+    color: white;
+    border-color: #eab308;
+}
+
+.harf.yok {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+}
+
+.harf:empty {
+    background: white;
+    border: 2px solid #d1d5db;
+}
+
+/* Boş Satır Stili */
+.tahmin-satiri.bos {
+    opacity: 0.7;
+}
+
+.tahmin-satiri.bos .harf {
+    background: #f3f4f6;
+}
+
+.tahmin-satiri.bos .harf:first-child {
+    opacity: 1;
+    background: #22c55e;
+    color: white;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .harf {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
+    .tahmin-container {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    #tahminler {
+        min-height: 300px;
+    }
 } 
