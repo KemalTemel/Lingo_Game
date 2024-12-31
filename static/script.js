@@ -292,26 +292,16 @@ socket.on('oyun_durumu', (data) => {
     }
     
     tahminSatirlariniOlustur();
+    
+    // Eğer önceki tahminler varsa onları göster
+    if (data.tahminler && data.tahminler.length > 0) {
+        tahminSonuclariniGuncelle(data.tahminler);
+    }
 });
 
 socket.on('tahmin_sonucu', (data) => {
-    // Tahmin sonuçlarını göster
-    const tahminlerDiv = document.getElementById('tahminler');
-    tahminlerDiv.innerHTML = '';
-    
-    data.tahminler.forEach(tahmin => {
-        const tahminDiv = document.createElement('div');
-        tahminDiv.className = 'tahmin-satiri mb-2';
-        
-        tahmin.sonuc.forEach(harf => {
-            const harfDiv = document.createElement('span');
-            harfDiv.className = `harf ${harf.durum}`;
-            harfDiv.textContent = harf.harf;
-            tahminDiv.appendChild(harfDiv);
-        });
-        
-        tahminlerDiv.appendChild(tahminDiv);
-    });
+    // Sadece tahminleri güncelle
+    tahminSonuclariniGuncelle(data.tahminler);
     
     // Bomba bilgilerini güncelle
     if (data.bomba_aciga_cikti && data.bomba_harfi) {
@@ -329,8 +319,6 @@ socket.on('tahmin_sonucu', (data) => {
     if (data.puanlar) {
         puanTablosunuGuncelle(data.puanlar);
     }
-    
-    tahminSonuclariniGuncelle(data.tahminler);
 });
 
 socket.on('sure_guncelle', (data) => {
