@@ -208,14 +208,18 @@ function tahminSonuclariniGuncelle(tahminler) {
     const satirlar = tahminlerDiv.getElementsByClassName('tahmin-satiri');
     const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
 
+    // Eğer tahmin kutuları yoksa oluştur
+    if (!tahminlerDiv.hasChildNodes()) {
+        tahminSatirlariniOlustur();
+    }
+
     // Önceki tahminleri işle
     for (let i = 0; i < tahminler.length; i++) {
         const tahmin = tahminler[i];
         const satirDiv = satirlar[i];
-        satirDiv.classList.remove('bos'); // Kullanılan satırın solukluk efektini kaldır
-        const harfDivler = satirDiv.getElementsByClassName('harf');
+        satirDiv.classList.remove('bos');
 
-        // Mevcut tahmini göster
+        const harfDivler = satirDiv.getElementsByClassName('harf');
         for (let j = 0; j < kelimeUzunlugu; j++) {
             const harfDiv = harfDivler[j];
             harfDiv.textContent = tahmin.tahmin[j];
@@ -228,6 +232,7 @@ function tahminSonuclariniGuncelle(tahminler) {
         const sonTahmin = tahminler[tahminler.length - 1];
         for (let i = tahminler.length; i < 6; i++) {
             const satirDiv = satirlar[i];
+            satirDiv.classList.add('bos');
             const harfDivler = satirDiv.getElementsByClassName('harf');
 
             for (let j = 0; j < kelimeUzunlugu; j++) {
@@ -256,42 +261,11 @@ socket.on('oyun_durumu', (data) => {
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
     document.getElementById('kalan-sure').textContent = data.kalan_sure;
     
-    // Bomba sayacını güncelle
-    document.getElementById('bomba-sayaci').textContent = data.bomba_sayaci;
-    
-    // Bomba harflerini göster/gizle
-    if (data.bomba_harfleri && data.bomba_aciga_cikti) {
-        document.getElementById('bomba-harfi').textContent = data.bomba_harfleri.join(', ');
-    } else {
-        document.getElementById('bomba-harfi').textContent = '?';
+    // Sadece ilk kez veya tahminler boşsa kutuları oluştur
+    const tahminlerDiv = document.getElementById('tahminler');
+    if (!tahminlerDiv.hasChildNodes()) {
+        tahminSatirlariniOlustur();
     }
-    
-    // Puan tablosunu güncelle
-    if (data.puanlar) {
-        puanTablosunuGuncelle(data.puanlar);
-    }
-    
-    // En yüksek puanları güncelle
-    if (data.en_yuksek_skorlar) {
-        enYuksekPuanlariGuncelle(data.en_yuksek_skorlar);
-    }
-    
-    // İlk oyun için süre çemberini sıfırla
-    const sureProgress = document.getElementById('sure-progress');
-    if (sureProgress) {
-        sureProgress.style.transform = 'rotate(-90deg)';
-        sureProgress.style.borderColor = '#3b82f6';
-    }
-    
-    // İlk oyun için tahmin yapılabilir
-    if (data.ilk_oyun) {
-        tahminYapilabilir = true;
-    } else {
-        // Sıradaki oyuncu butonunu göster
-        document.getElementById('siradaki-oyuncu-div').style.display = 'block';
-    }
-    
-    tahminSatirlariniOlustur();
     
     // Eğer önceki tahminler varsa onları göster
     if (data.tahminler && data.tahminler.length > 0) {
@@ -300,7 +274,7 @@ socket.on('oyun_durumu', (data) => {
 });
 
 socket.on('tahmin_sonucu', (data) => {
-    // Sadece tahminleri güncelle
+    // Tahminleri güncelle
     tahminSonuclariniGuncelle(data.tahminler);
     
     // Bomba bilgilerini güncelle
