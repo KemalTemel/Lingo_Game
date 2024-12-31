@@ -75,12 +75,6 @@ body::before {
     justify-content: center;
     gap: 8px;
     margin-bottom: 8px;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-.tahmin-satiri.bos {
-    opacity: 0.5;
 }
 
 .harf {
@@ -94,40 +88,44 @@ body::before {
     text-transform: uppercase;
     border: 2px solid #d1d5db;
     background: white;
+    border-radius: 8px;
     transition: all 0.2s ease;
 }
 
-/* Boş kutu stili */
 .harf:empty {
     background: white;
     border: 2px solid #d1d5db;
 }
 
-/* Doğru harf stili */
 .harf.dogru {
     background: #22c55e;
     color: white;
     border-color: #22c55e;
 }
 
-/* Yanlış yerde olan harf stili */
 .harf.var {
     background: #eab308;
     color: white;
     border-color: #eab308;
 }
 
-/* Olmayan harf stili */
 .harf.yok {
     background: #ef4444;
     color: white;
     border-color: #ef4444;
 }
 
-/* Aktif satır efekti */
-.tahmin-satiri.aktif .harf:empty {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+.tahmin-satiri.bos {
+    opacity: 0.7;
+}
+
+#tahminler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+    min-height: 360px;
 }
 
 .harf.joker {
