@@ -182,15 +182,19 @@ function tahminSatirlariniOlustur() {
     for (let i = 0; i < 6; i++) {
         const satirDiv = document.createElement('div');
         satirDiv.className = 'tahmin-satiri mb-2';
+        if (i > 0) satirDiv.classList.add('bos'); // İlk satır hariç hepsi soluk
 
         // Her satıra kelime uzunluğu kadar kutu ekle
         for (let j = 0; j < kelimeUzunlugu; j++) {
             const harfDiv = document.createElement('div');
             harfDiv.className = 'harf';
-            // Sadece ilk harfi göster
+            
+            // İlk harfi tüm satırlarda göster
             if (j === 0) {
                 harfDiv.textContent = ilkHarf;
                 harfDiv.classList.add('dogru');
+            } else {
+                harfDiv.textContent = '';
             }
             satirDiv.appendChild(harfDiv);
         }
@@ -208,6 +212,7 @@ function tahminSonuclariniGuncelle(tahminler) {
     for (let i = 0; i < tahminler.length; i++) {
         const tahmin = tahminler[i];
         const satirDiv = satirlar[i];
+        satirDiv.classList.remove('bos'); // Kullanılan satırın solukluk efektini kaldır
         const harfDivler = satirDiv.getElementsByClassName('harf');
 
         // Mevcut tahmini göster
@@ -218,7 +223,7 @@ function tahminSonuclariniGuncelle(tahminler) {
         }
     }
 
-    // Kalan boş satırlara doğru harfleri taşı
+    // Kalan boş satırlara sadece doğru harfleri taşı
     if (tahminler.length > 0) {
         const sonTahmin = tahminler[tahminler.length - 1];
         for (let i = tahminler.length; i < 6; i++) {
