@@ -75,12 +75,17 @@ def yeni_kelime_sec(uzunluk):
     global oyun
     kelime = random.choice(kelimeler[uzunluk])['madde'].lower()
     
-    # Türkçe alfabedeki tüm harfler
-    tum_harfler = set('abcçdefgğhıijklmnoöprsştuüvyz')
+    # Türkçe alfabedeki sessiz harfler
+    sessiz_harfler = set('bcçdfgğhjklmnprsştvyz')
     
     # Kelimedeki harfleri çıkar
-    kullanilabilir_harfler = tum_harfler - set(kelime)
+    kullanilabilir_harfler = sessiz_harfler - set(kelime)
     kullanilabilir_harfler = list(kullanilabilir_harfler)
+    
+    # Eğer yeterli sayıda kullanılabilir sessiz harf yoksa, tüm sessiz harfleri kullan
+    if len(kullanilabilir_harfler) < 2:
+        kullanilabilir_harfler = list(sessiz_harfler - set(kelime))
+    
     # Her seferinde listeyi karıştır
     random.shuffle(kullanilabilir_harfler)
     
