@@ -101,10 +101,10 @@ function tahminYap() {
 }
 
 function siradakiOyuncuyaGec() {
-    socket.emit('siradaki_oyuncu_hazir');
-    document.getElementById('siradaki-oyuncu-div').style.display = 'none';
-    document.getElementById('tahmin-input').value = '';
-    tahminYapilabilir = false; // Süre başlayana kadar tahmin yapılamaz
+    socket.emit('siradaki_oyuncu');
+    const siradakiOyuncuDiv = document.getElementById('siradaki-oyuncu-div');
+    siradakiOyuncuDiv.style.display = 'none';
+    tahminYapilabilir = true; // Yeni oyuncu için tahmin yapılabilir duruma getir
 }
 
 function sureAnimasyonunuBaslat() {
@@ -629,5 +629,45 @@ document.addEventListener('click', (e) => {
     
     if (!emojiBtn && !emojiPanel && panel.style.display === 'block') {
         panel.style.display = 'none';
+    }
+});
+
+// Mevcut socket olaylarına ek olarak
+socket.on('yeni_tur', (data) => {
+    // Oyun bilgilerini güncelle
+    document.getElementById('ilk-harf').textContent = data.ilk_harf;
+    document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
+    document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
+    document.getElementById('kalan-sure').textContent = data.kalan_sure;
+    document.getElementById('tur-sayisi').textContent = data.tur_sayisi;
+
+    // Tahmin kutularını yeniden oluştur
+    tahminSatirlariniOlustur();
+
+    // Bomba bilgilerini sıfırla
+    document.getElementById('bomba-harfi').textContent = '?';
+    document.getElementById('bomba-harfi').classList.remove('tehlike');
+    
+    // Bomba sayacını güncelle
+    if (data.bomba_sayaci) {
+        document.getElementById('bomba-sayaci').textContent = data.bomba_sayaci;
+    }
+
+    // Varsa önceki patlama animasyonunu temizle
+    const patlamaDiv = document.querySelector('.patlama-animasyon');
+    if (patlamaDiv) {
+        patlamaDiv.remove();
+    }
+
+    // Sıradaki oyuncu butonunu gizle
+    const siradakiOyuncuDiv = document.getElementById('siradaki-oyuncu-div');
+    siradakiOyuncuDiv.style.display = 'none';
+
+    // Tahmin yapılabilir duruma getir
+    tahminYapilabilir = true;
+
+    // Puan tablosunu güncelle
+    if (data.puanlar) {
+        puanTablosunuGuncelle(data.puanlar);
     }
 }); 
