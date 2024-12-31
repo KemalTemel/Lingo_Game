@@ -229,14 +229,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="tahminler" class="mb-3"></div>
-                            <div class="input-group mb-3">
-                                <button class="btn btn-light emoji-btn" type="button" onclick="toggleEmojiPanel()">
-                                    😊
-                                </button>
-                                <input type="text" class="form-control" id="tahmin-input" placeholder="Tahmininizi yazın...">
-                                <button class="btn btn-primary" onclick="tahminYap()">Tahmin Et</button>
-                                <button class="btn btn-warning" id="joker-btn" onclick="jokerKullan()">Joker (40 Puan)</button>
+                            <div id="tahminler" class="mb-3">
+                                <!-- Tahmin kutuları JavaScript ile oluşturulacak -->
+                            </div>
+                            <div class="tahmin-alani">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-light emoji-btn" type="button" onclick="toggleEmojiPanel()">
+                                        😊
+                                    </button>
+                                    <input type="text" 
+                                           class="form-control" 
+                                           id="tahmin-input" 
+                                           placeholder="Tahmininizi yazın..." 
+                                           maxlength="7"
+                                           autocomplete="off"
+                                           onkeyup="this.value = this.value.toLowerCase()">
+                                    <button class="btn btn-primary" onclick="tahminYap()">Tahmin Et</button>
+                                    <button class="btn btn-warning" id="joker-btn" onclick="jokerKullan()">Joker (40 Puan)</button>
+                                </div>
                             </div>
                             <div id="siradaki-oyuncu-div" style="display: none;" class="text-center">
                                 <button class="btn btn-success" onclick="siradakiOyuncuyaGec()">
