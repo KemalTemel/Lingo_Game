@@ -324,9 +324,9 @@ def joker_kullan(data):
         emit('hata', {'mesaj': 'Sıra sizde değil!'})
         return
     
-    # Puan kontrolü
-    if oyun['puanlar'][oyuncu] < 100:
-        emit('hata', {'mesaj': 'Joker kullanmak için 100 puana ihtiyacınız var!'})
+    # Puan kontrolünü 40'a düşür
+    if oyun['puanlar'][oyuncu] < 40:
+        emit('hata', {'mesaj': 'Joker kullanmak için 40 puana ihtiyacınız var!'})
         return
     
     dogru_kelime = oyun['kelime']
@@ -349,8 +349,8 @@ def joker_kullan(data):
     # Rastgele bir harf seç
     secilen_index, secilen_harf = random.choice(acilmamis_harfler)
     
-    # Puanı düş
-    oyun['puanlar'][oyuncu] -= 100
+    # Puanı düş (40 puan)
+    oyun['puanlar'][oyuncu] -= 40
     
     # Joker sonucunu gönder
     emit('joker_sonucu', {
