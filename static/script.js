@@ -182,17 +182,15 @@ function tahminSatirlariniOlustur() {
     for (let i = 0; i < 6; i++) {
         const satirDiv = document.createElement('div');
         satirDiv.className = 'tahmin-satiri mb-2';
-        satirDiv.setAttribute('data-sira', i);
 
         // Her satıra kelime uzunluğu kadar kutu ekle
         for (let j = 0; j < kelimeUzunlugu; j++) {
-            const harfDiv = document.createElement('span');
+            const harfDiv = document.createElement('div');
             harfDiv.className = 'harf';
-            if (j === 0) { // İlk harf her zaman görünür
+            // Sadece ilk harfi göster
+            if (j === 0) {
                 harfDiv.textContent = ilkHarf;
                 harfDiv.classList.add('dogru');
-            } else {
-                harfDiv.textContent = '';
             }
             satirDiv.appendChild(harfDiv);
         }
