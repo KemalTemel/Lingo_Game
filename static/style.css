@@ -75,6 +75,12 @@ body::before {
     justify-content: center;
     gap: 8px;
     margin-bottom: 8px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.tahmin-satiri.bos {
+    opacity: 0.5;
 }
 
 .harf {
@@ -834,4 +840,18 @@ body::before {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.tahmin-alani {
+    position: relative;
+    margin-top: 20px;
+}
+
+#tahminler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    min-height: 360px; /* 6 satır için minimum yükseklik */
 } 
