@@ -72,57 +72,47 @@ body::before {
 
 .tahmin-satiri {
     display: flex;
-    gap: 8px;
-    margin-bottom: 15px;
     justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
 }
 
 .harf {
-    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 12px;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    animation: pop 0.3s ease-in-out;
-}
-
-@keyframes pop {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+    background: #fff;
 }
 
 .harf.dogru {
-    background-color: #22c55e;
+    background: #22c55e;
     color: white;
     border-color: #16a34a;
 }
 
 .harf.var {
-    background-color: #eab308;
+    background: #eab308;
     color: white;
-    box-shadow: 0 4px 12px rgba(234, 179, 8, 0.3);
+    border-color: #ca8a04;
 }
 
 .harf.yok {
-    background-color: #ef4444;
+    background: #ef4444;
     color: white;
-    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+    border-color: #dc2626;
+}
+
+/* Boş kutu stili */
+.harf:empty {
+    background: #f3f4f6;
+    border-color: #d1d5db;
 }
 
 .harf.joker {
