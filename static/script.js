@@ -171,6 +171,76 @@ function enYuksekPuanlariGuncelle(skorlar) {
     });
 }
 
+// Boş tahmin satırlarını oluştur
+function tahminSatirlariniOlustur() {
+    const tahminlerDiv = document.getElementById('tahminler');
+    tahminlerDiv.innerHTML = '';
+    const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
+    const ilkHarf = document.getElementById('ilk-harf').textContent;
+
+    // 6 satır oluştur
+    for (let i = 0; i < 6; i++) {
+        const satirDiv = document.createElement('div');
+        satirDiv.className = 'tahmin-satiri mb-2';
+        satirDiv.setAttribute('data-sira', i);
+
+        // Her satıra kelime uzunluğu kadar kutu ekle
+        for (let j = 0; j < kelimeUzunlugu; j++) {
+            const harfDiv = document.createElement('span');
+            harfDiv.className = 'harf';
+            if (j === 0) { // İlk harf her zaman görünür
+                harfDiv.textContent = ilkHarf;
+                harfDiv.classList.add('dogru');
+            } else {
+                harfDiv.textContent = '';
+            }
+            satirDiv.appendChild(harfDiv);
+        }
+        tahminlerDiv.appendChild(satirDiv);
+    }
+}
+
+// Tahmin sonuçlarını güncelle
+function tahminSonuclariniGuncelle(tahminler) {
+    const tahminlerDiv = document.getElementById('tahminler');
+    const satirlar = tahminlerDiv.getElementsByClassName('tahmin-satiri');
+    const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
+
+    // Önceki tahminleri işle
+    for (let i = 0; i < tahminler.length; i++) {
+        const tahmin = tahminler[i];
+        const satirDiv = satirlar[i];
+        const harfDivler = satirDiv.getElementsByClassName('harf');
+
+        // Mevcut tahmini göster
+        for (let j = 0; j < kelimeUzunlugu; j++) {
+            const harfDiv = harfDivler[j];
+            harfDiv.textContent = tahmin.tahmin[j];
+            harfDiv.className = `harf ${tahmin.sonuc[j].durum}`;
+        }
+    }
+
+    // Kalan boş satırlara doğru harfleri taşı
+    if (tahminler.length > 0) {
+        const sonTahmin = tahminler[tahminler.length - 1];
+        for (let i = tahminler.length; i < 6; i++) {
+            const satirDiv = satirlar[i];
+            const harfDivler = satirDiv.getElementsByClassName('harf');
+
+            for (let j = 0; j < kelimeUzunlugu; j++) {
+                const harfDiv = harfDivler[j];
+                if (j === 0 || (sonTahmin.sonuc[j].durum === 'dogru')) {
+                    harfDiv.textContent = sonTahmin.tahmin[j];
+                    harfDiv.classList.add('dogru');
+                } else {
+                    harfDiv.textContent = '';
+                    harfDiv.className = 'harf';
+                }
+            }
+        }
+    }
+}
+
 // Socket olayları
 socket.on('oyun_durumu', (data) => {
     // Giriş ekranını gizle, oyun ekranını göster
@@ -217,6 +287,8 @@ socket.on('oyun_durumu', (data) => {
         // Sıradaki oyuncu butonunu göster
         document.getElementById('siradaki-oyuncu-div').style.display = 'block';
     }
+    
+    tahminSatirlariniOlustur();
 });
 
 socket.on('tahmin_sonucu', (data) => {
@@ -254,6 +326,8 @@ socket.on('tahmin_sonucu', (data) => {
     if (data.puanlar) {
         puanTablosunuGuncelle(data.puanlar);
     }
+    
+    tahminSonuclariniGuncelle(data.tahminler);
 });
 
 socket.on('sure_guncelle', (data) => {
