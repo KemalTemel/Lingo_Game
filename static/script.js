@@ -514,4 +514,56 @@ socket.on('bomba_patladi', async (data) => {
             </button>
         `;
     }, 600);
+});
+
+// Emoji panel kontrolü
+function toggleEmojiPanel() {
+    const panel = document.getElementById('emoji-panel');
+    const button = document.querySelector('.emoji-btn');
+    
+    // Panel pozisyonunu emoji butonuna göre ayarla
+    if (panel.style.display === 'none') {
+        const buttonRect = button.getBoundingClientRect();
+        panel.style.position = 'absolute';
+        panel.style.left = buttonRect.left + 'px';
+        panel.style.top = (buttonRect.top - 220) + 'px';
+    }
+    
+    panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+}
+
+// Emoji gönderme
+function sendEmoji(emoji) {
+    const aktifOyuncu = document.getElementById('aktif-oyuncu').textContent;
+    socket.emit('emoji_gonder', {
+        oyuncu: aktifOyuncu,
+        emoji: emoji
+    });
+    toggleEmojiPanel(); // Paneli kapat
+}
+
+// Emoji alma
+socket.on('emoji_alindi', (data) => {
+    const emojiMessages = document.getElementById('emoji-messages');
+    const message = document.createElement('div');
+    message.className = 'emoji-message';
+    message.innerHTML = `<strong>${data.oyuncu}:</strong> ${data.emoji}`;
+    
+    emojiMessages.appendChild(message);
+    
+    // 3 saniye sonra mesajı kaldır
+    setTimeout(() => {
+        message.remove();
+    }, 3000);
+});
+
+// Sayfa tıklaması ile emoji panelini kapat
+document.addEventListener('click', (e) => {
+    const panel = document.getElementById('emoji-panel');
+    const emojiBtn = e.target.closest('.emoji-btn');
+    const emojiPanel = e.target.closest('.emoji-panel');
+    
+    if (!emojiBtn && !emojiPanel && panel.style.display === 'block') {
+        panel.style.display = 'none';
+    }
 }); 
