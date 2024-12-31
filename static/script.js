@@ -174,7 +174,7 @@ function enYuksekPuanlariGuncelle(skorlar) {
 // Boş tahmin satırlarını oluştur
 function tahminSatirlariniOlustur() {
     const tahminlerDiv = document.getElementById('tahminler');
-    tahminlerDiv.innerHTML = '';
+    tahminlerDiv.innerHTML = ''; // Önce mevcut tahminleri temizle
     const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
     const ilkHarf = document.getElementById('ilk-harf').textContent;
 
@@ -182,7 +182,7 @@ function tahminSatirlariniOlustur() {
     for (let i = 0; i < 6; i++) {
         const satirDiv = document.createElement('div');
         satirDiv.className = 'tahmin-satiri mb-2';
-        if (i > 0) satirDiv.classList.add('bos'); // İlk satır hariç hepsi soluk
+        if (i > 0) satirDiv.classList.add('bos');
 
         // Her satıra kelime uzunluğu kadar kutu ekle
         for (let j = 0; j < kelimeUzunlugu; j++) {
@@ -260,16 +260,29 @@ socket.on('oyun_durumu', (data) => {
     document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
     document.getElementById('kalan-sure').textContent = data.kalan_sure;
+    document.getElementById('tur-sayisi').textContent = data.tur_sayisi;
+
+    // Tahmin kutularını oluştur
+    tahminSatirlariniOlustur();
+
+    // Bomba sayacını güncelle
+    document.getElementById('bomba-sayaci').textContent = data.bomba_sayaci;
     
-    // Sadece ilk kez veya tahminler boşsa kutuları oluştur
-    const tahminlerDiv = document.getElementById('tahminler');
-    if (!tahminlerDiv.hasChildNodes()) {
-        tahminSatirlariniOlustur();
+    // Bomba harflerini göster/gizle
+    if (data.bomba_harfleri && data.bomba_aciga_cikti) {
+        document.getElementById('bomba-harfi').textContent = data.bomba_harfleri.join(', ');
+    } else {
+        document.getElementById('bomba-harfi').textContent = '?';
     }
     
-    // Eğer önceki tahminler varsa onları göster
-    if (data.tahminler && data.tahminler.length > 0) {
-        tahminSonuclariniGuncelle(data.tahminler);
+    // Puan tablosunu güncelle
+    if (data.puanlar) {
+        puanTablosunuGuncelle(data.puanlar);
+    }
+    
+    // En yüksek puanları güncelle
+    if (data.en_yuksek_skorlar) {
+        enYuksekPuanlariGuncelle(data.en_yuksek_skorlar);
     }
 });
 
@@ -282,11 +295,6 @@ socket.on('tahmin_sonucu', (data) => {
         document.getElementById('bomba-harfi').textContent = data.bomba_harfi;
         document.getElementById('bomba-harfi').classList.add('tehlike');
         sesOynat('uyari');
-    } else {
-        document.getElementById('bomba-sayaci').textContent = data.bomba_sayaci;
-        if (data.bomba_sayaci <= 3) {
-            sesOynat('tik');
-        }
     }
 
     // Puan tablosunu güncelle
