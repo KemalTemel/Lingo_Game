@@ -359,6 +359,17 @@ def joker_kullan(data):
         'puanlar': oyun['puanlar']
     }, broadcast=True)
 
+@socketio.on('emoji_gonder')
+def emoji_gonder(data):
+    oyuncu = data['oyuncu']
+    emoji = data['emoji']
+    
+    # Emojiyi tüm oyunculara gönder
+    emit('emoji_alindi', {
+        'oyuncu': oyuncu,
+        'emoji': emoji
+    }, broadcast=True)
+
 @app.route('/')
 def index():
     return render_template('index.html')
