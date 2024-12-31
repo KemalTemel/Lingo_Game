@@ -970,4 +970,20 @@ body::before {
     #tahminler {
         min-height: 300px;
     }
+
+    /* Boş satırlardaki doğru harfler için özel stil */
+.tahmin-satiri.bos .harf.dogru {
+    background: #22c55e;
+    color: #1a1a1a;  /* Koyu renk metin */
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    font-size: 1.9rem;
+}
+
+/* İlk harf için özel stil (beyaz renk kalmalı) */
+.tahmin-satiri.bos .harf:first-child {
+    opacity: 1;
+    background: #22c55e;
+    color: white !important; /* İlk harf her zaman beyaz kalacak */
+}
 } 
