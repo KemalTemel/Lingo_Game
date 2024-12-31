@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <div class="game-header">
+                <h1 class="game-title">
+                    <span class="lingo-text" data-text="Lingo">Lingo</span>
+                    <span class="lingo-emoji">🎯</span>
+                </h1>
+                <button class="ses-kontrol" onclick="sesiAcKapat()">
+                    <span class="ses-acik">🔊</span>
+                    <span class="ses-kapali" style="display: none;">🔇</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="card-title mb-0">Kelime: <span id="ilk-harf"></span>...</h5>
+                    <div class="oyun-bilgileri">
+                        <span class="badge bg-primary me-2">Seviye: <span id="kelime-uzunlugu">4</span> Harf</span>
+                        <span class="badge bg-info me-2">Tur: <span id="tur-sayisi">1</span>/2</span>
+                    </div>
+                </div>
+                <div class="alert alert-info d-flex justify-content-between align-items-center">
+                    <div>Sıra: <strong><span id="aktif-oyuncu"></span></strong></div>
+                    <div class="sure-container">
+                        <div class="sure-daire"></div>
+                        <div id="sure-progress" class="sure-progress"></div>
+                        <div class="sure-text">
+                            <span id="kalan-sure">90</span>s
+                        </div>
+                    </div>
+                </div>
+                <div id="tahminler" class="mb-3"></div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="tahmin-input" placeholder="Tahmininizi yazın...">
+                    <button class="btn btn-primary" onclick="tahminYap()">Tahmin Et</button>
+                </div>
+                <div id="siradaki-oyuncu-div" style="display: none;" class="text-center">
+                    <button class="btn btn-success" onclick="siradakiOyuncuyaGec()">
+                        Sıradaki Oyuncuya Geç
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='oyun.js') }}"></script>
+</body>
+</html> 
