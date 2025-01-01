@@ -87,17 +87,11 @@ body::before {
     justify-content: center;
     font-size: 1.8rem;
     font-weight: bold;
-    text-transform: none;
+    text-transform: uppercase;
     border: 2px solid #d1d5db;
     background: white;
     border-radius: 8px;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.harf.bos {
-    background: #f3f4f6;
-    color: #9ca3af;
 }
 
 .harf:empty {
@@ -280,22 +274,11 @@ body::before {
     box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
 }
 
-.tahmin-input-container {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-    width: 100%;
-    max-width: 600px;
-    flex-wrap: wrap;
-}
-
 #tahmin-input {
-    flex: 1;
-    min-width: 200px;
-    padding: 15px;
-    font-size: 1.2rem;
-    border: 2px solid #e2e8f0;
     border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
     transition: all 0.2s ease;
 }
 
@@ -303,20 +286,6 @@ body::before {
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
     outline: none;
-}
-
-.tahmin-butonlar {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.tahmin-butonlar .btn {
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    white-space: nowrap;
-    flex: 1;
-    min-width: 120px;
 }
 
 .btn {
@@ -938,7 +907,7 @@ body::before {
     justify-content: center;
     font-size: 1.8rem;
     font-weight: bold;
-    text-transform: none;
+    text-transform: uppercase;
     border: 2px solid #d1d5db;
     background: white;
     border-radius: 8px;
@@ -988,9 +957,9 @@ body::before {
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .harf {
-        width: 40px;
-        height: 40px;
-        font-size: 1.4rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
     }
 
     .tahmin-container {
@@ -1000,42 +969,5 @@ body::before {
 
     #tahminler {
         min-height: 300px;
-    }
-
-    /* Boş satırlardaki doğru harfler için özel stil */
-.tahmin-satiri.bos .harf.dogru {
-    background: #22c55e;
-    color: #1a1a1a;  /* Koyu renk metin */
-    font-weight: 700;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
-    font-size: 1.9rem;
-}
-
-/* İlk harf için özel stil (beyaz renk kalmalı) */
-.tahmin-satiri.bos .harf:first-child {
-    opacity: 1;
-    background: #22c55e;
-    color: white !important; /* İlk harf her zaman beyaz kalacak */
-}
-
-    .tahmin-input-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    #tahmin-input {
-        width: 100%;
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    .tahmin-butonlar {
-        width: 100%;
-        justify-content: stretch;
-    }
-
-    .tahmin-butonlar .btn {
-        width: 100%;
-        margin: 5px 0;
     }
 } 
