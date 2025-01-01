@@ -280,10 +280,12 @@ body::before {
     margin: 20px 0;
     width: 100%;
     max-width: 600px;
+    flex-wrap: wrap;
 }
 
 #tahmin-input {
     flex: 1;
+    min-width: 200px;
     padding: 15px;
     font-size: 1.2rem;
     border: 2px solid #e2e8f0;
@@ -300,11 +302,15 @@ body::before {
 .tahmin-butonlar {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .tahmin-butonlar .btn {
     padding: 12px 24px;
     font-size: 1.1rem;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 120px;
 }
 
 .btn {
@@ -976,9 +982,9 @@ body::before {
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .harf {
-        width: 45px;
-        height: 45px;
-        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
     }
 
     .tahmin-container {
@@ -1005,4 +1011,25 @@ body::before {
     background: #22c55e;
     color: white !important; /* İlk harf her zaman beyaz kalacak */
 }
+
+    .tahmin-input-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #tahmin-input {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .tahmin-butonlar {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .tahmin-butonlar .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
 } 
