@@ -1,8 +1,5 @@
 [
-  {
-    "id": 12,
-    "madde": "Duma"
-  },
+  
   {
     "id": 37,
     "madde": "düet"
@@ -15,45 +12,18 @@
     "id": 207,
     "madde": "duyu"
   },
-  {
-    "id": 268,
-    "madde": "düğü"
-  },
-  {
-    "id": 434,
-    "madde": "dürü"
-  },
-  {
-    "id": 435,
-    "madde": "dürü"
-  },
-  {
-    "id": 450,
-    "madde": "düse"
-  },
+
   {
     "id": 553,
     "madde": "düve"
-  },
-  {
-    "id": 571,
-    "madde": "düze"
   },
   {
     "id": 619,
     "madde": "norm"
   },
   {
-    "id": 660,
-    "madde": "e, E"
-  },
-  {
     "id": 662,
     "madde": "ebat"
-  },
-  {
-    "id": 687,
-    "madde": "ebet"
   },
   {
     "id": 694,
@@ -84,10 +54,6 @@
     "madde": "eder"
   },
   {
-    "id": 775,
-    "madde": "edik"
-  },
-  {
     "id": 790,
     "madde": "edim"
   },
@@ -96,40 +62,12 @@
     "madde": "edip"
   },
   {
-    "id": 804,
-    "madde": "edna"
-  },
-  {
     "id": 882,
     "madde": "ağız"
   },
   {
-    "id": 952,
-    "madde": "ağlı"
-  },
-  {
-    "id": 953,
-    "madde": "ağma"
-  },
-  {
     "id": 961,
     "madde": "ağrı"
-  },
-  {
-    "id": 976,
-    "madde": "ağsı"
-  },
-  {
-    "id": 1014,
-    "madde": "ahar"
-  },
-  {
-    "id": 1026,
-    "madde": "ahçı"
-  },
-  {
-    "id": 1029,
-    "madde": "ahdî"
   },
   {
     "id": 1052,
@@ -140,48 +78,12 @@
     "madde": "ahir"
   },
   {
-    "id": 1065,
-    "madde": "ahit"
-  },
-  {
-    "id": 1071,
-    "madde": "ahiz"
-  },
-  {
-    "id": 1125,
-    "madde": "ahşa"
-  },
-  {
     "id": 1141,
     "madde": "aile"
   },
   {
     "id": 1161,
     "madde": "ajan"
-  },
-  {
-    "id": 1166,
-    "madde": "ajur"
-  },
-  {
-    "id": 1185,
-    "madde": "akaç"
-  },
-  {
-    "id": 1199,
-    "madde": "akak"
-  },
-  {
-    "id": 1205,
-    "madde": "akar"
-  },
-  {
-    "id": 1237,
-    "madde": "akça"
-  },
-  {
-    "id": 1238,
-    "madde": "akça"
   },
   {
     "id": 1246,
@@ -212,14 +114,6 @@
     "madde": "akik"
   },
   {
-    "id": 1466,
-    "madde": "akil"
-  },
-  {
-    "id": 1470,
-    "madde": "akim"
-  },
-  {
     "id": 1472,
     "madde": "akis"
   },
@@ -232,10 +126,6 @@
     "madde": "akit"
   },
   {
-    "id": 1500,
-    "madde": "aklı"
-  },
-  {
     "id": 1506,
     "madde": "akli"
   },
@@ -244,20 +134,8 @@
     "madde": "akma"
   },
   {
-    "id": 1578,
-    "madde": "akse"
-  },
-  {
     "id": 1597,
     "madde": "aksi"
-  },
-  {
-    "id": 1619,
-    "madde": "aksu"
-  },
-  {
-    "id": 1709,
-    "madde": "akur"
   },
   {
     "id": 1711,
