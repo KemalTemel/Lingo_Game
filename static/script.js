@@ -308,36 +308,12 @@ socket.on('tahmin_sonucu', (data) => {
         const satir = satirlar[bosIndex];
         const harfKutulari = satir.getElementsByClassName('harf');
         
-        // Önceki tahminlerdeki doğru harfleri koru
-        const dogruHarfler = new Set();
-        for (let i = 0; i < bosIndex; i++) {
-            const oncekiSatir = satirlar[i].getElementsByClassName('harf');
-            for (let j = 0; j < oncekiSatir.length; j++) {
-                if (oncekiSatir[j].classList.contains('dogru')) {
-                    dogruHarfler.add(j);
-                }
-            }
-        }
-
         data.sonuc.forEach((sonuc, index) => {
             if (index < harfKutulari.length) {
                 const harfKutusu = harfKutulari[index];
-                // Türkçe karakter düzeltmeleri
-                let harf = sonuc.harf.toLocaleUpperCase('tr-TR');
-                harfKutusu.textContent = harf;
-                
-                if (bosIndex === 0) {
-                    // İlk tahmin satırı için normal görünüm
-                    harfKutusu.className = `harf ${sonuc.durum}`;
-                } else {
-                    // Diğer satırlar için sadece doğru harfleri göster
-                    if (sonuc.durum === 'dogru' || dogruHarfler.has(index)) {
-                        harfKutusu.className = 'harf dogru';
-                    } else {
-                        harfKutusu.className = 'harf bos';
-                        harfKutusu.textContent = index === 0 ? harf : '';
-                    }
-                }
+                // Sadece Türkçe karakter düzeltmesi ekleyelim
+                harfKutusu.textContent = sonuc.harf.toLocaleUpperCase('tr-TR');
+                harfKutusu.className = `harf ${sonuc.durum}`;
             }
         });
     }
@@ -786,7 +762,7 @@ socket.on('oda_durumu', (data) => {
     }
 }); 
 
-// Türkçe karakter düzeltmesi için input kontrolü
+// Input için Türkçe karakter düzeltmesi
 document.getElementById('tahmin-input').addEventListener('input', function(e) {
     this.value = this.value.toLocaleLowerCase('tr-TR');
 });
