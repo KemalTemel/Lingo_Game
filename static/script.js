@@ -87,24 +87,32 @@ function oyunuBaslat() {
 }
 
 function tahminYap() {
-    if (!tahminYapilabilir) return;
+    if (!tahminYapilabilir) {
+        console.log('Tahmin yapılamaz durumda');
+        return;
+    }
     
-    const tahmin = document.getElementById('tahmin-input').value.trim().toLowerCase();
+    const tahminInput = document.getElementById('tahmin-input');
+    const tahmin = tahminInput.value.trim().toLowerCase();
     if (!tahmin) return;
+    
+    const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
+    if (tahmin.length !== kelimeUzunlugu) {
+        alert(`Kelime ${kelimeUzunlugu} harfli olmalı!`);
+        return;
+    }
     
     socket.emit('tahmin_yap', {
         tahmin: tahmin,
         oyuncu: document.getElementById('aktif-oyuncu').textContent
     });
     
-    document.getElementById('tahmin-input').value = '';
+    tahminInput.value = '';
+    tahminInput.focus();
 }
 
 function siradakiOyuncuyaGec() {
     socket.emit('siradaki_oyuncu');
-    const siradakiOyuncuDiv = document.getElementById('siradaki-oyuncu-div');
-    siradakiOyuncuDiv.style.display = 'none';
-    tahminYapilabilir = true;
     
     // Önceki tahminleri ve animasyonları temizle
     const tahminlerDiv = document.getElementById('tahminler');
@@ -117,6 +125,15 @@ function siradakiOyuncuyaGec() {
     if (basarisizDiv) basarisizDiv.remove();
     if (basariDiv) basariDiv.remove();
     if (sureBittiDiv) sureBittiDiv.remove();
+    
+    // Sıradaki oyuncu butonunu gizle
+    const siradakiOyuncuDiv = document.getElementById('siradaki-oyuncu-div');
+    if (siradakiOyuncuDiv) {
+        siradakiOyuncuDiv.style.display = 'none';
+    }
+    
+    // Tahmin yapılabilir duruma getir
+    tahminYapilabilir = true;
 }
 
 function sureAnimasyonunuBaslat() {
@@ -484,16 +501,7 @@ socket.on('siradaki_oyuncu', (data) => {
     }
     
     // Yeni tahmin satırlarını oluştur
-    setTimeout(() => {
-        tahminSatirlariniOlustur();
-        
-        // Tahmin kutularının görünürlüğünü kontrol et
-        const tahminSatirlari = document.getElementsByClassName('tahmin-satiri');
-        if (tahminSatirlari.length === 0) {
-            console.error('Tahmin satırları oluşturulamadı!');
-            tahminSatirlariniOlustur(); // Tekrar dene
-        }
-    }, 100);
+    tahminSatirlariniOlustur();
     
     // Süre çemberini sıfırla
     const sureProgress = document.getElementById('sure-progress');
@@ -514,6 +522,12 @@ socket.on('siradaki_oyuncu', (data) => {
     
     // Input alanına fokuslan
     document.getElementById('tahmin-input').focus();
+    
+    // Sıradaki oyuncu butonunu gizle
+    const siradakiOyuncuDiv = document.getElementById('siradaki-oyuncu-div');
+    if (siradakiOyuncuDiv) {
+        siradakiOyuncuDiv.style.display = 'none';
+    }
 });
 
 socket.on('oyun_bitti', (data) => {
