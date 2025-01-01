@@ -188,24 +188,32 @@ def tahmin_yap(data):
         'oyuncu': oyuncu
     }, room=oda_id)
 
-    # Kelime doğru tahmin edildiyse
-    if tahmin == dogru_kelime:
-        # Oyuncuya puan ver ve sıradaki oyuncuya geç
-        oyun['puanlar'][oyuncu] = oyun['puanlar'].get(oyuncu, 0) + 100
-        emit('oyun_kazanildi', {
-            'kelime': dogru_kelime,
-            'oyuncu': oyuncu,
-            'puanlar': oyun['puanlar']
-        }, room=oda_id)
-    else:
+    # Kelime doğru tahmin edildiyse veya 6 tahmin yapıldıysa
+    if tahmin == dogru_kelime or len(oyun['tahminler']) >= 6:
+        # Oyuncuya puan ver
+        if tahmin == dogru_kelime:
+            oyun['puanlar'][oyuncu] = oyun['puanlar'].get(oyuncu, 0) + 100
+        
         # Sıradaki oyuncuya geç
         simdiki_index = oyun['oyuncular'].index(oyun['aktif_oyuncu'])
         sonraki_index = (simdiki_index + 1) % len(oyun['oyuncular'])
         oyun['aktif_oyuncu'] = oyun['oyuncular'][sonraki_index]
+        oyun['tahminler'] = []  # Tahminleri sıfırla
+        oyun['kalan_sure'] = SURE_SINIRI
+        
+        # Yeni kelime seç
+        kelime, bomba_harfleri = yeni_kelime_sec(4)
+        oyun['kelime'] = kelime
+        oyun['bomba_harfleri'] = bomba_harfleri
         
         emit('siradaki_oyuncu', {
-            'aktif_oyuncu': oyun['aktif_oyuncu']
+            'aktif_oyuncu': oyun['aktif_oyuncu'],
+            'ilk_harf': kelime[0],
+            'kelime_uzunlugu': 4,
+            'kalan_sure': SURE_SINIRI
         }, room=oda_id)
+        
+        timer_baslat(oda_id)
 
 @socketio.on('siradaki_oyuncu')
 def siradaki_oyuncuya_gec():
