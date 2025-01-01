@@ -288,17 +288,28 @@ socket.on('oyun_durumu', (data) => {
 
 socket.on('tahmin_sonucu', (data) => {
     const tahminler = document.getElementById('tahminler');
-    const yeniTahmin = document.createElement('div');
-    yeniTahmin.className = 'tahmin-satiri';
+    const satirlar = tahminler.getElementsByClassName('tahmin-satiri');
+    let bosIndex = -1;
     
-    data.sonuc.forEach(sonuc => {
-        const harfDiv = document.createElement('div');
-        harfDiv.className = `harf ${sonuc.durum}`;
-        harfDiv.textContent = sonuc.harf;
-        yeniTahmin.appendChild(harfDiv);
-    });
+    // İlk boş satırı bul
+    for (let i = 0; i < satirlar.length; i++) {
+        if (!satirlar[i].hasChildNodes() || satirlar[i].children.length === 0) {
+            bosIndex = i;
+            break;
+        }
+    }
     
-    tahminler.appendChild(yeniTahmin);
+    if (bosIndex !== -1) {
+        const satir = satirlar[bosIndex];
+        satir.innerHTML = ''; // Satırı temizle
+        
+        data.sonuc.forEach(sonuc => {
+            const harfDiv = document.createElement('div');
+            harfDiv.className = `harf ${sonuc.durum}`;
+            harfDiv.textContent = sonuc.harf;
+            satir.appendChild(harfDiv);
+        });
+    }
 });
 
 socket.on('sure_guncelle', (data) => {
@@ -437,6 +448,7 @@ socket.on('siradaki_oyuncu', (data) => {
         tahminBtn.disabled = false;
         jokerBtn.disabled = false;
         tahminInput.placeholder = 'Tahmininizi yazın...';
+        tahminInput.focus(); // Otomatik olarak input'a odaklan
     } else {
         tahminInput.disabled = true;
         tahminBtn.disabled = true;
