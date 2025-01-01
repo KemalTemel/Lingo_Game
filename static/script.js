@@ -144,6 +144,7 @@ function sureAnimasyonunuBaslat() {
         sureProgress.offsetHeight; // Reflow
         
         // Yeni animasyonu başlat
+        sureProgress.style.animation = 'sure-animasyon 90s linear';
         sureProgress.style.transform = 'rotate(-90deg)';
         sureProgress.style.borderColor = '#3b82f6'; // Mavi
     }
@@ -496,19 +497,13 @@ socket.on('siradaki_oyuncu', (data) => {
     
     // Önceki tahminleri ve animasyonları temizle
     const tahminlerDiv = document.getElementById('tahminler');
-    while (tahminlerDiv.firstChild) {
-        tahminlerDiv.removeChild(tahminlerDiv.firstChild);
-    }
+    tahminlerDiv.innerHTML = '';
     
     // Yeni tahmin satırlarını oluştur
     tahminSatirlariniOlustur();
     
-    // Süre çemberini sıfırla
-    const sureProgress = document.getElementById('sure-progress');
-    if (sureProgress) {
-        sureProgress.style.transform = 'rotate(-90deg)';
-        sureProgress.style.borderColor = '#3b82f6';
-    }
+    // Süre çemberini sıfırla ve yeniden başlat
+    sureAnimasyonunuBaslat();
     
     // Bomba bilgilerini sıfırla
     const bombaHarfiElement = document.getElementById('bomba-harfi');
