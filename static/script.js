@@ -2,6 +2,7 @@ const socket = io();
 const SURE_SINIRI = 90; // saniye
 let sureAnimasyonu = null;
 let tahminYapilabilir = true;
+let aktifOdaId = null;
 
 // Ses efektleri
 const sesler = {
@@ -669,4 +670,37 @@ socket.on('yeni_tur', (data) => {
     if (data.puanlar) {
         puanTablosunuGuncelle(data.puanlar);
     }
+});
+
+function yeniOdaOlustur() {
+    const oyuncuAdi = document.getElementById('oyuncu-adi').value;
+    if (!oyuncuAdi) {
+        alert('Lütfen önce oyuncu adınızı girin!');
+        return;
+    }
+    socket.emit('odaya_katil', { oyuncu: oyuncuAdi });
+}
+
+function odayaKatilGoster() {
+    document.getElementById('oda-katil-form').style.display = 'block';
+}
+
+function odayaKatil() {
+    const oyuncuAdi = document.getElementById('oyuncu-adi').value;
+    const odaId = document.getElementById('oda-id-input').value;
+    if (!oyuncuAdi || !odaId) {
+        alert('Lütfen oyuncu adı ve oda ID girin!');
+        return;
+    }
+    socket.emit('odaya_katil', { oyuncu: oyuncuAdi, oda_id: odaId });
+}
+
+socket.on('oda_durumu', (data) => {
+    aktifOdaId = data.oda_id;
+    document.getElementById('oda-bilgisi').textContent = `Oda ID: ${data.oda_id}`;
+    // Oyuncu listesini güncelle
+    const oyuncuListesi = document.getElementById('oyuncu-listesi');
+    oyuncuListesi.innerHTML = data.oyuncular.map(oyuncu => 
+        `<div class="oyuncu-item">${oyuncu}</div>`
+    ).join('');
 }); 
