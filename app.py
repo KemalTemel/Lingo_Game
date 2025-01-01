@@ -468,6 +468,30 @@ def siradaki_oyuncuya_gec():
 
     oyun['aktif_oyuncu'] = oyun['oyuncular'][sonraki_index]
 
+    
+
+    # Tur kontrolü ve kelime uzunluğu güncelleme
+
+    if sonraki_index == 0:  # Tüm oyuncular oynadığında
+
+        oyun['tur_sayisi'] += 1
+
+        if oyun['tur_sayisi'] >= 2:  # Her 2 turda bir kelime uzunluğu artar
+
+            oyun['kelime_uzunlugu'] = min(oyun['kelime_uzunlugu'] + 1, 7)
+
+            oyun['tur_sayisi'] = 0
+
+            if oyun['kelime_uzunlugu'] > 7:
+
+                oyun['aktif'] = False
+
+                socketio.emit('oyun_bitti', {'puanlar': oyun['puanlar']})
+
+                return
+
+    
+
     # Süreyi sıfırla ve yeni zamanlayıcıyı başlat
 
     oyun['kalan_sure'] = SURE_SINIRI
@@ -475,6 +499,8 @@ def siradaki_oyuncuya_gec():
     aktif_timer = Timer(1.0, sure_kontrolu)
 
     aktif_timer.start()
+
+    
 
     # Yeni kelime seç
 
@@ -490,7 +516,7 @@ def siradaki_oyuncuya_gec():
 
     oyun['tahminler'] = []
 
-    oyun['tur_sayisi'] += 1
+    
 
     # Oyun durumunu güncelle ve yayınla
 
@@ -508,7 +534,9 @@ def siradaki_oyuncuya_gec():
 
         'ilk_oyun': False,
 
-        'bomba_sayaci': 3
+        'bomba_sayaci': 3,
+
+        'tur_sayisi': oyun['tur_sayisi']
 
     }, broadcast=True)
 
