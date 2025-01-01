@@ -82,6 +82,13 @@ function oyunuBaslat() {
 function tahminYap() {
     const tahminInput = document.getElementById('tahmin-input');
     const tahmin = tahminInput.value.trim().toLowerCase();
+    const aktifOyuncu = document.getElementById('aktif-oyuncu').textContent;
+    const benimAdim = document.getElementById('oyuncu-adi').value;
+    
+    if (aktifOyuncu !== benimAdim) {
+        alert('Sıra sizde değil!');
+        return;
+    }
     
     if (!tahmin) {
         alert('Lütfen bir tahmin girin!');
@@ -91,7 +98,7 @@ function tahminYap() {
     socket.emit('tahmin_yap', {
         tahmin: tahmin,
         oda_id: aktifOdaId,
-        oyuncu: document.getElementById('oyuncu-adi').value
+        oyuncu: benimAdim
     });
 
     tahminInput.value = '';
