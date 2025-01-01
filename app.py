@@ -230,25 +230,11 @@ def oyun_baslat(data):
 
     # Bağlı kullanıcı sayısını kontrol et
 
-    if len(bagli_kullanicilar) < 2:
+    if bagli_kullanicilar < 2:
 
-        emit('hata', {'mesaj': f'Oyun için yeterli bağlantı yok! Bağlı kullanıcı: {len(bagli_kullanicilar)}'})
+        emit('hata', {'mesaj': f'Oyun için yeterli bağlantı yok! Bağlı kullanıcı: {bagli_kullanicilar}'})
 
         return
-
-    
-
-    # Bağlı kullanıcıları oyuncu isimlerine ata
-
-    bagli_sid_listesi = list(bagli_kullanicilar.keys())
-
-    oyuncu_sid_map = {
-
-        oyuncular[i]: bagli_sid_listesi[i]
-
-        for i in range(min(len(oyuncular), len(bagli_sid_listesi)))
-
-    }
 
     
 
