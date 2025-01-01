@@ -180,20 +180,13 @@
         <div id="giris-ekrani">
             <h1 class="text-center mb-4">Lingo</h1>
             
-            <!-- Oyuncu Bilgileri -->
+            <!-- Oyuncu Bilgisi -->
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Oyuncu Bilgileri</h5>
+                    <h5 class="card-title">Oyuncu Bilgisi</h5>
                     <div class="mb-3">
-                        <label>Kaç Kişi Oynayacaksınız?</label>
-                        <select class="form-select" id="oyuncu-sayisi" onchange="oyuncuSayisiDegisti()">
-                            <option value="2">2 Oyuncu</option>
-                            <option value="3">3 Oyuncu</option>
-                            <option value="4">4 Oyuncu</option>
-                        </select>
-                    </div>
-                    <div id="oyuncu-alanlari">
-                        <!-- Oyuncu input alanları JavaScript ile oluşturulacak -->
+                        <label class="form-label">Oyuncu Adınız:</label>
+                        <input type="text" class="form-control" id="oyuncu-adi" placeholder="Adınızı girin">
                     </div>
                 </div>
             </div>
@@ -213,15 +206,20 @@
                                 <button class="btn btn-primary" onclick="odayaKatil()">Katıl</button>
                             </div>
                         </div>
-                        <div id="oda-bilgisi" class="alert alert-info mt-3" style="display: none;">
-                            <!-- Oda bilgisi buraya gelecek -->
-                        </div>
-                        <div id="oyuncu-listesi" class="mt-3">
-                            <!-- Odadaki oyuncular buraya listelenecek -->
-                        </div>
                     </div>
-                    <button class="btn btn-success w-100 mt-3" id="oyunu-baslat" onclick="oyunuBaslat()" style="display: none;">
-                        Oyunu Başlat
+                </div>
+            </div>
+
+            <!-- Oda Bilgisi -->
+            <div id="oda-bilgisi" class="card mb-4" style="display: none;">
+                <div class="card-body">
+                    <h5 class="card-title">Oda Bilgisi</h5>
+                    <div class="alert alert-info" id="oda-id-gosterim"></div>
+                    <div id="oyuncu-listesi" class="mb-3">
+                        <!-- Oyuncular burada listelenecek -->
+                    </div>
+                    <button class="btn btn-success w-100" id="oyunu-baslat" onclick="oyunuBaslat()" disabled>
+                        Oyunu Başlat (En az 2 oyuncu gerekli)
                     </button>
                 </div>
             </div>
