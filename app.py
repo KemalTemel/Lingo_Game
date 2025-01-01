@@ -450,7 +450,7 @@ def tahmin_yap(data):
 
 def siradaki_oyuncuya_gec():
 
-    global oyun
+    global oyun, aktif_timer
 
     if not oyun['aktif']:
 
@@ -458,45 +458,25 @@ def siradaki_oyuncuya_gec():
 
         
 
-    oyun['timer_aktif'] = False
+    timer_durdur()  # Mevcut zamanlayıcıyı durdur
 
-    oyuncu_sayisi = len(oyun['oyuncular'])
+    # Sıradaki oyuncuyu belirle
 
-    simdiki_index = oyun['oyuncular'].index(oyun['aktif_oyuncu'])
+    mevcut_index = oyun['oyuncular'].index(oyun['aktif_oyuncu'])
 
-    sonraki_index = (simdiki_index + 1) % oyuncu_sayisi
+    sonraki_index = (mevcut_index + 1) % len(oyun['oyuncular'])
 
     oyun['aktif_oyuncu'] = oyun['oyuncular'][sonraki_index]
 
-    oyun['tahminler'] = []
+    # Süreyi sıfırla ve yeni zamanlayıcıyı başlat
 
     oyun['kalan_sure'] = SURE_SINIRI
 
-    
+    aktif_timer = Timer(1.0, sure_kontrolu)
 
-    # Oyuncu turu kontrolü
+    aktif_timer.start()
 
-    if sonraki_index == 0:
-
-        oyun['tur_sayisi'] += 1
-
-        if oyun['tur_sayisi'] >= 2:
-
-            oyun['kelime_uzunlugu'] += 1
-
-            oyun['tur_sayisi'] = 0
-
-            if oyun['kelime_uzunlugu'] > 7:
-
-                oyun['aktif'] = False
-
-                socketio.emit('oyun_bitti', {'puanlar': oyun['puanlar']})
-
-                return
-
-    
-
-    # Yeni kelime ve bomba harfleri seç
+    # Yeni kelime seç
 
     kelime, bomba_harfleri = yeni_kelime_sec(oyun['kelime_uzunlugu'])
 
@@ -504,45 +484,33 @@ def siradaki_oyuncuya_gec():
 
     oyun['bomba_harfleri'] = bomba_harfleri
 
-    
+    oyun['bomba_sayaci'] = 3
 
-    socketio.emit('siradaki_oyuncu', {
+    oyun['bomba_aciga_cikti'] = False
+
+    oyun['tahminler'] = []
+
+    oyun['tur_sayisi'] += 1
+
+    # Oyun durumunu güncelle ve yayınla
+
+    socketio.emit('oyun_durumu', {
 
         'aktif_oyuncu': oyun['aktif_oyuncu'],
+
+        'ilk_harf': kelime[0],
 
         'kelime_uzunlugu': oyun['kelime_uzunlugu'],
 
-        'tur_sayisi': oyun['tur_sayisi'],
-
-        'ilk_harf': oyun['kelime'][0],
+        'oyuncular': oyun['oyuncular'],
 
         'kalan_sure': SURE_SINIRI,
 
-        'ilk_oyun': False
+        'ilk_oyun': False,
 
-    })
+        'bomba_sayaci': 3
 
-    
-
-    # Yeni tur başlatıldığında
-
-    socketio.emit('yeni_tur', {
-
-        'ilk_harf': oyun['kelime'][0],
-
-        'kelime_uzunlugu': len(oyun['kelime']),
-
-        'aktif_oyuncu': oyun['aktif_oyuncu'],
-
-        'kalan_sure': SURE_SINIRI,
-
-        'tur_sayisi': oyun['tur_sayisi'],
-
-        'bomba_sayaci': 2,
-
-        'puanlar': oyun['puanlar']
-
-    })
+    }, broadcast=True)
 
 
 
