@@ -218,24 +218,32 @@ function tahminSatirlariniOlustur() {
     const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
     const ilkHarf = document.getElementById('ilk-harf').textContent;
     
-    // Yeni tahmin satırı oluştur
-    const yeniSatir = document.createElement('div');
-    yeniSatir.className = 'tahmin-satiri';
-    
-    // İlk harf için kutu oluştur
-    const ilkKutu = document.createElement('div');
-    ilkKutu.className = 'harf-kutusu dolu';
-    ilkKutu.textContent = ilkHarf;
-    yeniSatir.appendChild(ilkKutu);
-    
-    // Diğer harfler için boş kutular oluştur
-    for (let i = 1; i < kelimeUzunlugu; i++) {
-        const kutu = document.createElement('div');
-        kutu.className = 'harf-kutusu';
-        yeniSatir.appendChild(kutu);
+    // 6 satır oluştur
+    for (let i = 0; i < 6; i++) {
+        const satirDiv = document.createElement('div');
+        satirDiv.className = 'tahmin-satiri mb-2';
+        
+        // İlk satır aktif, diğerleri bos class'ı alır
+        if (i > 0) satirDiv.classList.add('bos');
+        
+        // Her satıra kelime uzunluğu kadar kutu ekle
+        for (let j = 0; j < kelimeUzunlugu; j++) {
+            const harfDiv = document.createElement('div');
+            harfDiv.className = 'harf';
+            
+            // İlk harfi tüm satırlarda göster
+            if (j === 0) {
+                harfDiv.textContent = ilkHarf;
+                harfDiv.classList.add('dogru');
+            } else {
+                harfDiv.textContent = '';
+            }
+            
+            satirDiv.appendChild(harfDiv);
+        }
+        
+        tahminlerDiv.appendChild(satirDiv);
     }
-    
-    tahminlerDiv.appendChild(yeniSatir);
 }
 
 // Tahmin sonuçlarını güncelle
