@@ -87,11 +87,17 @@ body::before {
     justify-content: center;
     font-size: 1.8rem;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: none;
     border: 2px solid #d1d5db;
     background: white;
     border-radius: 8px;
     transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.harf.bos {
+    background: #f3f4f6;
+    color: #9ca3af;
 }
 
 .harf:empty {
@@ -932,7 +938,7 @@ body::before {
     justify-content: center;
     font-size: 1.8rem;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: none;
     border: 2px solid #d1d5db;
     background: white;
     border-radius: 8px;
