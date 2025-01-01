@@ -178,39 +178,51 @@
         
         <!-- Oyuncu Giriş Ekranı -->
         <div id="giris-ekrani">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Oyuncu Bilgileri</h5>
-                            <div class="mb-3">
-                                <label for="oyuncu-sayisi" class="form-label">Kaç Kişi Oynayacaksınız?</label>
-                                <select class="form-select" id="oyuncu-sayisi" onchange="oyuncuAlanlariOlustur()">
-                                    <option value="2">2 Oyuncu</option>
-                                    <option value="3">3 Oyuncu</option>
-                                    <option value="4">4 Oyuncu</option>
-                                </select>
-                            </div>
-                            <div id="oyuncu-alanlari">
-                                <!-- Oyuncu input alanları JavaScript ile eklenecek -->
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="oyunuBaslat()">Oyunu Başlat</button>
-                        </div>
+            <h1 class="text-center mb-4">Lingo</h1>
+            
+            <!-- Oyuncu Bilgileri -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Oyuncu Bilgileri</h5>
+                    <div class="mb-3">
+                        <label>Kaç Kişi Oynayacaksınız?</label>
+                        <select class="form-select" id="oyuncu-sayisi" onchange="oyuncuSayisiDegisti()">
+                            <option value="2">2 Oyuncu</option>
+                            <option value="3">3 Oyuncu</option>
+                            <option value="4">4 Oyuncu</option>
+                        </select>
+                    </div>
+                    <div id="oyuncu-alanlari">
+                        <!-- Oyuncu input alanları JavaScript ile oluşturulacak -->
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Oyuncu girişi kısmının altına -->
-        <div class="oda-secimi" id="oda-secimi">
-            <div class="btn-group" role="group">
-                <button class="btn btn-primary" onclick="yeniOdaOlustur()">Yeni Oda Oluştur</button>
-                <button class="btn btn-secondary" onclick="odayaKatilGoster()">Odaya Katıl</button>
-            </div>
-            <div id="oda-katil-form" style="display: none;">
-                <div class="input-group mt-3">
-                    <input type="text" class="form-control" id="oda-id-input" placeholder="Oda ID">
-                    <button class="btn btn-primary" onclick="odayaKatil()">Katıl</button>
+            <!-- Oda Seçimi -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Oda Seçimi</h5>
+                    <div class="oda-secimi" id="oda-secimi">
+                        <div class="btn-group w-100 mb-3" role="group">
+                            <button class="btn btn-primary" onclick="yeniOdaOlustur()">Yeni Oda Oluştur</button>
+                            <button class="btn btn-secondary" onclick="odayaKatilGoster()">Odaya Katıl</button>
+                        </div>
+                        <div id="oda-katil-form" style="display: none;">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="oda-id-input" placeholder="Oda ID">
+                                <button class="btn btn-primary" onclick="odayaKatil()">Katıl</button>
+                            </div>
+                        </div>
+                        <div id="oda-bilgisi" class="alert alert-info mt-3" style="display: none;">
+                            <!-- Oda bilgisi buraya gelecek -->
+                        </div>
+                        <div id="oyuncu-listesi" class="mt-3">
+                            <!-- Odadaki oyuncular buraya listelenecek -->
+                        </div>
+                    </div>
+                    <button class="btn btn-success w-100 mt-3" id="oyunu-baslat" onclick="oyunuBaslat()" style="display: none;">
+                        Oyunu Başlat
+                    </button>
                 </div>
             </div>
         </div>
