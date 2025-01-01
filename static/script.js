@@ -645,21 +645,12 @@ socket.on('yeni_tur', (data) => {
 });
 
 function yeniOdaOlustur() {
-    const oyuncuSayisi = parseInt(document.getElementById('oyuncu-sayisi').value);
-    const oyuncular = [];
-    
-    // Oyuncu isimlerini topla
-    for (let i = 1; i <= oyuncuSayisi; i++) {
-        const oyuncuAdi = document.getElementById(`oyuncu-${i}`).value.trim();
-        if (!oyuncuAdi) {
-            alert('Lütfen tüm oyuncu isimlerini girin!');
-            return;
-        }
-        oyuncular.push(oyuncuAdi);
+    const oyuncuAdi = document.getElementById('oyuncu-adi').value.trim();
+    if (!oyuncuAdi) {
+        alert('Lütfen oyuncu adınızı girin!');
+        return;
     }
-    
-    // İlk oyuncuyu odaya ekle
-    socket.emit('odaya_katil', { oyuncu: oyuncular[0] });
+    socket.emit('odaya_katil', { oyuncu: oyuncuAdi });
 }
 
 function odayaKatilGoster() {
@@ -667,7 +658,7 @@ function odayaKatilGoster() {
 }
 
 function odayaKatil() {
-    const oyuncuAdi = document.getElementById('oyuncu-1').value.trim();
+    const oyuncuAdi = document.getElementById('oyuncu-adi').value.trim();
     const odaId = document.getElementById('oda-id-input').value.trim();
     
     if (!oyuncuAdi || !odaId) {
@@ -679,17 +670,28 @@ function odayaKatil() {
 
 socket.on('oda_durumu', (data) => {
     aktifOdaId = data.oda_id;
+    
+    // Oda bilgisi kartını göster
     const odaBilgisi = document.getElementById('oda-bilgisi');
     odaBilgisi.style.display = 'block';
-    odaBilgisi.textContent = `Oda ID: ${data.oda_id}`;
-
+    
+    // Oda ID'sini göster
+    document.getElementById('oda-id-gosterim').textContent = `Oda ID: ${data.oda_id}`;
+    
+    // Oyuncu listesini güncelle
     const oyuncuListesi = document.getElementById('oyuncu-listesi');
     oyuncuListesi.innerHTML = '<h6>Odadaki Oyuncular:</h6>' + 
         data.oyuncular.map(oyuncu => 
             `<div class="alert alert-light mb-2">${oyuncu}</div>`
         ).join('');
-
-    // Oyunu başlat butonunu göster
-    const oyunuBaslatBtn = document.getElementById('oyunu-baslat');
-    oyunuBaslatBtn.style.display = 'block';
+    
+    // Başlat butonunu güncelle
+    const baslatBtn = document.getElementById('oyunu-baslat');
+    if (data.oyuncular.length >= 2) {
+        baslatBtn.disabled = false;
+        baslatBtn.textContent = 'Oyunu Başlat';
+    } else {
+        baslatBtn.disabled = true;
+        baslatBtn.textContent = 'Oyunu Başlat (En az 2 oyuncu gerekli)';
+    }
 }); 
