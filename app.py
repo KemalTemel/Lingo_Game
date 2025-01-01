@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify
-from flask_socketio import SocketIO, emit
+from flask_socketio import SocketIO, emit, join_room, leave_room
 import json
 import random
 from threading import Timer
@@ -58,25 +58,24 @@ def timer_durdur():
         aktif_timer.cancel()
         aktif_timer = None
 
-def sure_kontrolu():
-    global oyun, aktif_timer
-    if not oyun['aktif']:
+def sure_kontrolu(oda_id):
+    if oda_id not in oyun_odalari or not oyun_odalari[oda_id]['aktif']:
         return
         
+    oyun = oyun_odalari[oda_id]
     if oyun['kalan_sure'] > 0:
         oyun['kalan_sure'] -= 1
-        socketio.emit('sure_guncelle', {'kalan_sure': oyun['kalan_sure']})
+        socketio.emit('sure_guncelle', {'kalan_sure': oyun['kalan_sure']}, room=oda_id)
         
         if oyun['kalan_sure'] > 0:
-            aktif_timer = Timer(1.0, sure_kontrolu)
-            aktif_timer.start()
+            timer_baslat(oda_id)
         else:
             dogru_kelime = oyun['kelime']
             socketio.emit('sure_bitti', {
                 'aktif_oyuncu': oyun['aktif_oyuncu'],
                 'dogru_kelime': dogru_kelime,
                 'bomba_harfleri': oyun['bomba_harfleri']
-            })
+            }, room=oda_id)
 
 def yeni_kelime_sec(uzunluk):
     kelime = random.choice(kelimeler[uzunluk])['madde'].lower()
@@ -379,6 +378,12 @@ def odaya_katil(data):
         'oda_id': oda_id,
         'oyuncular': oyun_odalari[oda_id]['oyuncular']
     }, room=oda_id)
+
+def timer_baslat(oda_id):
+    global aktif_timer
+    timer_durdur()
+    aktif_timer = Timer(1.0, lambda: sure_kontrolu(oda_id))
+    aktif_timer.start()
 
 if __name__ == '__main__':
     if os.environ.get('FLASK_ENV') == 'development':
