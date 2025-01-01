@@ -228,7 +228,7 @@ def oyun_baslat(data):
 
     
 
-    emit('oyun_durumu', {
+    socketio.emit('oyun_durumu', {
 
         'aktif_oyuncu': oyuncular[0],
 
@@ -244,7 +244,7 @@ def oyun_baslat(data):
 
         'bomba_sayaci': 3
 
-    }, broadcast=True)
+    })
 
     
 
@@ -298,7 +298,7 @@ def tahmin_yap(data):
 
                 'puanlar': oyun['puanlar']
 
-            }, broadcast=True)
+            })
 
             return
 
@@ -406,7 +406,7 @@ def tahmin_yap(data):
 
             'tahminler': oyun['tahminler']
 
-        }, broadcast=True)
+        })
 
         
 
@@ -422,7 +422,7 @@ def tahmin_yap(data):
 
             'bomba_harfleri': oyun['bomba_harfleri']
 
-        }, broadcast=True)
+        })
 
     else:
 
@@ -442,7 +442,7 @@ def tahmin_yap(data):
 
             'son_tahmin_sonuc': sonuc
 
-        }, broadcast=True)
+        })
 
 
 
@@ -538,7 +538,7 @@ def siradaki_oyuncuya_gec():
 
         'tur_sayisi': oyun['tur_sayisi']
 
-    }, broadcast=True)
+    })
 
 
 
@@ -620,7 +620,7 @@ def joker_kullan(data):
 
         'puanlar': oyun['puanlar']
 
-    }, broadcast=True)
+    })
 
 
 
@@ -638,7 +638,7 @@ def emoji_gonder(data):
 
         'emoji': emoji
 
-    }, broadcast=True)
+    })
 
 
 
