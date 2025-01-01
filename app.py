@@ -149,17 +149,12 @@ def tahmin_yap(data):
         return
 
     oyun = oyun_odalari[oda_id]
-    
     if not oyun['aktif']:
         emit('hata', {'mesaj': 'Oyun henüz başlamadı!'})
         return
 
     if oyuncu != oyun['aktif_oyuncu']:
         emit('hata', {'mesaj': 'Sıra sizde değil!'})
-        return
-
-    if len(tahmin) != oyun['kelime_uzunlugu']:
-        emit('hata', {'mesaj': f'Tahmin {oyun["kelime_uzunlugu"]} harfli olmalı!'})
         return
 
     # Tahmin sonucunu hesapla
@@ -190,29 +185,34 @@ def tahmin_yap(data):
 
     # Kelime doğru tahmin edildiyse veya 6 tahmin yapıldıysa
     if tahmin == dogru_kelime or len(oyun['tahminler']) >= 6:
-        # Oyuncuya puan ver
+        # Doğru bilindiyse puan ver
         if tahmin == dogru_kelime:
             oyun['puanlar'][oyuncu] = oyun['puanlar'].get(oyuncu, 0) + 100
-        
+            emit('oyun_kazanildi', {
+                'kelime': dogru_kelime,
+                'oyuncu': oyuncu,
+                'puanlar': oyun['puanlar']
+            }, room=oda_id)
+
         # Sıradaki oyuncuya geç
         simdiki_index = oyun['oyuncular'].index(oyun['aktif_oyuncu'])
         sonraki_index = (simdiki_index + 1) % len(oyun['oyuncular'])
         oyun['aktif_oyuncu'] = oyun['oyuncular'][sonraki_index]
-        oyun['tahminler'] = []  # Tahminleri sıfırla
+        oyun['tahminler'] = []
         oyun['kalan_sure'] = SURE_SINIRI
-        
+
         # Yeni kelime seç
         kelime, bomba_harfleri = yeni_kelime_sec(4)
         oyun['kelime'] = kelime
         oyun['bomba_harfleri'] = bomba_harfleri
-        
+
         emit('siradaki_oyuncu', {
             'aktif_oyuncu': oyun['aktif_oyuncu'],
             'ilk_harf': kelime[0],
             'kelime_uzunlugu': 4,
             'kalan_sure': SURE_SINIRI
         }, room=oda_id)
-        
+
         timer_baslat(oda_id)
 
 @socketio.on('siradaki_oyuncu')
