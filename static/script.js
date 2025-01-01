@@ -104,7 +104,19 @@ function siradakiOyuncuyaGec() {
     socket.emit('siradaki_oyuncu');
     const siradakiOyuncuDiv = document.getElementById('siradaki-oyuncu-div');
     siradakiOyuncuDiv.style.display = 'none';
-    tahminYapilabilir = true; // Yeni oyuncu için tahmin yapılabilir duruma getir
+    tahminYapilabilir = true;
+    
+    // Önceki tahminleri ve animasyonları temizle
+    const tahminlerDiv = document.getElementById('tahminler');
+    tahminlerDiv.innerHTML = '';
+    
+    // Başarısızlık/başarı mesajlarını temizle
+    const basarisizDiv = document.querySelector('.basarisiz-animasyon');
+    const basariDiv = document.querySelector('.basari-bildirimi');
+    const sureBittiDiv = document.querySelector('.sure-bitti-animasyon');
+    if (basarisizDiv) basarisizDiv.remove();
+    if (basariDiv) basariDiv.remove();
+    if (sureBittiDiv) sureBittiDiv.remove();
 }
 
 function sureAnimasyonunuBaslat() {
@@ -446,14 +458,14 @@ socket.on('siradaki_oyuncu', (data) => {
     // Oyun bilgilerini güncelle
     document.getElementById('ilk-harf').textContent = data.ilk_harf;
     document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
-    document.getElementById('tur-sayisi').textContent = data.tur_sayisi + 1;
+    document.getElementById('tur-sayisi').textContent = data.tur_sayisi;
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
     document.getElementById('kalan-sure').textContent = SURE_SINIRI;
     
-    // Tahminleri temizle
-    document.getElementById('tahminler').innerHTML = '';
+    // Tahmin alanını temizle ve yeniden oluştur
     document.getElementById('tahmin-input').value = '';
     document.getElementById('tahmin-input').placeholder = 'Tahmininizi yazın...';
+    tahminSatirlariniOlustur();
     
     // Süre çemberini sıfırla
     const sureProgress = document.getElementById('sure-progress');
@@ -461,6 +473,19 @@ socket.on('siradaki_oyuncu', (data) => {
         sureProgress.style.transform = 'rotate(-90deg)';
         sureProgress.style.borderColor = '#3b82f6';
     }
+    
+    // Bomba bilgilerini sıfırla
+    const bombaHarfiElement = document.getElementById('bomba-harfi');
+    if (bombaHarfiElement) {
+        bombaHarfiElement.textContent = '?';
+        bombaHarfiElement.classList.remove('tehlike');
+    }
+    
+    // Tahmin yapılabilir duruma getir
+    tahminYapilabilir = true;
+    
+    // Input alanına fokuslan
+    document.getElementById('tahmin-input').focus();
 });
 
 socket.on('oyun_bitti', (data) => {
