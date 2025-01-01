@@ -80,13 +80,6 @@ function oyunuBaslat() {
         oyuncular.push(oyuncuAdi);
     }
     
-    // Bağlı kullanıcı sayısını kontrol et
-    const bagliKullaniciSayisi = parseInt(document.getElementById('bagli-kullanicilar').textContent.match(/\d+/)[0]);
-    if (bagliKullaniciSayisi < 2) {
-        alert('Oyun için en az 2 bağlı kullanıcı gerekli!');
-        return;
-    }
-    
     // Oyunu başlat
     socket.emit('oyun_baslat', {
         oyuncular: oyuncular
@@ -99,10 +92,8 @@ function tahminYap() {
         return;
     }
     
-    const aktifOyuncu = document.getElementById('aktif-oyuncu').textContent;
     const tahminInput = document.getElementById('tahmin-input');
     const tahmin = tahminInput.value.trim().toLowerCase();
-    
     if (!tahmin) return;
     
     const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
@@ -113,7 +104,7 @@ function tahminYap() {
     
     socket.emit('tahmin_yap', {
         tahmin: tahmin,
-        oyuncu: aktifOyuncu
+        oyuncu: document.getElementById('aktif-oyuncu').textContent
     });
     
     tahminInput.value = '';
@@ -213,19 +204,21 @@ function enYuksekPuanlariGuncelle(skorlar) {
 // Boş tahmin satırlarını oluştur
 function tahminSatirlariniOlustur() {
     const tahminlerDiv = document.getElementById('tahminler');
-    tahminlerDiv.innerHTML = ''; // Önceki tahminleri temizle
+    if (!tahminlerDiv) {
+        console.error('Tahminler div bulunamadı!');
+        return;
+    }
     
+    tahminlerDiv.innerHTML = ''; // Önce mevcut tahminleri temizle
     const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
     const ilkHarf = document.getElementById('ilk-harf').textContent;
-    
+
     // 6 satır oluştur
     for (let i = 0; i < 6; i++) {
         const satirDiv = document.createElement('div');
         satirDiv.className = 'tahmin-satiri mb-2';
-        
-        // İlk satır aktif, diğerleri bos class'ı alır
         if (i > 0) satirDiv.classList.add('bos');
-        
+
         // Her satıra kelime uzunluğu kadar kutu ekle
         for (let j = 0; j < kelimeUzunlugu; j++) {
             const harfDiv = document.createElement('div');
@@ -238,11 +231,15 @@ function tahminSatirlariniOlustur() {
             } else {
                 harfDiv.textContent = '';
             }
-            
             satirDiv.appendChild(harfDiv);
         }
-        
         tahminlerDiv.appendChild(satirDiv);
+    }
+    
+    // Tahmin kutularının oluşturulduğunu kontrol et
+    const tahminSatirlari = tahminlerDiv.getElementsByClassName('tahmin-satiri');
+    if (tahminSatirlari.length === 0) {
+        console.error('Tahmin satırları oluşturulamadı!');
     }
 }
 
@@ -315,14 +312,12 @@ socket.on('oyun_durumu', (data) => {
     document.getElementById('giris-ekrani').style.display = 'none';
     document.getElementById('oyun-ekrani').style.display = 'block';
     
-    // Aktif oyuncuyu güncelle
+    // Oyun bilgilerini güncelle
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
-    
-    // Kelime uzunluğunu güncelle
     document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
-    
-    // İlk harfi güncelle
     document.getElementById('ilk-harf').textContent = data.ilk_harf;
+    document.getElementById('kalan-sure').textContent = data.kalan_sure;
+    document.getElementById('tur-sayisi').textContent = data.tur_sayisi;
     
     // Tahmin alanını temizle
     document.getElementById('tahmin-input').value = '';
@@ -330,15 +325,22 @@ socket.on('oyun_durumu', (data) => {
     // Tahmin satırlarını yeniden oluştur
     tahminSatirlariniOlustur();
     
-    // Süre animasyonunu başlat
+    // Süreyi yeniden başlat
     sureAnimasyonunuBaslat();
     
     // Tahmin yapılabilir duruma getir
     tahminYapilabilir = true;
     
-    // Bomba harfini güncelle
-    if (data.bomba_harfi) {
-        document.getElementById('bomba-harfi').textContent = data.bomba_harfi;
+    // Bomba sayacını güncelle
+    const bombaSayaciElement = document.getElementById('bomba-sayaci');
+    if (bombaSayaciElement) {
+        bombaSayaciElement.textContent = data.bomba_sayaci;
+    }
+    
+    // Bomba harflerini güncelle
+    const bombaHarfiElement = document.getElementById('bomba-harfi');
+    if (bombaHarfiElement) {
+        bombaHarfiElement.textContent = data.bomba_aciga_cikti ? data.bomba_harfleri.join(', ') : '?';
     }
 });
 
@@ -730,15 +732,4 @@ socket.on('yeni_tur', (data) => {
     if (data.puanlar) {
         puanTablosunuGuncelle(data.puanlar);
     }
-});
-
-// Bağlı kullanıcı sayısını takip et
-socket.on('bagli_kullanicilar', (data) => {
-    const bagliSayi = data.sayi;
-    // Bağlı kullanıcı sayısını göster
-    const bagliKullanicilarDiv = document.getElementById('bagli-kullanicilar');
-    if (bagliKullanicilarDiv) {
-        bagliKullanicilarDiv.textContent = `Bağlı Kullanıcı: ${bagliSayi}`;
-    }
-});
- 
+}); 
