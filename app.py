@@ -371,13 +371,13 @@ def odaya_katil(data):
         if oda_id not in oyun_odalari:
             emit('hata', {'mesaj': 'Oda bulunamadı!'})
             return
-        
+            
         if oyuncu in oyun_odalari[oda_id]['oyuncular']:
             emit('hata', {'mesaj': 'Bu oyuncu zaten odada!'})
             return
             
         if len(oyun_odalari[oda_id]['oyuncular']) >= 4:
-            emit('hata', {'mesaj': 'Oda dolu!'})
+            emit('hata', {'mesaj': 'Oda dolu! (Maksimum 4 oyuncu)'})
             return
             
         oyun_odalari[oda_id]['oyuncular'].append(oyuncu)
@@ -385,7 +385,7 @@ def odaya_katil(data):
     # Odaya katıl
     join_room(oda_id)
     
-    # Oda bilgilerini gönder
+    # Tüm odadakilere güncel bilgiyi gönder
     emit('oda_durumu', {
         'oda_id': oda_id,
         'oyuncular': oyun_odalari[oda_id]['oyuncular']
