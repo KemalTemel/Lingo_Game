@@ -273,10 +273,22 @@ function tahminSonuclariniGuncelle(tahminler) {
                 // İlk harf her zaman aynı ve yeşil
                 harfDiv.textContent = ilkHarf;
                 harfDiv.className = 'harf dogru';
+                // Doğru harfler için ek stil
+                harfDiv.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.2)';
+                harfDiv.style.boxShadow = '0 0 10px rgba(34, 197, 94, 0.3)';
+                harfDiv.style.fontWeight = '700';
+                harfDiv.style.opacity = '1';
             } else {
                 // Kullanıcının tahmin ettiği harfi göster
                 harfDiv.textContent = tahmin.tahmin[j];
                 harfDiv.className = `harf ${tahmin.sonuc[j].durum}`;
+                // Doğru harfler için ek stil
+                if (tahmin.sonuc[j].durum === 'dogru') {
+                    harfDiv.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.2)';
+                    harfDiv.style.boxShadow = '0 0 10px rgba(34, 197, 94, 0.3)';
+                    harfDiv.style.fontWeight = '700';
+                    harfDiv.style.opacity = '1';
+                }
             }
         }
     }
@@ -293,10 +305,20 @@ function tahminSonuclariniGuncelle(tahminler) {
                 // İlk harf her zaman aynı ve yeşil
                 harfDiv.textContent = ilkHarf;
                 harfDiv.className = 'harf dogru';
+                // Doğru harfler için ek stil
+                harfDiv.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.2)';
+                harfDiv.style.boxShadow = '0 0 10px rgba(34, 197, 94, 0.3)';
+                harfDiv.style.fontWeight = '700';
+                harfDiv.style.opacity = '1';
             } else if (dogruHarfler[j] !== null) {
                 // Önceki tahminlerde doğru bulunan harfleri yeşil olarak göster
                 harfDiv.textContent = dogruHarfler[j];
                 harfDiv.className = 'harf dogru';
+                // Doğru harfler için ek stil
+                harfDiv.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.2)';
+                harfDiv.style.boxShadow = '0 0 10px rgba(34, 197, 94, 0.3)';
+                harfDiv.style.fontWeight = '700';
+                harfDiv.style.opacity = '1';
             } else {
                 // Diğer kutular boş
                 harfDiv.textContent = '';
