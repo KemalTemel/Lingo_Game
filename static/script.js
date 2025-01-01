@@ -68,23 +68,11 @@ function oyuncuAlanlariOlustur() {
 }
 
 function oyunuBaslat() {
-    const oyuncuSayisi = parseInt(document.getElementById('oyuncu-sayisi').value);
-    const oyuncular = [];
-    
-    // Oyuncu isimlerini topla
-    for (let i = 1; i <= oyuncuSayisi; i++) {
-        const oyuncuAdi = document.getElementById(`oyuncu-${i}`).value.trim();
-        if (!oyuncuAdi) {
-            alert('Lütfen tüm oyuncu isimlerini girin!');
-            return;
-        }
-        oyuncular.push(oyuncuAdi);
+    if (!aktifOdaId) {
+        alert('Önce bir odaya katılmalısınız!');
+        return;
     }
-    
-    // Oyunu başlat
-    socket.emit('oyun_baslat', {
-        oyuncular: oyuncular
-    });
+    socket.emit('oyun_baslat', { oda_id: aktifOdaId });
 }
 
 function tahminYap() {
@@ -268,38 +256,18 @@ function tahminSonuclariniGuncelle(tahminler) {
 
 // Socket olayları
 socket.on('oyun_durumu', (data) => {
-    // Giriş ekranını gizle, oyun ekranını göster
     document.getElementById('giris-ekrani').style.display = 'none';
     document.getElementById('oyun-ekrani').style.display = 'block';
     
-    // Oyun bilgilerini güncelle
     document.getElementById('ilk-harf').textContent = data.ilk_harf;
     document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
     document.getElementById('kalan-sure').textContent = data.kalan_sure;
-    document.getElementById('tur-sayisi').textContent = data.tur_sayisi;
-
-    // Tahmin kutularını oluştur
+    
     tahminSatirlariniOlustur();
-
-    // Bomba sayacını güncelle
-    document.getElementById('bomba-sayaci').textContent = data.bomba_sayaci;
     
-    // Bomba harflerini göster/gizle
-    if (data.bomba_harfleri && data.bomba_aciga_cikti) {
-        document.getElementById('bomba-harfi').textContent = data.bomba_harfleri.join(', ');
-    } else {
-        document.getElementById('bomba-harfi').textContent = '?';
-    }
-    
-    // Puan tablosunu güncelle
-    if (data.puanlar) {
-        puanTablosunuGuncelle(data.puanlar);
-    }
-    
-    // En yüksek puanları güncelle
-    if (data.en_yuksek_skorlar) {
-        enYuksekPuanlariGuncelle(data.en_yuksek_skorlar);
+    if (data.tahminler && data.tahminler.length > 0) {
+        tahminSonuclariniGuncelle(data.tahminler);
     }
 });
 
@@ -697,10 +665,17 @@ function odayaKatil() {
 
 socket.on('oda_durumu', (data) => {
     aktifOdaId = data.oda_id;
-    document.getElementById('oda-bilgisi').textContent = `Oda ID: ${data.oda_id}`;
-    // Oyuncu listesini güncelle
+    const odaBilgisi = document.getElementById('oda-bilgisi');
+    odaBilgisi.style.display = 'block';
+    odaBilgisi.textContent = `Oda ID: ${data.oda_id}`;
+
     const oyuncuListesi = document.getElementById('oyuncu-listesi');
-    oyuncuListesi.innerHTML = data.oyuncular.map(oyuncu => 
-        `<div class="oyuncu-item">${oyuncu}</div>`
-    ).join('');
+    oyuncuListesi.innerHTML = '<h6>Odadaki Oyuncular:</h6>' + 
+        data.oyuncular.map(oyuncu => 
+            `<div class="alert alert-light mb-2">${oyuncu}</div>`
+        ).join('');
+
+    // Oyunu başlat butonunu göster
+    const oyunuBaslatBtn = document.getElementById('oyunu-baslat');
+    oyunuBaslatBtn.style.display = 'block';
 }); 
