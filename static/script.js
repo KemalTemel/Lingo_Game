@@ -655,17 +655,47 @@ function yeniOdaOlustur() {
 
 function odayaKatilGoster() {
     document.getElementById('oda-katil-form').style.display = 'block';
+    // Mevcut odaları getir
+    socket.emit('odalari_getir');
 }
 
-function odayaKatil() {
+socket.on('odalar_listesi', (data) => {
+    const odaListesi = document.getElementById('mevcut-odalar');
+    if (data.odalar.length > 0) {
+        odaListesi.innerHTML = '<h6 class="mt-3">Mevcut Odalar:</h6>' +
+            data.odalar.map(oda => `
+                <div class="oda-item alert alert-light mb-2">
+                    <div>Oda ID: ${oda.oda_id}</div>
+                    <div>Oyuncular: ${oda.oyuncular.join(', ')} (${oda.oyuncu_sayisi}/4)</div>
+                    <button class="btn btn-sm btn-primary mt-2" onclick="odayaKatil('${oda.oda_id}')">
+                        Bu Odaya Katıl
+                    </button>
+                </div>
+            `).join('');
+    } else {
+        odaListesi.innerHTML = '<div class="alert alert-info mt-3">Henüz aktif oda bulunmuyor.</div>';
+    }
+});
+
+function odayaKatil(odaId = null) {
     const oyuncuAdi = document.getElementById('oyuncu-adi').value.trim();
-    const odaId = document.getElementById('oda-id-input').value.trim();
+    const manuelOdaId = document.getElementById('oda-id-input').value.trim();
     
-    if (!oyuncuAdi || !odaId) {
-        alert('Lütfen oyuncu adı ve oda ID girin!');
+    if (!oyuncuAdi) {
+        alert('Lütfen oyuncu adınızı girin!');
         return;
     }
-    socket.emit('odaya_katil', { oyuncu: oyuncuAdi, oda_id: odaId });
+
+    const kullanilacakOdaId = odaId || manuelOdaId;
+    if (!kullanilacakOdaId) {
+        alert('Lütfen bir oda ID girin veya mevcut odalardan birini seçin!');
+        return;
+    }
+
+    socket.emit('odaya_katil', { 
+        oyuncu: oyuncuAdi, 
+        oda_id: kullanilacakOdaId 
+    });
 }
 
 socket.on('oda_durumu', (data) => {
