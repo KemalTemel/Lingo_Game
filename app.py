@@ -93,9 +93,9 @@ def yeni_kelime_sec(uzunluk):
 
 @socketio.on('oyun_baslat')
 def oyun_baslat(data):
-    oda_id = data['oda_id']
-    if oda_id not in oyun_odalari:
-        emit('hata', {'mesaj': 'Oda bulunamadı!'})
+    oda_id = data.get('oda_id')
+    if not oda_id or oda_id not in oyun_odalari:
+        emit('hata', {'mesaj': 'Geçersiz oda!'})
         return
         
     oyun = oyun_odalari[oda_id]
@@ -342,8 +342,12 @@ def oyun_sayfasi():
 
 @socketio.on('odaya_katil')
 def odaya_katil(data):
-    oda_id = data.get('oda_id')
     oyuncu = data.get('oyuncu')
+    oda_id = data.get('oda_id')
+    
+    if not oyuncu:
+        emit('hata', {'mesaj': 'Oyuncu adı gerekli!'})
+        return
     
     if not oda_id:
         # Yeni oda oluştur
@@ -367,8 +371,16 @@ def odaya_katil(data):
         if oda_id not in oyun_odalari:
             emit('hata', {'mesaj': 'Oda bulunamadı!'})
             return
-        if oyuncu not in oyun_odalari[oda_id]['oyuncular']:
-            oyun_odalari[oda_id]['oyuncular'].append(oyuncu)
+        
+        if oyuncu in oyun_odalari[oda_id]['oyuncular']:
+            emit('hata', {'mesaj': 'Bu oyuncu zaten odada!'})
+            return
+            
+        if len(oyun_odalari[oda_id]['oyuncular']) >= 4:
+            emit('hata', {'mesaj': 'Oda dolu!'})
+            return
+            
+        oyun_odalari[oda_id]['oyuncular'].append(oyuncu)
     
     # Odaya katıl
     join_room(oda_id)
