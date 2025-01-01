@@ -179,19 +179,27 @@ function enYuksekPuanlariGuncelle(skorlar) {
 function tahminSatirlariniOlustur() {
     const tahminler = document.getElementById('tahminler');
     tahminler.innerHTML = ''; // Önce mevcut tahminleri temizle
+    const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
+    const ilkHarf = document.getElementById('ilk-harf').textContent;
     
     // 6 satır oluştur
     for (let i = 0; i < 6; i++) {
         const satir = document.createElement('div');
         satir.className = 'tahmin-satiri';
+        if (i > 0) satir.classList.add('bos');
         
-        // Her satırda 4 harf kutusu oluştur
-        for (let j = 0; j < 4; j++) {
+        // Her satıra kelime uzunluğu kadar kutu ekle
+        for (let j = 0; j < kelimeUzunlugu; j++) {
             const harfKutusu = document.createElement('div');
             harfKutusu.className = 'harf';
+            
+            // İlk harfi tüm satırlarda göster
+            if (j === 0) {
+                harfKutusu.textContent = ilkHarf;
+                harfKutusu.classList.add('dogru');
+            }
             satir.appendChild(harfKutusu);
         }
-        
         tahminler.appendChild(satir);
     }
 }
@@ -284,7 +292,14 @@ socket.on('tahmin_sonucu', (data) => {
     // İlk boş satırı bul
     for (let i = 0; i < satirlar.length; i++) {
         const harfler = satirlar[i].getElementsByClassName('harf');
-        if (!harfler[0].textContent) {  // İlk harf boşsa bu satır boştur
+        let dolu = false;
+        for (let j = 1; j < harfler.length; j++) { // İlk harfi kontrol etme
+            if (harfler[j].textContent) {
+                dolu = true;
+                break;
+            }
+        }
+        if (!dolu) {
             bosIndex = i;
             break;
         }
@@ -430,6 +445,13 @@ socket.on('siradaki_oyuncu', (data) => {
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
     const benimAdim = document.getElementById('oyuncu-adi').value;
     
+    // Yeni kelime bilgileri geldiyse güncelle
+    if (data.ilk_harf) {
+        document.getElementById('ilk-harf').textContent = data.ilk_harf;
+        document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
+        tahminSatirlariniOlustur();
+    }
+    
     // Tahmin yapma kontrolü
     const tahminInput = document.getElementById('tahmin-input');
     const tahminBtn = document.getElementById('tahmin-btn');
@@ -441,11 +463,6 @@ socket.on('siradaki_oyuncu', (data) => {
         jokerBtn.disabled = false;
         tahminInput.placeholder = 'Tahmininizi yazın...';
         tahminInput.focus();
-        
-        // Yeni tur başladıysa tahmin kutularını sıfırla
-        if (data.ilk_harf) {
-            tahminSatirlariniOlustur();
-        }
     } else {
         tahminInput.disabled = true;
         tahminBtn.disabled = true;
