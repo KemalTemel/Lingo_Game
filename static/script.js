@@ -311,7 +311,6 @@ socket.on('tahmin_sonucu', (data) => {
         data.sonuc.forEach((sonuc, index) => {
             if (index < harfKutulari.length) {
                 const harfKutusu = harfKutulari[index];
-                // Sadece Türkçe karakter düzeltmesi ekleyelim
                 harfKutusu.textContent = sonuc.harf.toLocaleUpperCase('tr-TR');
                 harfKutusu.className = `harf ${sonuc.durum}`;
             }
