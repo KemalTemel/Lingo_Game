@@ -186,6 +186,11 @@ function enYuksekPuanlariGuncelle(skorlar) {
 // Boş tahmin satırlarını oluştur
 function tahminSatirlariniOlustur() {
     const tahminlerDiv = document.getElementById('tahminler');
+    if (!tahminlerDiv) {
+        console.error('Tahminler div bulunamadı!');
+        return;
+    }
+    
     tahminlerDiv.innerHTML = ''; // Önce mevcut tahminleri temizle
     const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
     const ilkHarf = document.getElementById('ilk-harf').textContent;
@@ -211,6 +216,12 @@ function tahminSatirlariniOlustur() {
             satirDiv.appendChild(harfDiv);
         }
         tahminlerDiv.appendChild(satirDiv);
+    }
+    
+    // Tahmin kutularının oluşturulduğunu kontrol et
+    const tahminSatirlari = tahminlerDiv.getElementsByClassName('tahmin-satiri');
+    if (tahminSatirlari.length === 0) {
+        console.error('Tahmin satırları oluşturulamadı!');
     }
 }
 
@@ -462,10 +473,27 @@ socket.on('siradaki_oyuncu', (data) => {
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
     document.getElementById('kalan-sure').textContent = SURE_SINIRI;
     
-    // Tahmin alanını temizle ve yeniden oluştur
+    // Tahmin alanını temizle
     document.getElementById('tahmin-input').value = '';
     document.getElementById('tahmin-input').placeholder = 'Tahmininizi yazın...';
-    tahminSatirlariniOlustur();
+    
+    // Önceki tahminleri ve animasyonları temizle
+    const tahminlerDiv = document.getElementById('tahminler');
+    while (tahminlerDiv.firstChild) {
+        tahminlerDiv.removeChild(tahminlerDiv.firstChild);
+    }
+    
+    // Yeni tahmin satırlarını oluştur
+    setTimeout(() => {
+        tahminSatirlariniOlustur();
+        
+        // Tahmin kutularının görünürlüğünü kontrol et
+        const tahminSatirlari = document.getElementsByClassName('tahmin-satiri');
+        if (tahminSatirlari.length === 0) {
+            console.error('Tahmin satırları oluşturulamadı!');
+            tahminSatirlariniOlustur(); // Tekrar dene
+        }
+    }, 100);
     
     // Süre çemberini sıfırla
     const sureProgress = document.getElementById('sure-progress');
