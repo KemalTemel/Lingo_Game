@@ -80,17 +80,21 @@ function oyunuBaslat() {
 }
 
 function tahminYap() {
-    if (!tahminYapilabilir) return;
+    const tahminInput = document.getElementById('tahmin-input');
+    const tahmin = tahminInput.value.trim().toLowerCase();
     
-    const tahmin = document.getElementById('tahmin-input').value.trim().toLowerCase();
-    if (!tahmin) return;
-    
+    if (!tahmin) {
+        alert('Lütfen bir tahmin girin!');
+        return;
+    }
+
     socket.emit('tahmin_yap', {
         tahmin: tahmin,
-        oyuncu: document.getElementById('aktif-oyuncu').textContent
+        oda_id: aktifOdaId,
+        oyuncu: document.getElementById('oyuncu-adi').value
     });
-    
-    document.getElementById('tahmin-input').value = '';
+
+    tahminInput.value = '';
 }
 
 function siradakiOyuncuyaGec() {
@@ -276,20 +280,18 @@ socket.on('oyun_durumu', (data) => {
 });
 
 socket.on('tahmin_sonucu', (data) => {
-    // Tahminleri güncelle
-    tahminSonuclariniGuncelle(data.tahminler);
+    const tahminler = document.getElementById('tahminler');
+    const yeniTahmin = document.createElement('div');
+    yeniTahmin.className = 'tahmin-satiri';
     
-    // Bomba bilgilerini güncelle
-    if (data.bomba_aciga_cikti && data.bomba_harfi) {
-        document.getElementById('bomba-harfi').textContent = data.bomba_harfi;
-        document.getElementById('bomba-harfi').classList.add('tehlike');
-        sesOynat('uyari');
-    }
-
-    // Puan tablosunu güncelle
-    if (data.puanlar) {
-        puanTablosunuGuncelle(data.puanlar);
-    }
+    data.sonuc.forEach(sonuc => {
+        const harfDiv = document.createElement('div');
+        harfDiv.className = `harf ${sonuc.durum}`;
+        harfDiv.textContent = sonuc.harf;
+        yeniTahmin.appendChild(harfDiv);
+    });
+    
+    tahminler.appendChild(yeniTahmin);
 });
 
 socket.on('sure_guncelle', (data) => {
@@ -415,23 +417,24 @@ socket.on('tahmin_hakki_bitti', async (data) => {
 });
 
 socket.on('siradaki_oyuncu', (data) => {
-    // Oyun bilgilerini güncelle
-    document.getElementById('ilk-harf').textContent = data.ilk_harf;
-    document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
-    document.getElementById('tur-sayisi').textContent = data.tur_sayisi + 1;
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
-    document.getElementById('kalan-sure').textContent = SURE_SINIRI;
+    const benimAdim = document.getElementById('oyuncu-adi').value;
     
-    // Tahminleri temizle
-    document.getElementById('tahminler').innerHTML = '';
-    document.getElementById('tahmin-input').value = '';
-    document.getElementById('tahmin-input').placeholder = 'Tahmininizi yazın...';
+    // Tahmin yapma kontrolü
+    const tahminInput = document.getElementById('tahmin-input');
+    const tahminBtn = document.getElementById('tahmin-btn');
+    const jokerBtn = document.getElementById('joker-btn');
     
-    // Süre çemberini sıfırla
-    const sureProgress = document.getElementById('sure-progress');
-    if (sureProgress) {
-        sureProgress.style.transform = 'rotate(-90deg)';
-        sureProgress.style.borderColor = '#3b82f6';
+    if (data.aktif_oyuncu === benimAdim) {
+        tahminInput.disabled = false;
+        tahminBtn.disabled = false;
+        jokerBtn.disabled = false;
+        tahminInput.placeholder = 'Tahmininizi yazın...';
+    } else {
+        tahminInput.disabled = true;
+        tahminBtn.disabled = true;
+        jokerBtn.disabled = true;
+        tahminInput.placeholder = 'Sıra sizde değil';
     }
 });
 
