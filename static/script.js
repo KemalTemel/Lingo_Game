@@ -80,28 +80,18 @@ function oyunuBaslat() {
 }
 
 function tahminYap() {
-    const tahminInput = document.getElementById('tahmin-input');
-    const tahmin = tahminInput.value.trim().toLowerCase();
-    const aktifOyuncu = document.getElementById('aktif-oyuncu').textContent;
-    const benimAdim = document.getElementById('oyuncu-adi').value;
+    if (!tahminYapilabilir) return;
     
-    if (aktifOyuncu !== benimAdim) {
-        alert('Sıra sizde değil!');
-        return;
-    }
-    
-    if (!tahmin) {
-        alert('Lütfen bir tahmin girin!');
-        return;
-    }
+    const tahmin = document.getElementById('tahmin-input').value.trim().toLowerCase();
+    if (!tahmin) return;
 
     socket.emit('tahmin_yap', {
         tahmin: tahmin,
         oda_id: aktifOdaId,
-        oyuncu: benimAdim
+        oyuncu: document.getElementById('aktif-oyuncu').textContent
     });
 
-    tahminInput.value = '';
+    document.getElementById('tahmin-input').value = '';
 }
 
 function siradakiOyuncuyaGec() {
@@ -206,64 +196,21 @@ function tahminSatirlariniOlustur() {
 // Tahmin sonuçlarını güncelle
 function tahminSonuclariniGuncelle(tahminler) {
     const tahminlerDiv = document.getElementById('tahminler');
-    const satirlar = tahminlerDiv.getElementsByClassName('tahmin-satiri');
-    const kelimeUzunlugu = parseInt(document.getElementById('kelime-uzunlugu').textContent);
-    const ilkHarf = document.getElementById('ilk-harf').textContent;
-
-    // Önceki tahminlerdeki doğru harfleri bul
-    let dogruHarfler = new Array(kelimeUzunlugu).fill(null);
-    tahminler.forEach(tahmin => {
-        tahmin.sonuc.forEach((sonuc, index) => {
-            if (sonuc.durum === 'dogru') {
-                dogruHarfler[index] = tahmin.tahmin[index];
-            }
+    tahminlerDiv.innerHTML = '';
+    
+    tahminler.forEach(tahminBilgisi => {
+        const satirDiv = document.createElement('div');
+        satirDiv.className = 'tahmin-satiri';
+        
+        tahminBilgisi.sonuc.forEach(sonuc => {
+            const harfDiv = document.createElement('div');
+            harfDiv.className = `harf ${sonuc.durum}`;
+            harfDiv.textContent = sonuc.harf.toLocaleUpperCase('tr-TR');
+            satirDiv.appendChild(harfDiv);
         });
+        
+        tahminlerDiv.appendChild(satirDiv);
     });
-
-    // Önceki tahminleri işle
-    for (let i = 0; i < tahminler.length; i++) {
-        const tahmin = tahminler[i];
-        const satirDiv = satirlar[i];
-        satirDiv.classList.remove('bos');
-
-        const harfDivler = satirDiv.getElementsByClassName('harf');
-        for (let j = 0; j < kelimeUzunlugu; j++) {
-            const harfDiv = harfDivler[j];
-            if (j === 0) {
-                // İlk harf her zaman aynı ve yeşil
-                harfDiv.textContent = ilkHarf;
-                harfDiv.className = 'harf dogru';
-            } else {
-                // Kullanıcının tahmin ettiği harfi göster
-                harfDiv.textContent = tahmin.tahmin[j];
-                harfDiv.className = `harf ${tahmin.sonuc[j].durum}`;
-            }
-        }
-    }
-
-    // Kalan boş satırlara sadece doğru harfleri yerleştir
-    for (let i = tahminler.length; i < 6; i++) {
-        const satirDiv = satirlar[i];
-        satirDiv.classList.add('bos');
-        const harfDivler = satirDiv.getElementsByClassName('harf');
-
-        for (let j = 0; j < kelimeUzunlugu; j++) {
-            const harfDiv = harfDivler[j];
-            if (j === 0) {
-                // İlk harf her zaman aynı ve yeşil
-                harfDiv.textContent = ilkHarf;
-                harfDiv.className = 'harf dogru';
-            } else if (dogruHarfler[j] !== null) {
-                // Önceki tahminlerde doğru bulunan harfleri yeşil olarak göster
-                harfDiv.textContent = dogruHarfler[j];
-                harfDiv.className = 'harf dogru';
-            } else {
-                // Diğer kutular boş
-                harfDiv.textContent = '';
-                harfDiv.className = 'harf';
-            }
-        }
-    }
 }
 
 // Socket olayları
@@ -284,37 +231,19 @@ socket.on('oyun_durumu', (data) => {
 });
 
 socket.on('tahmin_sonucu', (data) => {
-    const tahminler = document.getElementById('tahminler');
-    const satirlar = tahminler.getElementsByClassName('tahmin-satiri');
-    let bosIndex = -1;
+    // Tahminleri güncelle
+    tahminSonuclariniGuncelle(data.tahminler);
     
-    // İlk boş satırı bul
-    for (let i = 0; i < satirlar.length; i++) {
-        const harfler = satirlar[i].getElementsByClassName('harf');
-        let dolu = false;
-        for (let j = 1; j < harfler.length; j++) {
-            if (harfler[j].textContent) {
-                dolu = true;
-                break;
-            }
-        }
-        if (!dolu) {
-            bosIndex = i;
-            break;
-        }
+    // Bomba bilgilerini güncelle
+    if (data.bomba_aciga_cikti && data.bomba_harfi) {
+        document.getElementById('bomba-harfi').textContent = data.bomba_harfi;
+        document.getElementById('bomba-harfi').classList.add('tehlike');
+        sesOynat('uyari');
     }
-    
-    if (bosIndex !== -1) {
-        const satir = satirlar[bosIndex];
-        const harfKutulari = satir.getElementsByClassName('harf');
-        
-        data.sonuc.forEach((sonuc, index) => {
-            if (index < harfKutulari.length) {
-                const harfKutusu = harfKutulari[index];
-                harfKutusu.textContent = sonuc.harf.toLocaleUpperCase('tr-TR');
-                harfKutusu.className = `harf ${sonuc.durum}`;
-            }
-        });
+
+    // Puan tablosunu güncelle
+    if (data.puanlar) {
+        puanTablosunuGuncelle(data.puanlar);
     }
 });
 
@@ -441,32 +370,23 @@ socket.on('tahmin_hakki_bitti', async (data) => {
 });
 
 socket.on('siradaki_oyuncu', (data) => {
+    // Oyun bilgilerini güncelle
+    document.getElementById('ilk-harf').textContent = data.ilk_harf;
+    document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
+    document.getElementById('tur-sayisi').textContent = data.tur_sayisi + 1;
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
-    const benimAdim = document.getElementById('oyuncu-adi').value;
+    document.getElementById('kalan-sure').textContent = SURE_SINIRI;
     
-    // Yeni kelime bilgileri geldiyse güncelle
-    if (data.ilk_harf) {
-        document.getElementById('ilk-harf').textContent = data.ilk_harf;
-        document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
-        tahminSatirlariniOlustur();
-    }
+    // Tahminleri temizle
+    document.getElementById('tahminler').innerHTML = '';
+    document.getElementById('tahmin-input').value = '';
+    document.getElementById('tahmin-input').placeholder = 'Tahmininizi yazın...';
     
-    // Tahmin yapma kontrolü
-    const tahminInput = document.getElementById('tahmin-input');
-    const tahminBtn = document.getElementById('tahmin-btn');
-    const jokerBtn = document.getElementById('joker-btn');
-    
-    if (data.aktif_oyuncu === benimAdim) {
-        tahminInput.disabled = false;
-        tahminBtn.disabled = false;
-        jokerBtn.disabled = false;
-        tahminInput.placeholder = 'Tahmininizi yazın...';
-        tahminInput.focus();
-    } else {
-        tahminInput.disabled = true;
-        tahminBtn.disabled = true;
-        jokerBtn.disabled = true;
-        tahminInput.placeholder = 'Sıra sizde değil';
+    // Süre çemberini sıfırla
+    const sureProgress = document.getElementById('sure-progress');
+    if (sureProgress) {
+        sureProgress.style.transform = 'rotate(-90deg)';
+        sureProgress.style.borderColor = '#3b82f6';
     }
 });
 
