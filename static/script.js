@@ -272,33 +272,34 @@ socket.on('oyun_durumu', (data) => {
     document.getElementById('oyun-ekrani').style.display = 'block';
     
     // Oyun bilgilerini güncelle
-    document.getElementById('ilk-harf').textContent = data.ilk_harf;
-    document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
+    document.getElementById('kelime-uzunlugu').textContent = data.kelime_uzunlugu;
+    document.getElementById('ilk-harf').textContent = data.ilk_harf;
     document.getElementById('kalan-sure').textContent = data.kalan_sure;
     document.getElementById('tur-sayisi').textContent = data.tur_sayisi;
-
-    // Tahmin kutularını oluştur
+    
+    // Tahmin alanını temizle
+    document.getElementById('tahmin-input').value = '';
+    
+    // Tahmin satırlarını yeniden oluştur
     tahminSatirlariniOlustur();
-
+    
+    // Süreyi yeniden başlat
+    sureAnimasyonunuBaslat();
+    
+    // Tahmin yapılabilir duruma getir
+    tahminYapilabilir = true;
+    
     // Bomba sayacını güncelle
-    document.getElementById('bomba-sayaci').textContent = data.bomba_sayaci;
-    
-    // Bomba harflerini göster/gizle
-    if (data.bomba_harfleri && data.bomba_aciga_cikti) {
-        document.getElementById('bomba-harfi').textContent = data.bomba_harfleri.join(', ');
-    } else {
-        document.getElementById('bomba-harfi').textContent = '?';
+    const bombaSayaciElement = document.getElementById('bomba-sayaci');
+    if (bombaSayaciElement) {
+        bombaSayaciElement.textContent = data.bomba_sayaci;
     }
     
-    // Puan tablosunu güncelle
-    if (data.puanlar) {
-        puanTablosunuGuncelle(data.puanlar);
-    }
-    
-    // En yüksek puanları güncelle
-    if (data.en_yuksek_skorlar) {
-        enYuksekPuanlariGuncelle(data.en_yuksek_skorlar);
+    // Bomba harflerini güncelle
+    const bombaHarfiElement = document.getElementById('bomba-harfi');
+    if (bombaHarfiElement) {
+        bombaHarfiElement.textContent = data.bomba_aciga_cikti ? data.bomba_harfleri.join(', ') : '?';
     }
 });
 
