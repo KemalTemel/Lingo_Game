@@ -80,6 +80,13 @@ function oyunuBaslat() {
         oyuncular.push(oyuncuAdi);
     }
     
+    // Bağlı kullanıcı sayısını kontrol et
+    const bagliKullaniciSayisi = parseInt(document.getElementById('bagli-kullanicilar').textContent.match(/\d+/)[0]);
+    if (bagliKullaniciSayisi < 2) {
+        alert('Oyun için en az 2 bağlı kullanıcı gerekli!');
+        return;
+    }
+    
     // Oyunu başlat
     socket.emit('oyun_baslat', {
         oyuncular: oyuncular
@@ -296,6 +303,10 @@ function tahminSonuclariniGuncelle(tahminler) {
 
 // Socket olayları
 socket.on('oyun_durumu', (data) => {
+    // Giriş ekranını gizle, oyun ekranını göster
+    document.getElementById('giris-ekrani').style.display = 'none';
+    document.getElementById('oyun-ekrani').style.display = 'block';
+    
     // Aktif oyuncuyu güncelle
     document.getElementById('aktif-oyuncu').textContent = data.aktif_oyuncu;
     
