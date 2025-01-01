@@ -58,6 +58,12 @@ def timer_durdur():
         aktif_timer.cancel()
         aktif_timer = None
 
+def timer_baslat(oda_id):
+    global aktif_timer
+    timer_durdur()
+    aktif_timer = Timer(1.0, lambda: sure_kontrolu(oda_id))
+    aktif_timer.start()
+
 def sure_kontrolu(oda_id):
     if oda_id not in oyun_odalari or not oyun_odalari[oda_id]['aktif']:
         return
@@ -365,12 +371,6 @@ def odaya_katil(data):
         'oda_id': oda_id,
         'oyuncular': oyun_odalari[oda_id]['oyuncular']
     }, room=oda_id)
-
-def timer_baslat(oda_id):
-    global aktif_timer
-    timer_durdur()
-    aktif_timer = Timer(1.0, lambda: sure_kontrolu(oda_id))
-    aktif_timer.start()
 
 @socketio.on('odalari_getir')
 def odalari_getir():
