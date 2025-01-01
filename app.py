@@ -5,6 +5,7 @@ import random
 from threading import Timer
 import os
 import logging
+import uuid
 
 # Flask uygulamasını oluştur
 app = Flask(__name__)
@@ -22,6 +23,9 @@ BOMBA_CEZA_ORANI = 0.25  # Puanın %25'i kaybedilir
 
 # Global timer değişkeni
 aktif_timer = None
+
+# Global değişkenler
+oyun_odalari = {}  # Her odadaki oyun durumunu tutacak
 
 # Aktif oyun bilgisi
 oyun = {
@@ -90,41 +94,42 @@ def yeni_kelime_sec(uzunluk):
 
 @socketio.on('oyun_baslat')
 def oyun_baslat(data):
-    global oyun, aktif_timer
-    oyuncular = data['oyuncular']
-    
-    if len(oyuncular) < 2:
+    oda_id = data['oda_id']
+    if oda_id not in oyun_odalari:
+        emit('hata', {'mesaj': 'Oda bulunamadı!'})
+        return
+        
+    oyun = oyun_odalari[oda_id]
+    if len(oyun['oyuncular']) < 2:
         emit('hata', {'mesaj': 'En az 2 oyuncu gerekli!'})
         return
     
-    timer_durdur()
+    # Oyunu başlat
     kelime, bomba_harfleri = yeni_kelime_sec(4)
-    
     oyun['aktif'] = True
-    oyun['oyuncular'] = oyuncular
     oyun['kelime'] = kelime
     oyun['bomba_harfleri'] = bomba_harfleri
     oyun['bomba_sayaci'] = 3
     oyun['bomba_aciga_cikti'] = False
     oyun['tahminler'] = []
-    oyun['puanlar'] = {oyuncu: 0 for oyuncu in oyuncular}
+    oyun['puanlar'] = {oyuncu: 0 for oyuncu in oyun['oyuncular']}
     oyun['kelime_uzunlugu'] = 4
-    oyun['aktif_oyuncu'] = oyuncular[0]
+    oyun['aktif_oyuncu'] = oyun['oyuncular'][0]
     oyun['tur_sayisi'] = 0
     oyun['kalan_sure'] = SURE_SINIRI
     
+    # Timer'ı başlat
+    timer_baslat(oda_id)
+    
     emit('oyun_durumu', {
-        'aktif_oyuncu': oyuncular[0],
+        'aktif_oyuncu': oyun['oyuncular'][0],
         'ilk_harf': kelime[0],
         'kelime_uzunlugu': 4,
-        'oyuncular': oyuncular,
+        'oyuncular': oyun['oyuncular'],
         'kalan_sure': SURE_SINIRI,
         'ilk_oyun': True,
         'bomba_sayaci': 3
-    }, broadcast=True)
-    
-    aktif_timer = Timer(1.0, sure_kontrolu)
-    aktif_timer.start()
+    }, room=oda_id)
 
 @socketio.on('tahmin_yap')
 def tahmin_yap(data):
@@ -224,17 +229,23 @@ def tahmin_yap(data):
 
 @socketio.on('siradaki_oyuncu')
 def siradaki_oyuncuya_gec():
-    global oyun
+    global oyun, aktif_timer
     if not oyun['aktif']:
         return
         
-    oyun['timer_aktif'] = False
+    # Önceki timer'ı durdur
+    timer_durdur()
+    
     oyuncu_sayisi = len(oyun['oyuncular'])
     simdiki_index = oyun['oyuncular'].index(oyun['aktif_oyuncu'])
     sonraki_index = (simdiki_index + 1) % oyuncu_sayisi
     oyun['aktif_oyuncu'] = oyun['oyuncular'][sonraki_index]
     oyun['tahminler'] = []
     oyun['kalan_sure'] = SURE_SINIRI
+    
+    # Yeni timer başlat
+    aktif_timer = Timer(1.0, sure_kontrolu)
+    aktif_timer.start()
     
     # Oyuncu turu kontrolü
     if sonraki_index == 0:
@@ -329,6 +340,45 @@ def index():
 @app.route('/oyun')
 def oyun_sayfasi():
     return render_template('oyun.html')
+
+@socketio.on('odaya_katil')
+def odaya_katil(data):
+    oda_id = data.get('oda_id')
+    oyuncu = data.get('oyuncu')
+    
+    if not oda_id:
+        # Yeni oda oluştur
+        oda_id = str(uuid.uuid4())[:8]
+        oyun_odalari[oda_id] = {
+            'aktif': False,
+            'oyuncular': [oyuncu],
+            'kelime': '',
+            'tahminler': [],
+            'puanlar': {},
+            'kelime_uzunlugu': 4,
+            'aktif_oyuncu': '',
+            'tur_sayisi': 0,
+            'kalan_sure': SURE_SINIRI,
+            'bomba_harfleri': [],
+            'bomba_sayaci': 3,
+            'bomba_aciga_cikti': False
+        }
+    else:
+        # Mevcut odaya katıl
+        if oda_id not in oyun_odalari:
+            emit('hata', {'mesaj': 'Oda bulunamadı!'})
+            return
+        if oyuncu not in oyun_odalari[oda_id]['oyuncular']:
+            oyun_odalari[oda_id]['oyuncular'].append(oyuncu)
+    
+    # Odaya katıl
+    join_room(oda_id)
+    
+    # Oda bilgilerini gönder
+    emit('oda_durumu', {
+        'oda_id': oda_id,
+        'oyuncular': oyun_odalari[oda_id]['oyuncular']
+    }, room=oda_id)
 
 if __name__ == '__main__':
     if os.environ.get('FLASK_ENV') == 'development':
