@@ -120,6 +120,7 @@ def oyun_baslat(data):
     # Timer'ı başlat
     timer_baslat(oda_id)
     
+    # Tüm odadakilere oyun durumunu gönder
     emit('oyun_durumu', {
         'aktif_oyuncu': oyun['oyuncular'][0],
         'ilk_harf': kelime[0],
@@ -127,7 +128,8 @@ def oyun_baslat(data):
         'oyuncular': oyun['oyuncular'],
         'kalan_sure': SURE_SINIRI,
         'ilk_oyun': True,
-        'bomba_sayaci': 3
+        'bomba_sayaci': 3,
+        'tahmin_yapilabilir': True  # Yeni eklenen alan
     }, room=oda_id)
 
 @socketio.on('tahmin_yap')
@@ -396,6 +398,18 @@ def timer_baslat(oda_id):
     timer_durdur()
     aktif_timer = Timer(1.0, lambda: sure_kontrolu(oda_id))
     aktif_timer.start()
+
+@socketio.on('odalari_getir')
+def odalari_getir():
+    aktif_odalar = []
+    for oda_id, oda in oyun_odalari.items():
+        if not oda['aktif'] and len(oda['oyuncular']) < 4:  # Sadece aktif olmayan ve dolu olmayan odalar
+            aktif_odalar.append({
+                'oda_id': oda_id,
+                'oyuncu_sayisi': len(oda['oyuncular']),
+                'oyuncular': oda['oyuncular']
+            })
+    emit('odalar_listesi', {'odalar': aktif_odalar})
 
 if __name__ == '__main__':
     if os.environ.get('FLASK_ENV') == 'development':
