@@ -274,11 +274,20 @@ body::before {
     box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
 }
 
+.tahmin-input-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
 #tahmin-input {
-    border-radius: 10px;
-    padding: 12px;
-    font-size: 16px;
+    flex: 1;
+    padding: 15px;
+    font-size: 1.2rem;
     border: 2px solid #e2e8f0;
+    border-radius: 10px;
     transition: all 0.2s ease;
 }
 
@@ -286,6 +295,16 @@ body::before {
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
     outline: none;
+}
+
+.tahmin-butonlar {
+    display: flex;
+    gap: 10px;
+}
+
+.tahmin-butonlar .btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
 }
 
 .btn {
