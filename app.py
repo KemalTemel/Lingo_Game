@@ -134,99 +134,72 @@ def oyun_baslat(data):
 
 @socketio.on('tahmin_yap')
 def tahmin_yap(data):
-    global oyun
-    tahmin = data['tahmin'].lower()
-    oyuncu = data['oyuncu']
-    
-    if not oyun['aktif'] or oyuncu != oyun['aktif_oyuncu']:
+    oda_id = data.get('oda_id')
+    tahmin = data.get('tahmin', '').lower()
+    oyuncu = data.get('oyuncu')
+
+    if not oda_id or oda_id not in oyun_odalari:
+        emit('hata', {'mesaj': 'Geçersiz oda!'})
         return
+
+    oyun = oyun_odalari[oda_id]
     
-    # Bomba harflerini kontrol et
-    for harf in tahmin:
-        if harf in oyun['bomba_harfleri']:
-            oyun['puanlar'][oyuncu] = int(oyun['puanlar'][oyuncu] * 0.75)
-            timer_durdur()
-            
-            emit('bomba_patladi', {
-                'oyuncu': oyuncu,
-                'bomba_harfi': harf,
-                'bomba_harfleri': oyun['bomba_harfleri'],
-                'puan_kaybi': int(oyun['puanlar'][oyuncu] * 0.25),
-                'dogru_kelime': oyun['kelime'],
-                'puanlar': oyun['puanlar']
-            }, broadcast=True)
-            return
+    if not oyun['aktif']:
+        emit('hata', {'mesaj': 'Oyun henüz başlamadı!'})
+        return
+
+    if oyuncu != oyun['aktif_oyuncu']:
+        emit('hata', {'mesaj': 'Sıra sizde değil!'})
+        return
 
     if len(tahmin) != oyun['kelime_uzunlugu']:
-        emit('hata', {'mesaj': f'Kelime {oyun["kelime_uzunlugu"]} harfli olmalı!'})
+        emit('hata', {'mesaj': f'Tahmin {oyun["kelime_uzunlugu"]} harfli olmalı!'})
         return
-    
-    dogru_kelime = oyun['kelime']
+
+    # Tahmin sonucunu hesapla
     sonuc = []
-    dogru_kelime_liste = list(dogru_kelime)
-    tahmin_liste = list(tahmin)
-    kullanilan_indeksler = set()
-
-    # Önce doğru yerdeki harfleri kontrol et
-    for i in range(len(tahmin)):
-        if tahmin[i] == dogru_kelime[i]:
-            sonuc.append({'harf': tahmin[i], 'durum': 'dogru'})
-            kullanilan_indeksler.add(i)
-            dogru_kelime_liste[i] = None
-            tahmin_liste[i] = None
-        else:
-            sonuc.append({'harf': tahmin[i], 'durum': 'yok'})
-
-    # Sonra yanlış yerdeki harfleri kontrol et
-    for i in range(len(tahmin)):
-        if i not in kullanilan_indeksler and tahmin_liste[i] is not None:
-            harf = tahmin_liste[i]
-            for j in range(len(dogru_kelime_liste)):
-                if dogru_kelime_liste[j] == harf:
-                    sonuc[i] = {'harf': harf, 'durum': 'var'}
-                    dogru_kelime_liste[j] = None
-                    break
+    dogru_kelime = oyun['kelime']
     
-    oyun['tahminler'].append({'oyuncu': oyuncu, 'tahmin': tahmin, 'sonuc': sonuc})
-    
+    for i, harf in enumerate(tahmin):
+        if i < len(dogru_kelime):
+            if harf == dogru_kelime[i]:
+                sonuc.append({'harf': harf, 'durum': 'dogru'})
+            elif harf in dogru_kelime:
+                sonuc.append({'harf': harf, 'durum': 'var'})
+            else:
+                sonuc.append({'harf': harf, 'durum': 'yok'})
+
+    # Tahmin bilgisini kaydet
+    oyun['tahminler'].append({
+        'tahmin': tahmin,
+        'sonuc': sonuc
+    })
+
+    # Tüm odadakilere tahmin sonucunu gönder
+    emit('tahmin_sonucu', {
+        'tahmin': tahmin,
+        'sonuc': sonuc,
+        'oyuncu': oyuncu
+    }, room=oda_id)
+
+    # Kelime doğru tahmin edildiyse
     if tahmin == dogru_kelime:
-        timer_durdur()
-        tahmin_sirasi = len(oyun['tahminler'])
-        temel_puan = max(100 - (tahmin_sirasi - 1) * 10, 10)
-        sure_bonus = oyun['kalan_sure']
-        bomba_bonus = 100 if not oyun['bomba_aciga_cikti'] else 0
-        toplam_puan = temel_puan + sure_bonus + bomba_bonus
-        oyun['puanlar'][oyuncu] = oyun['puanlar'].get(oyuncu, 0) + toplam_puan
-        
-        emit('kelime_bulundu', {
+        # Oyuncuya puan ver ve sıradaki oyuncuya geç
+        oyun['puanlar'][oyuncu] = oyun['puanlar'].get(oyuncu, 0) + 100
+        emit('oyun_kazanildi', {
+            'kelime': dogru_kelime,
             'oyuncu': oyuncu,
-            'temel_puan': temel_puan,
-            'sure_bonus': sure_bonus,
-            'bomba_bonus': bomba_bonus,
-            'toplam_puan': toplam_puan,
-            'puanlar': oyun['puanlar'],
-            'tahmin': tahmin,
-            'sonuc': sonuc,
-            'tahminler': oyun['tahminler']
-        }, broadcast=True)
-        
-    elif len(oyun['tahminler']) >= TAHMIN_SINIRI:
-        timer_durdur()
-        emit('tahmin_hakki_bitti', {
-            'oyuncu': oyuncu,
-            'dogru_kelime': dogru_kelime,
-            'bomba_harfleri': oyun['bomba_harfleri']
-        }, broadcast=True)
+            'puanlar': oyun['puanlar']
+        }, room=oda_id)
     else:
-        emit('tahmin_sonucu', {
-            'tahminler': oyun['tahminler'],
-            'kalan_tahmin': TAHMIN_SINIRI - len(oyun['tahminler']),
-            'puanlar': oyun['puanlar'],
-            'bomba_sayaci': oyun['bomba_sayaci'],
-            'bomba_aciga_cikti': oyun['bomba_aciga_cikti'],
-            'bomba_harfleri': oyun['bomba_harfleri'] if oyun['bomba_aciga_cikti'] else None,
-            'son_tahmin_sonuc': sonuc
-        }, broadcast=True)
+        # Sıradaki oyuncuya geç
+        simdiki_index = oyun['oyuncular'].index(oyun['aktif_oyuncu'])
+        sonraki_index = (simdiki_index + 1) % len(oyun['oyuncular'])
+        oyun['aktif_oyuncu'] = oyun['oyuncular'][sonraki_index]
+        
+        emit('siradaki_oyuncu', {
+            'aktif_oyuncu': oyun['aktif_oyuncu']
+        }, room=oda_id)
 
 @socketio.on('siradaki_oyuncu')
 def siradaki_oyuncuya_gec():
