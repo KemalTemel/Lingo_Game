@@ -51,8 +51,12 @@ function sesiAcKapat() {
     }
 }
 
-function oyuncuAlanlariOlustur() {
+function oyuncuSayisiDegisti() {
     const oyuncuSayisi = parseInt(document.getElementById('oyuncu-sayisi').value);
+    oyuncuAlanlariOlustur(oyuncuSayisi);
+}
+
+function oyuncuAlanlariOlustur(oyuncuSayisi) {
     const oyuncuAlanlari = document.getElementById('oyuncu-alanlari');
     oyuncuAlanlari.innerHTML = '';
     
@@ -60,8 +64,8 @@ function oyuncuAlanlariOlustur() {
         const div = document.createElement('div');
         div.className = 'mb-3';
         div.innerHTML = `
-            <label for="oyuncu-${i}" class="form-label">${i}. Oyuncu Adı:</label>
-            <input type="text" class="form-control" id="oyuncu-${i}" required>
+            <label class="form-label">${i}. Oyuncu Adı:</label>
+            <input type="text" class="form-control" id="oyuncu-${i}">
         `;
         oyuncuAlanlari.appendChild(div);
     }
@@ -472,7 +476,7 @@ document.getElementById('tahmin-input').addEventListener('keypress', (e) => {
 
 // Sayfa yüklendiğinde oyuncu alanlarını oluştur
 document.addEventListener('DOMContentLoaded', () => {
-    oyuncuAlanlariOlustur();
+    oyuncuAlanlariOlustur(2); // Varsayılan olarak 2 oyuncu
     sesiAcKapat();
 });
 
@@ -641,12 +645,21 @@ socket.on('yeni_tur', (data) => {
 });
 
 function yeniOdaOlustur() {
-    const oyuncuAdi = document.getElementById('oyuncu-adi').value;
-    if (!oyuncuAdi) {
-        alert('Lütfen önce oyuncu adınızı girin!');
-        return;
+    const oyuncuSayisi = parseInt(document.getElementById('oyuncu-sayisi').value);
+    const oyuncular = [];
+    
+    // Oyuncu isimlerini topla
+    for (let i = 1; i <= oyuncuSayisi; i++) {
+        const oyuncuAdi = document.getElementById(`oyuncu-${i}`).value.trim();
+        if (!oyuncuAdi) {
+            alert('Lütfen tüm oyuncu isimlerini girin!');
+            return;
+        }
+        oyuncular.push(oyuncuAdi);
     }
-    socket.emit('odaya_katil', { oyuncu: oyuncuAdi });
+    
+    // İlk oyuncuyu odaya ekle
+    socket.emit('odaya_katil', { oyuncu: oyuncular[0] });
 }
 
 function odayaKatilGoster() {
@@ -654,8 +667,9 @@ function odayaKatilGoster() {
 }
 
 function odayaKatil() {
-    const oyuncuAdi = document.getElementById('oyuncu-adi').value;
-    const odaId = document.getElementById('oda-id-input').value;
+    const oyuncuAdi = document.getElementById('oyuncu-1').value.trim();
+    const odaId = document.getElementById('oda-id-input').value.trim();
+    
     if (!oyuncuAdi || !odaId) {
         alert('Lütfen oyuncu adı ve oda ID girin!');
         return;
