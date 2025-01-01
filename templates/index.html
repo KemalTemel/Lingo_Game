@@ -178,52 +178,25 @@
         
         <!-- Oyuncu Giriş Ekranı -->
         <div id="giris-ekrani">
-            <h1 class="text-center mb-4">Lingo</h1>
-            
-            <!-- Oyuncu Bilgisi -->
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Oyuncu Bilgisi</h5>
-                    <div class="mb-3">
-                        <label class="form-label">Oyuncu Adınız:</label>
-                        <input type="text" class="form-control" id="oyuncu-adi" placeholder="Adınızı girin">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Oda Seçimi -->
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Oda Seçimi</h5>
-                    <div class="oda-secimi" id="oda-secimi">
-                        <div class="btn-group w-100 mb-3" role="group">
-                            <button class="btn btn-primary" onclick="yeniOdaOlustur()">Yeni Oda Oluştur</button>
-                            <button class="btn btn-secondary" onclick="odayaKatilGoster()">Odaya Katıl</button>
-                        </div>
-                        <div id="oda-katil-form" style="display: none;">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="oda-id-input" placeholder="Oda ID">
-                                <button class="btn btn-primary" onclick="odayaKatil()">Katıl</button>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Oyuncu Bilgileri</h5>
+                            <div class="mb-3">
+                                <label for="oyuncu-sayisi" class="form-label">Kaç Kişi Oynayacaksınız?</label>
+                                <select class="form-select" id="oyuncu-sayisi" onchange="oyuncuAlanlariOlustur()">
+                                    <option value="2">2 Oyuncu</option>
+                                    <option value="3">3 Oyuncu</option>
+                                    <option value="4">4 Oyuncu</option>
+                                </select>
                             </div>
-                            <div id="mevcut-odalar">
-                                <!-- Mevcut odalar buraya listelenecek -->
+                            <div id="oyuncu-alanlari">
+                                <!-- Oyuncu input alanları JavaScript ile eklenecek -->
                             </div>
+                            <button class="btn btn-primary w-100" onclick="oyunuBaslat()">Oyunu Başlat</button>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Oda Bilgisi -->
-            <div id="oda-bilgisi" class="card mb-4" style="display: none;">
-                <div class="card-body">
-                    <h5 class="card-title">Oda Bilgisi</h5>
-                    <div class="alert alert-info" id="oda-id-gosterim"></div>
-                    <div id="oyuncu-listesi" class="mb-3">
-                        <!-- Oyuncular burada listelenecek -->
-                    </div>
-                    <button class="btn btn-success w-100" id="oyunu-baslat" onclick="oyunuBaslat()" disabled>
-                        Oyunu Başlat (En az 2 oyuncu gerekli)
-                    </button>
                 </div>
             </div>
         </div>
@@ -257,26 +230,24 @@
                                 </div>
                             </div>
                             <div class="tahmin-container">
-                                <div id="tahminler">
-                                    <!-- Tahmin satırları JavaScript ile oluşturulacak -->
+                                <div id="tahminler" class="mb-3">
+                                    <!-- Tahmin kutuları JavaScript ile oluşturulacak -->
                                 </div>
                             </div>
                             <div class="tahmin-alani">
-                                <div class="tahmin-input-container">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-light emoji-btn" type="button" onclick="toggleEmojiPanel()">
+                                        😊
+                                    </button>
                                     <input type="text" 
-                                           id="tahmin-input" 
                                            class="form-control" 
-                                           placeholder="Tahmininizi yazın..."
+                                           id="tahmin-input" 
+                                           placeholder="Tahmininizi yazın..." 
                                            maxlength="7"
-                                           autocomplete="off">
-                                    <div class="tahmin-butonlar">
-                                        <button id="tahmin-btn" 
-                                                class="btn btn-primary" 
-                                                onclick="tahminYap()">Tahmin Et</button>
-                                        <button id="joker-btn" 
-                                                class="btn btn-warning" 
-                                                onclick="jokerKullan()">Joker (40 Puan)</button>
-                                    </div>
+                                           autocomplete="off"
+                                           onkeyup="this.value = this.value.toLowerCase()">
+                                    <button class="btn btn-primary" onclick="tahminYap()">Tahmin Et</button>
+                                    <button class="btn btn-warning" id="joker-btn" onclick="jokerKullan()">Joker (40 Puan)</button>
                                 </div>
                             </div>
                             <div id="siradaki-oyuncu-div" style="display: none;" class="text-center">
