@@ -905,7 +905,19 @@ body::before {
 .harf.dogru {
     background: #22c55e;
     color: white;
-    border-color: #22c55e;
+    border-color: #16a34a;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+    font-weight: 700;
+    opacity: 1;
+    letter-spacing: 0.5px;
+}
+.tahmin-satiri.bos .harf.dogru {
+    opacity: 1;
+    background: #22c55e;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
 }
 
 .harf.var {
