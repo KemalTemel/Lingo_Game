@@ -201,6 +201,20 @@
             </div>
         </div>
 
+        <!-- Oyuncu girişi kısmının altına -->
+        <div class="oda-secimi" id="oda-secimi">
+            <div class="btn-group" role="group">
+                <button class="btn btn-primary" onclick="yeniOdaOlustur()">Yeni Oda Oluştur</button>
+                <button class="btn btn-secondary" onclick="odayaKatilGoster()">Odaya Katıl</button>
+            </div>
+            <div id="oda-katil-form" style="display: none;">
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" id="oda-id-input" placeholder="Oda ID">
+                    <button class="btn btn-primary" onclick="odayaKatil()">Katıl</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Oyun Ekranı -->
         <div id="oyun-ekrani" style="display: none;">
             <div class="row">
