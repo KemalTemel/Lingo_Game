@@ -80,6 +80,14 @@ oyun = {
 
 
 
+# Global değişkenler
+
+bagli_kullanicilar = 0
+
+oyuncu_sid_map = {}  # Oyuncu adı -> Socket ID eşleşmesi
+
+
+
 def kelimeleri_yukle():
 
     kelimeler = {}
@@ -178,6 +186,30 @@ def yeni_kelime_sec(uzunluk):
 
 
 
+@socketio.on('connect')
+
+def handle_connect():
+
+    global bagli_kullanicilar
+
+    bagli_kullanicilar += 1
+
+    socketio.emit('bagli_kullanicilar', {'sayi': bagli_kullanicilar})
+
+
+
+@socketio.on('disconnect')
+
+def handle_disconnect():
+
+    global bagli_kullanicilar
+
+    bagli_kullanicilar -= 1
+
+    socketio.emit('bagli_kullanicilar', {'sayi': bagli_kullanicilar})
+
+
+
 @socketio.on('oyun_baslat')
 
 def oyun_baslat(data):
@@ -193,6 +225,30 @@ def oyun_baslat(data):
         emit('hata', {'mesaj': 'En az 2 oyuncu gerekli!'})
 
         return
+
+    
+
+    # Bağlı kullanıcı sayısını kontrol et
+
+    if len(bagli_kullanicilar) < 2:
+
+        emit('hata', {'mesaj': f'Oyun için yeterli bağlantı yok! Bağlı kullanıcı: {len(bagli_kullanicilar)}'})
+
+        return
+
+    
+
+    # Bağlı kullanıcıları oyuncu isimlerine ata
+
+    bagli_sid_listesi = list(bagli_kullanicilar.keys())
+
+    oyuncu_sid_map = {
+
+        oyuncular[i]: bagli_sid_listesi[i]
+
+        for i in range(min(len(oyuncular), len(bagli_sid_listesi)))
+
+    }
 
     
 
@@ -266,7 +322,11 @@ def tahmin_yap(data):
 
     
 
-    if not oyun['aktif'] or oyuncu != oyun['aktif_oyuncu']:
+    # Sadece sırası gelen ve doğru socket bağlantısından gelen tahminleri kabul et
+
+    if not oyun['aktif'] or oyuncu != oyun['aktif_oyuncu'] or request.sid != oyuncu_sid_map.get(oyuncu):
+
+        emit('hata', {'mesaj': 'Sıra sizde değil!'})
 
         return
 
